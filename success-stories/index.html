@@ -317,10 +317,20 @@
             }
         }
     </style>
+
+    <!-- Prevent bottom white line when dragging -->
+    <style>
+        html,
+        body {
+            background-color: #111827;
+            /* Matches gray-900 footer */
+            overscroll-behavior-y: none;
+        }
+    </style>
     <script src="/static/js/components.js?v=2026.02.28.01" defer></script>
 </head>
 
-<body class="antialiased bg-gray-50">
+<body class="antialiased">
 
     <app-header></app-header>
 

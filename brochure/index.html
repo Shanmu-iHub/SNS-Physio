@@ -317,10 +317,20 @@
             }
         }
     </style>
+
+    <!-- Prevent bottom white line when dragging -->
+    <style>
+        html,
+        body {
+            background-color: #111827;
+            /* Matches gray-900 footer */
+            overscroll-behavior-y: none;
+        }
+    </style>
     <script src="/static/js/components.js?v=2026.02.28.01" defer></script>
 </head>
 
-<body class="antialiased bg-gray-50">
+<body class="antialiased">
 
     <app-header></app-header>
 
@@ -393,7 +403,8 @@
                         <i class="fas fa-graduation-cap text-3xl text-purple-600"></i>
                     </div>
                     <h3 class="font-bold text-lg mb-2">Academic Programs</h3>
-                    <p class="text-sm text-gray-600">Bachelor and Master of Physiotherapy (B.P.T & M.P.T) curriculum details</p>
+                    <p class="text-sm text-gray-600">Bachelor and Master of Physiotherapy (B.P.T & M.P.T) curriculum
+                        details</p>
                 </div>
 
                 <div class="text-center">
