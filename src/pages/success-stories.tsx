@@ -13,7 +13,7 @@ export const SuccessStoriesPage = () => {
     <!-- Featured Story -->
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-gradient-to-br from-orange-100 to-red-100 rounded-3xl overflow-hidden shadow-2xl">
+            <div class="bg-gradient-to-br from-primary-100 to-red-100 rounded-3xl overflow-hidden shadow-2xl">
                 <div class="grid lg:grid-cols-2 gap-8">
                     <div class="h-96 lg:h-auto relative overflow-hidden">
                         <img src="https://scontent-maa3-2.cdninstagram.com/v/t51.82787-15/618548952_17913080631271418_4275555023929199059_n.webp?_nc_cat=110&ig_cache_key=MzgxNDEzNTM1MDc3MjYyMjE5Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=qL3MgYlQMwsQ7kNvwFRBblW&_nc_oc=Adnyply_5YwqDHFFfjCmwR3y9kdAaViAA18ZLBpmiNAJ8OKMSlQHOWWq8obsflCUyno&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-maa3-2.cdninstagram.com&_nc_gid=Ub07e9jp45HNLRXJHY7Zmw&oh=00_AfucDmHsYEG1wNs0iP4NQkOwDav0Oap6l_ndXzK01eckrA&oe=698790DD" alt="Book of Record" class="w-full h-full object-cover">
@@ -126,7 +126,7 @@ export const SuccessStoriesPage = () => {
                     image: "https://scontent-maa3-4.cdninstagram.com/v/t51.82787-15/612048914_18340162762235871_4589295776461399701_n.webp?_nc_cat=102&ig_cache_key=MzgwMzczNDU2NjQyMzk5Nzg0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4NzIwLnNkci5DMyJ9&_nc_ohc=SwoO0anUKZgQ7kNvwEHAjv7&_nc_oc=AdlC_Uqv_FiZKiEzwi762K48ex6vOXRjieKviXApXfKnCdjMK5tGDm5QzNUoPKqs050&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-maa3-4.cdninstagram.com&_nc_gid=mVC0gIw4aY5kbTMyjoe5MA&oh=00_AfsFFHCh3RLa_9-7AKNCISkZjzdzzalBvPIMPLUFawZlZw&oe=69877F45",
                     date: "January 2026",
                     category: "Community",
-                    color: "orange",
+                    color: "primary",
                     link: "https://www.instagram.com/p/DTJlHSKExme/?img_index=1"
                 }
             ],
@@ -231,7 +231,7 @@ export const SuccessStoriesPage = () => {
             <p class="text-xl text-gray-600 mb-8">
                 Join SNS Academy and become part of our legacy of excellence, innovation, and achievement!
             </p>
-            <a href="/admissions" class="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl transition">
+            <a href="/admissions" class="inline-flex items-center bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl transition">
                 <i class="fas fa-pen-to-square mr-2"></i>
                 Start Your Journey
             </a>

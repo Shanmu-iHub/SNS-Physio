@@ -153,9 +153,9 @@ app.get('/academics/secondary', (c) => {
                 </div>
 
                 <!-- Humanities Stream -->
-                <div class="bg-orange-50 rounded-2xl p-6 sm:p-8 lg:p-10 hover:shadow-md transition duration-300">
+                <div class="bg-primary-50 rounded-2xl p-6 sm:p-8 lg:p-10 hover:shadow-md transition duration-300">
                     <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-8 shadow-sm">
-                        <i class="fas fa-book text-3xl text-orange-600"></i>
+                        <i class="fas fa-book text-3xl text-primary-600"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 text-gray-900">Humanities Stream</h3>
                     <p class="text-gray-600 mb-6 font-semibold line-clamp-2 ">History, Political Science, Economics, Psychology</p>
@@ -176,8 +176,8 @@ app.get('/academics/secondary', (c) => {
             <h2 class="text-4xl font-bold text-center mb-12">Our Board Results Speak for Themselves</h2>
             
             <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 shadow-lg text-center">
-                    <div class="text-5xl font-extrabold text-orange-600 mb-2">100%</div>
+                <div class="bg-gradient-to-br from-primary-50 to-red-50 rounded-2xl p-8 shadow-lg text-center">
+                    <div class="text-5xl font-extrabold text-primary-600 mb-2">100%</div>
                     <div class="text-2xl font-bold text-gray-900 mb-2">Class X Pass Rate</div>
                     <div class="text-gray-600">Consistent 100% pass rate for last 3 years</div>
                     <div class="mt-4 text-sm text-gray-600">
@@ -204,8 +204,8 @@ app.get('/academics/secondary', (c) => {
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="bg-white rounded-2xl p-6 shadow-lg">
-                    <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-book-reader text-2xl text-orange-600"></i>
+                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-book-reader text-2xl text-primary-600"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Board Exam Coaching</h3>
                     <p class="text-sm text-gray-600">Intensive preparation for CBSE X & XII board exams</p>

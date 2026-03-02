@@ -7,7 +7,7 @@ export const ParentsTestimonialsCarousel = () => {
 
   return `
     <!-- Parents Testimonials Section -->
-    <section class="py-16 bg-gradient-to-br from-orange-50 to-red-50">
+    <section class="py-16 bg-gradient-to-br from-primary-50 to-red-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">What Parents Say About Us</h2>
@@ -25,7 +25,7 @@ export const ParentsTestimonialsCarousel = () => {
                         <div class="w-full flex-shrink-0 px-4">
                             <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
                                 <div class="flex items-center mb-6">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+                                    <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-red-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
                                         ${avatarIcon}
                                     </div>
                                     <div>
@@ -43,7 +43,7 @@ export const ParentsTestimonialsCarousel = () => {
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
                                     "SNS Academy has transformed my daughter's approach to learning. The Stanford-trained faculty and design thinking methodology have made her a creative problem-solver. She's not just scoring well academically but also developing real-world skills. The personalized attention with 10:1 ratio is truly commendable."
                                 </p>
-                                <div class="flex items-center text-orange-600 font-semibold">
+                                <div class="flex items-center text-primary-600 font-semibold">
                                     <i class="fas fa-check-circle mr-2"></i>
                                     <span>Verified Parent Review</span>
                                 </div>
@@ -54,7 +54,7 @@ export const ParentsTestimonialsCarousel = () => {
                         <div class="w-full flex-shrink-0 px-4">
                             <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
                                 <div class="flex items-center mb-6">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+                                    <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-primary-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
                                         ${avatarIcon}
                                     </div>
                                     <div>
@@ -72,7 +72,7 @@ export const ParentsTestimonialsCarousel = () => {
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
                                     "The innovation labs and STEM focus at SNS Academy are exceptional. My son has participated in 3 national robotics competitions this year! The school's emphasis on both academics and innovation through SNS iHub is preparing him for future challenges. Highly recommend for parents seeking holistic development."
                                 </p>
-                                <div class="flex items-center text-orange-600 font-semibold">
+                                <div class="flex items-center text-primary-600 font-semibold">
                                     <i class="fas fa-check-circle mr-2"></i>
                                     <span>Verified Parent Review</span>
                                 </div>
@@ -83,7 +83,7 @@ export const ParentsTestimonialsCarousel = () => {
                         <div class="w-full flex-shrink-0 px-4">
                             <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
                                 <div class="flex items-center mb-6">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-orange-600 to-amber-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+                                    <div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-amber-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
                                         ${avatarIcon}
                                     </div>
                                     <div>
@@ -101,7 +101,7 @@ export const ParentsTestimonialsCarousel = () => {
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
                                     "What sets SNS Academy apart is their genuine care for each child's overall development. The SPINE wellness program, 25+ clubs, and sports facilities are outstanding. My daughter loves the fingerprint approach where her unique talents are recognized and nurtured. The teachers are experienced and truly dedicated."
                                 </p>
-                                <div class="flex items-center text-orange-600 font-semibold">
+                                <div class="flex items-center text-primary-600 font-semibold">
                                     <i class="fas fa-check-circle mr-2"></i>
                                     <span>Verified Parent Review</span>
                                 </div>
@@ -112,7 +112,7 @@ export const ParentsTestimonialsCarousel = () => {
                         <div class="w-full flex-shrink-0 px-4">
                             <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
                                 <div class="flex items-center mb-6">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-orange-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+                                    <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-primary-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
                                         ${avatarIcon}
                                     </div>
                                     <div>
@@ -130,7 +130,7 @@ export const ParentsTestimonialsCarousel = () => {
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
                                     "SNS Academy's Stanford pathway program is phenomenal! My son secured admission to IIT thanks to the rigorous preparation and design thinking mindset developed here. The focus on innovation, leadership, and academic excellence truly prepares students for elite universities. Worth every investment!"
                                 </p>
-                                <div class="flex items-center text-orange-600 font-semibold">
+                                <div class="flex items-center text-primary-600 font-semibold">
                                     <i class="fas fa-check-circle mr-2"></i>
                                     <span>Verified Parent Review</span>
                                 </div>
@@ -141,19 +141,19 @@ export const ParentsTestimonialsCarousel = () => {
                 </div>
 
                 <!-- Navigation Buttons -->
-                <button id="prev-testimonial" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white hover:bg-orange-600 text-gray-900 hover:text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center transition-all z-10">
+                <button id="prev-testimonial" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white hover:bg-primary-600 text-gray-900 hover:text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center transition-all z-10">
                     <i class="fas fa-chevron-left"></i>
                 </button>
-                <button id="next-testimonial" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white hover:bg-orange-600 text-gray-900 hover:text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center transition-all z-10">
+                <button id="next-testimonial" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white hover:bg-primary-600 text-gray-900 hover:text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center transition-all z-10">
                     <i class="fas fa-chevron-right"></i>
                 </button>
 
                 <!-- Dots Indicator -->
                 <div class="flex justify-center mt-8 space-x-2">
-                    <button class="testimonial-dot w-3 h-3 rounded-full bg-orange-600 transition-all" data-index="0"></button>
-                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-orange-400 transition-all" data-index="1"></button>
-                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-orange-400 transition-all" data-index="2"></button>
-                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-orange-400 transition-all" data-index="3"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-primary-600 transition-all" data-index="0"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-primary-400 transition-all" data-index="1"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-primary-400 transition-all" data-index="2"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-primary-400 transition-all" data-index="3"></button>
                 </div>
             </div>
         </div>
@@ -172,9 +172,9 @@ export const ParentsTestimonialsCarousel = () => {
                 dots.forEach((dot, index) => {
                     if (index === currentIndex) {
                         dot.classList.remove('bg-gray-300');
-                        dot.classList.add('bg-orange-600');
+                        dot.classList.add('bg-primary-600');
                     } else {
-                        dot.classList.remove('bg-orange-600');
+                        dot.classList.remove('bg-primary-600');
                         dot.classList.add('bg-gray-300');
                     }
                 });

@@ -11,7 +11,7 @@ export const GalleryPage = () => {
     )}
 
     <!-- Life at SNS Academy -->
-    <section class="py-16 bg-gradient-to-br from-yellow-50 to-orange-50">
+    <section class="py-16 bg-gradient-to-br from-yellow-50 to-primary-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl font-bold text-center mb-4">Life @ SNS Academy</h2>
             <p class="text-center text-xl text-gray-600 mb-12">Where learning meets joy, and every day is an adventure!</p>
@@ -162,8 +162,8 @@ export const GalleryPage = () => {
                 </div>
                 
                 <div class="bg-white rounded-2xl p-8 shadow-xl">
-                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-language text-3xl text-orange-600"></i>
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-language text-3xl text-primary-600"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Language Lab</h3>
                     <p class="text-gray-600">Multimedia resources for language skill development</p>
@@ -178,7 +178,7 @@ export const GalleryPage = () => {
             <h2 class="text-4xl font-bold text-center mb-12">Premium Facilities</h2>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-6">
+                <div class="bg-gradient-to-br from-amber-50 to-primary-50 rounded-xl p-6">
                     <i class="fas fa-briefcase text-4xl text-amber-600 mb-4"></i>
                     <h3 class="text-xl font-bold mb-2">Board Room</h3>
                     <p class="text-gray-600 text-sm">Professional meeting space for important discussions</p>
@@ -316,7 +316,7 @@ export const SportsClubsPage = () => {
                     <p class="text-gray-600 text-center">Full-sized field with professional coaching</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-8 shadow-lg card-hover">
+                <div class="bg-gradient-to-br from-yellow-50 to-primary-50 rounded-2xl p-8 shadow-lg card-hover">
                     <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-table-tennis text-4xl text-yellow-600"></i>
                     </div>
@@ -332,9 +332,9 @@ export const SportsClubsPage = () => {
                     <p class="text-gray-600 text-center">All-weather indoor cricket center with nets</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 shadow-lg card-hover">
+                <div class="bg-gradient-to-br from-primary-50 to-red-50 rounded-2xl p-8 shadow-lg card-hover">
                     <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-basketball-ball text-4xl text-orange-600"></i>
+                        <i class="fas fa-basketball-ball text-4xl text-primary-600"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4">Basketball</h3>
                     <p class="text-gray-600 text-center">Full court with modern equipment</p>
@@ -456,7 +456,7 @@ export const SportsClubsPage = () => {
                 </div>
                 
                 <div class="bg-white rounded-xl p-6 shadow-lg text-center card-hover">
-                    <i class="fas fa-flask text-5xl text-orange-600 mb-4"></i>
+                    <i class="fas fa-flask text-5xl text-primary-600 mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Science Club</h3>
                     <p class="text-sm text-gray-600">Experiments and exhibitions</p>
                 </div>

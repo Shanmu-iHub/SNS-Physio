@@ -14,7 +14,7 @@ export const StanfordPathwayPage = () => {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="relative">
-                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-orange-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-primary-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
                      <div class="rounded-2xl overflow-hidden shadow-2xl relative">
                         <img src="/static/images/SNS Academy Web/Stanford-Trained Faculty.png" alt="Stanford Trained Faculty" class="w-full h-full object-cover">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8">
@@ -32,8 +32,8 @@ export const StanfordPathwayPage = () => {
                     
                     <div class="space-y-6">
                         <div class="flex items-start group">
-                            <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center flex-shrink-0 mr-6 group-hover:bg-orange-600 transition duration-300">
-                                <i class="fas fa-chalkboard-teacher text-2xl text-orange-600 group-hover:text-white transition duration-300"></i>
+                            <div class="w-14 h-14 bg-primary-50 rounded-xl flex items-center justify-center flex-shrink-0 mr-6 group-hover:bg-primary-600 transition duration-300">
+                                <i class="fas fa-chalkboard-teacher text-2xl text-primary-600 group-hover:text-white transition duration-300"></i>
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold text-gray-900 mb-2">Design Thinking Mastery</h3>
@@ -70,7 +70,7 @@ export const StanfordPathwayPage = () => {
     <section class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <span class="text-orange-600 font-bold tracking-wider uppercase text-sm mb-2 block">The Roadmap</span>
+                <span class="text-primary-600 font-bold tracking-wider uppercase text-sm mb-2 block">The Roadmap</span>
                 <h2 class="text-4xl font-bold text-gray-900 mb-6">Your Journey to Excellence</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     A structured 12-year journey from Nursery to Grade XII, building the foundation for elite university admission.
@@ -80,10 +80,10 @@ export const StanfordPathwayPage = () => {
             <div class="space-y-12">
                 <!-- Stage 1 -->
                  <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-sm border border-gray-100 hover:shadow-xl transition duration-300 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-64 h-64 bg-orange-50 rounded-bl-full -mr-16 -mt-16 opacity-50"></div>
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-primary-50 rounded-bl-full -mr-16 -mt-16 opacity-50"></div>
                     <div class="grid md:grid-cols-12 gap-8 relative z-10">
                         <div class="md:col-span-4">
-                            <div class="inline-block bg-orange-100 text-orange-700 px-4 py-1 rounded-full text-sm font-bold mb-4">Stage 1</div>
+                            <div class="inline-block bg-primary-100 text-primary-700 px-4 py-1 rounded-full text-sm font-bold mb-4">Stage 1</div>
                             <h3 class="text-3xl font-bold text-gray-900 mb-2">Foundation Stage</h3>
                             <p class="text-lg text-gray-500 font-medium mb-6">Nursery - Grade 5</p>
                             <p class="text-gray-600 leading-relaxed">
@@ -92,19 +92,19 @@ export const StanfordPathwayPage = () => {
                         </div>
                         <div class="md:col-span-8 grid sm:grid-cols-2 gap-8 border-t md:border-t-0 md:border-l border-gray-100 pt-8 md:pt-0 md:pl-8">
                             <div>
-                                <h4 class="font-bold text-gray-900 mb-4 flex items-center"><i class="fas fa-bullseye text-orange-600 mr-2"></i> Objectives</h4>
+                                <h4 class="font-bold text-gray-900 mb-4 flex items-center"><i class="fas fa-bullseye text-primary-600 mr-2"></i> Objectives</h4>
                                 <ul class="space-y-3 text-gray-600 text-sm">
-                                    <li class="flex items-start"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>Curiosity & Wonder Development</li>
-                                    <li class="flex items-start"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>Creative Thinking & Exploration</li>
-                                    <li class="flex items-start"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>Collaboration & Communication</li>
+                                    <li class="flex items-start"><span class="w-1.5 h-1.5 bg-primary-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>Curiosity & Wonder Development</li>
+                                    <li class="flex items-start"><span class="w-1.5 h-1.5 bg-primary-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>Creative Thinking & Exploration</li>
+                                    <li class="flex items-start"><span class="w-1.5 h-1.5 bg-primary-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>Collaboration & Communication</li>
                                 </ul>
                             </div>
                             <div>
-                                <h4 class="font-bold text-gray-900 mb-4 flex items-center"><i class="fas fa-cogs text-orange-600 mr-2"></i> Methods</h4>
+                                <h4 class="font-bold text-gray-900 mb-4 flex items-center"><i class="fas fa-cogs text-primary-600 mr-2"></i> Methods</h4>
                                 <ul class="space-y-3 text-gray-600 text-sm">
-                                    <li class="flex items-start"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>Project-Based Learning</li>
-                                    <li class="flex items-start"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>Storytelling & Creative Arts</li>
-                                    <li class="flex items-start"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>Hands-On STEM Activities</li>
+                                    <li class="flex items-start"><span class="w-1.5 h-1.5 bg-primary-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>Project-Based Learning</li>
+                                    <li class="flex items-start"><span class="w-1.5 h-1.5 bg-primary-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>Storytelling & Creative Arts</li>
+                                    <li class="flex items-start"><span class="w-1.5 h-1.5 bg-primary-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>Hands-On STEM Activities</li>
                                 </ul>
                             </div>
                         </div>
@@ -201,11 +201,11 @@ export const StanfordPathwayPage = () => {
                 </div>
 
                 <div class="p-8 rounded-2xl bg-gray-50 hover:bg-white border border-gray-100 hover:shadow-xl transition duration-300 group text-center">
-                    <div class="w-16 h-16 mx-auto bg-orange-100 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
-                        <i class="fas fa-lightbulb text-3xl text-orange-600"></i>
+                    <div class="w-16 h-16 mx-auto bg-primary-100 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                        <i class="fas fa-lightbulb text-3xl text-primary-600"></i>
                     </div>
                     <div class="text-4xl font-bold text-gray-900 mb-2">5+</div>
-                    <p class="text-sm font-bold text-orange-600 uppercase tracking-wider mb-2">Innovation Projects</p>
+                    <p class="text-sm font-bold text-primary-600 uppercase tracking-wider mb-2">Innovation Projects</p>
                     <p class="text-gray-500 text-sm">Real-World Solutions Per Year</p>
                 </div>
 
@@ -236,7 +236,7 @@ export const StanfordPathwayPage = () => {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div>
-                    <span class="text-orange-500 font-bold tracking-wider uppercase text-sm mb-2 block">The Toolkit</span>
+                    <span class="text-primary-500 font-bold tracking-wider uppercase text-sm mb-2 block">The Toolkit</span>
                     <h2 class="text-4xl font-bold mb-6">Mastering the Tools of Innovation</h2>
                     <p class="text-gray-400 text-lg mb-8 leading-relaxed">
                         We don't just teach theory. We equip students with powerful frameworks like the Design Thinking Playbook and Business Model Canvas (BMC) to deconstruct problems and build viable ventures.
@@ -244,7 +244,7 @@ export const StanfordPathwayPage = () => {
                     
                     <div class="space-y-6">
                         <div class="flex items-start">
-                             <i class="fas fa-book-reader text-2xl text-orange-500 mt-1 mr-4"></i>
+                             <i class="fas fa-book-reader text-2xl text-primary-500 mt-1 mr-4"></i>
                              <div>
                                  <h4 class="text-xl font-bold mb-2">Design Thinking Playbook</h4>
                                  <p class="text-gray-400 text-sm">A comprehensive guide covering Empathize, Define, Ideate, Prototype, and Test phases with actionable worksheets.</p>
@@ -260,7 +260,7 @@ export const StanfordPathwayPage = () => {
                     </div>
 
                     <div class="mt-10">
-                         <a href="/contact" class="inline-flex items-center bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold transition shadow-lg border border-transparent hover:border-orange-400">
+                         <a href="/contact" class="inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-xl font-bold transition shadow-lg border border-transparent hover:border-primary-400">
                             <i class="fas fa-download mr-2"></i>
                             Request Complete Playbook
                         </a>
@@ -272,7 +272,7 @@ export const StanfordPathwayPage = () => {
                     <div class="grid grid-cols-3 gap-2 p-4 bg-white/10 backdrop-blur rounded-2xl border border-white/10 transform rotate-2 hover:rotate-0 transition duration-500">
                         <div class="col-span-1 bg-blue-500/20 rounded-lg p-4 h-24 flex items-center justify-center"><i class="fas fa-handshake text-2xl text-blue-400"></i></div>
                         <div class="col-span-1 bg-green-500/20 rounded-lg p-4 h-24 flex items-center justify-center"><i class="fas fa-tasks text-2xl text-green-400"></i></div>
-                        <div class="row-span-2 bg-orange-500/20 rounded-lg p-4 flex items-center justify-center"><i class="fas fa-gift text-4xl text-orange-400"></i></div>
+                        <div class="row-span-2 bg-primary-500/20 rounded-lg p-4 flex items-center justify-center"><i class="fas fa-gift text-4xl text-primary-400"></i></div>
                         <div class="col-span-1 bg-purple-500/20 rounded-lg p-4 h-24 flex items-center justify-center"><i class="fas fa-users text-2xl text-purple-400"></i></div>
                         <div class="col-span-1 bg-pink-500/20 rounded-lg p-4 h-24 flex items-center justify-center"><i class="fas fa-heart text-2xl text-pink-400"></i></div>
                         <div class="col-span-1 bg-yellow-500/20 rounded-lg p-4 h-20 flex items-center justify-center"><i class="fas fa-tag text-2xl text-yellow-400"></i></div>
@@ -292,7 +292,7 @@ export const StanfordPathwayPage = () => {
                 Join India's first Design Thinking CBSE school and get trained by industry experts to achieve your global dreams.
             </p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                <a href="/admissions" class="inline-flex items-center justify-center bg-orange-600 text-white hover:bg-orange-700 px-10 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1">
+                <a href="/admissions" class="inline-flex items-center justify-center bg-primary-600 text-white hover:bg-primary-700 px-10 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1">
                     Apply for Admission
                 </a>
                 <a href="/contact" class="inline-flex items-center justify-center bg-white text-gray-700 border-2 border-gray-200 hover:border-gray-900 hover:text-gray-900 px-10 py-4 rounded-full font-bold text-lg transition">

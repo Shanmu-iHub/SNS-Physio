@@ -13,7 +13,7 @@ export const FacilitiesPage = () => {
     <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <span class="text-orange-600 font-bold tracking-wider uppercase text-sm mb-2 block">Student Life</span>
+                <span class="text-primary-600 font-bold tracking-wider uppercase text-sm mb-2 block">Student Life</span>
                 <h2 class="text-4xl font-bold text-gray-900 mb-6">SNS SPINE Activity Center</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     A 5-level world-class activity center for sports, arts, entertainment, and wellness. 
@@ -183,8 +183,8 @@ export const FacilitiesPage = () => {
                     <p class="text-sm text-gray-600">State-of-the-art computing facilities</p>
                 </div>
                 <div class="bg-white rounded-xl p-8 text-center shadow-lg hover:-translate-y-2 transition duration-300">
-                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-book text-3xl text-orange-600"></i>
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-book text-3xl text-primary-600"></i>
                     </div>
                     <h3 class="font-bold text-gray-900 text-lg mb-2">Library</h3>
                     <p class="text-sm text-gray-600">Comprehensive resource collection</p>
@@ -194,7 +194,7 @@ export const FacilitiesPage = () => {
     </section>
 
     <!-- CTA -->
-    <section class="py-20 bg-gradient-to-r from-pink-600 to-orange-600 text-white relative overflow-hidden">
+    <section class="py-20 bg-gradient-to-r from-pink-600 to-primary-600 text-white relative overflow-hidden">
         <div class="absolute inset-0 bg-black/10"></div>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h2 class="text-4xl lg:text-5xl font-bold mb-6">Experience It In Person</h2>

@@ -25,7 +25,7 @@ export const PageHeader = (title: string, subtitle: string, backgroundImage: str
             
             <!-- Decorative Element -->
             <div class="mt-8 flex justify-center">
-                <div class="w-24 h-1 bg-orange-500 rounded-full"></div>
+                <div class="w-24 h-1 bg-primary-500 rounded-full"></div>
             </div>
         </div>
         

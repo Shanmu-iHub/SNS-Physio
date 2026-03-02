@@ -168,7 +168,7 @@ export const PrimaryPage = () => {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div>
-                    <span class="text-orange-600 font-bold tracking-wider uppercase text-sm mb-2 block">Curriculum</span>
+                    <span class="text-primary-600 font-bold tracking-wider uppercase text-sm mb-2 block">Curriculum</span>
                     <h2 class="text-4xl font-bold text-gray-900 mb-6">CBSE with Innovation</h2>
                     <p class="text-lg text-gray-600 leading-relaxed mb-6">
                         SNS Academy follows CBSE Curriculum enhanced with design thinking methodologies. Core English and Mathematics skills are explicitly taught from foundation, while the broader skills of Literacy and Numeracy are developed across all subject areas.
@@ -178,7 +178,7 @@ export const PrimaryPage = () => {
                     </p>
                 </div>
                 <div class="relative">
-                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-orange-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-primary-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
                      <div class="absolute -bottom-4 -left-4 w-24 h-24 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
                     <img src="/static/images/SNS Academy Web/Primary Education.png" alt="Primary Classroom" class="relative rounded-2xl shadow-2xl w-full object-cover h-[400px]">
                 </div>
@@ -205,7 +205,7 @@ export const PrimaryPage = () => {
                         <p class="text-sm text-gray-500">Developing independent study skills</p>
                     </div>
                      <div class="text-center">
-                        <div class="w-16 h-16 mx-auto bg-orange-50 rounded-full flex items-center justify-center mb-4 text-orange-600 text-2xl"><i class="fas fa-hands-helping"></i></div>
+                        <div class="w-16 h-16 mx-auto bg-primary-50 rounded-full flex items-center justify-center mb-4 text-primary-600 text-2xl"><i class="fas fa-hands-helping"></i></div>
                         <h3 class="font-bold text-gray-900 mb-2">Social Justice</h3>
                         <p class="text-sm text-gray-500">Fostering strong community values</p>
                     </div>
@@ -220,18 +220,18 @@ export const PrimaryPage = () => {
     </section>
     
     <!-- CTA -->
-    <section class="py-24 bg-orange-900 text-white relative overflow-hidden">
+    <section class="py-24 bg-primary-900 text-white relative overflow-hidden">
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h2 class="text-4xl font-bold mb-6">Nurture Your Child's Potential</h2>
-            <p class="text-xl mb-10 text-orange-100 font-light">
+            <p class="text-xl mb-10 text-primary-100 font-light">
                 Experience world-class primary education with design thinking approach.
             </p>
              <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/admissions" class="bg-white text-orange-900 hover:bg-gray-100 px-10 py-4 rounded-full font-bold text-lg transition shadow-lg shrink-0">
+                <a href="/admissions" class="bg-white text-primary-900 hover:bg-gray-100 px-10 py-4 rounded-full font-bold text-lg transition shadow-lg shrink-0">
                     Apply for Admission
                 </a>
-                <a href="/contact" class="bg-orange-800 border border-orange-700 hover:bg-orange-700 px-10 py-4 rounded-full font-bold text-lg transition shrink-0">
+                <a href="/contact" class="bg-primary-800 border border-primary-700 hover:bg-primary-700 px-10 py-4 rounded-full font-bold text-lg transition shrink-0">
                     Schedule Visit
                 </a>
             </div>
@@ -336,12 +336,12 @@ export const MiddleSchoolPage = () => {
                 </div>
 
                 <!-- Grade 8 -->
-                <div class="bg-orange-50/70 rounded-2xl p-6 sm:p-8 lg:p-10 hover:shadow-md transition duration-300">
-                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-8 shadow-sm text-orange-600 text-2xl font-bold font-sans">
+                <div class="bg-primary-50/70 rounded-2xl p-6 sm:p-8 lg:p-10 hover:shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-8 shadow-sm text-primary-600 text-2xl font-bold font-sans">
                         8
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-2">Grade 8 Learners</h3>
-                    <p class="text-orange-600 font-semibold mb-4">Building responsibility and leadership</p>
+                    <p class="text-primary-600 font-semibold mb-4">Building responsibility and leadership</p>
                     <p class="text-gray-700 mb-6 text-sm leading-relaxed ">Grade 8 prepares students for higher academic challenges while nurturing leadership, accountability, and personal growth.</p>
                     <ul class="space-y-3 text-sm text-gray-500">
                         <li class="flex items-start"><span class="mr-3 mt-0.5 text-lg">🎯</span> <span class="pt-0.5">Strong academic focus and accountability</span></li>
@@ -366,7 +366,7 @@ export const MiddleSchoolPage = () => {
             
             <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
                 <div class="bg-white p-6 rounded-xl text-center shadow-sm hover:shadow-md transition">
-                    <i class="fas fa-heart text-3xl text-orange-500 mb-3"></i>
+                    <i class="fas fa-heart text-3xl text-primary-500 mb-3"></i>
                     <h4 class="font-bold">1. Empathize</h4>
                 </div>
                 <div class="bg-white p-6 rounded-xl text-center shadow-sm hover:shadow-md transition">

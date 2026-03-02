@@ -19,7 +19,7 @@ export const TransportPage = () => {
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 text-center card-hover">
+                <div class="bg-gradient-to-br from-primary-50 to-red-50 rounded-2xl p-8 text-center card-hover">
                     <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                         <i class="fas fa-bus text-4xl text-blue-600"></i>
                     </div>
@@ -35,7 +35,7 @@ export const TransportPage = () => {
                     <p class="text-gray-600">Real-time location monitoring</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 text-center card-hover">
+                <div class="bg-gradient-to-br from-red-50 to-primary-50 rounded-2xl p-8 text-center card-hover">
                     <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                         <i class="fas fa-shield-alt text-4xl text-purple-600"></i>
                     </div>
@@ -43,9 +43,9 @@ export const TransportPage = () => {
                     <p class="text-gray-600">Safe boarding system</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 text-center card-hover">
+                <div class="bg-gradient-to-br from-primary-50 to-red-50 rounded-2xl p-8 text-center card-hover">
                     <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                        <i class="fas fa-snowflake text-4xl text-orange-600"></i>
+                        <i class="fas fa-snowflake text-4xl text-primary-600"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-3">Air Conditioned</h3>
                     <p class="text-gray-600">All buses fully AC</p>
@@ -55,12 +55,12 @@ export const TransportPage = () => {
     </section>
 
     <!-- Bus Route Coverage -->
-    <section class="py-16 bg-gradient-to-br from-orange-50 to-amber-50">
+    <section class="py-16 bg-gradient-to-br from-primary-50 to-amber-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold mb-4">Bus Route Coverage Areas</h2>
                 <p class="text-xl text-gray-600 mb-2">We cover major areas across Coimbatore</p>
-                <p class="text-lg text-orange-600 font-semibold">🚨 Check if your area is covered before admission!</p>
+                <p class="text-lg text-primary-600 font-semibold">🚨 Check if your area is covered before admission!</p>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8 mb-12">
@@ -153,12 +153,12 @@ export const TransportPage = () => {
             </div>
 
             <!-- Check Your Area CTA -->
-            <div class="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 text-white text-center">
+            <div class="bg-gradient-to-r from-primary-500 to-red-500 rounded-2xl p-8 text-white text-center">
                 <i class="fas fa-exclamation-circle text-5xl mb-4"></i>
                 <h3 class="text-3xl font-bold mb-4">Not Sure If Your Area Is Covered?</h3>
                 <p class="text-xl mb-6">Contact our transport coordinator to check route availability for your specific location</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="tel:+914224390470" class="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
+                    <a href="tel:+914224390470" class="bg-white text-primary-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
                         <i class="fas fa-phone mr-2"></i>
                         Call: +91 96299 37861
                     </a>
@@ -177,19 +177,19 @@ export const TransportPage = () => {
             <h2 class="text-4xl font-bold text-center mb-12">Safety Features</h2>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-6">
+                <div class="bg-gradient-to-br from-red-50 to-primary-50 rounded-xl p-6">
                     <i class="fas fa-tachometer-alt text-4xl text-red-600 mb-4"></i>
                     <h3 class="text-xl font-bold mb-3">Speed Governor</h3>
                     <p class="text-gray-600">All buses fitted with speed limiters for safety</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-6">
+                <div class="bg-gradient-to-br from-primary-50 to-red-50 rounded-xl p-6">
                     <i class="fas fa-satellite-dish text-4xl text-blue-600 mb-4"></i>
                     <h3 class="text-xl font-bold mb-3">GPS Tracking</h3>
                     <p class="text-gray-600">Real-time location monitoring system</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-6">
+                <div class="bg-gradient-to-br from-red-50 to-primary-50 rounded-xl p-6">
                     <i class="fas fa-id-card text-4xl text-purple-600 mb-4"></i>
                     <h3 class="text-xl font-bold mb-3">RFID System</h3>
                     <p class="text-gray-600">Smart cards for secure boarding</p>
@@ -201,7 +201,7 @@ export const TransportPage = () => {
                     <p class="text-gray-600">Fully equipped medical kit in every bus</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-6">
+                <div class="bg-gradient-to-br from-yellow-50 to-primary-50 rounded-xl p-6">
                     <i class="fas fa-user-shield text-4xl text-yellow-600 mb-4"></i>
                     <h3 class="text-xl font-bold mb-3">Trained Staff</h3>
                     <p class="text-gray-600">Caretakers on every bus for student safety</p>
@@ -289,7 +289,7 @@ export const TransportPage = () => {
     <!-- Schedule Information -->
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-12 text-center">
+            <div class="bg-gradient-to-br from-primary-50 to-amber-50 rounded-2xl p-12 text-center">
                 <i class="fas fa-clock text-6xl text-blue-600 mb-6"></i>
                 <h2 class="text-4xl font-bold mb-4">School Timings</h2>
                 <p class="text-xl text-gray-700 mb-6">

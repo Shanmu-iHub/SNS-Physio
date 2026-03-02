@@ -282,19 +282,19 @@ footerTemplate.innerHTML = `
                     </ul>
                     <div class="flex space-x-3">
                         <a href="https://www.facebook.com/snsinstitutions" target="_blank"
-                            class="w-10 h-10 bg-gray-800 hover:bg-orange-600 rounded-lg flex items-center justify-center transition">
+                            class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="https://www.instagram.com/snsacademyorg" target="_blank"
-                            class="w-10 h-10 bg-gray-800 hover:bg-orange-600 rounded-lg flex items-center justify-center transition">
+                            class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
                             <i class="fab fa-instagram"></i>
                         </a>
                         <a href="https://www.youtube.com/@snsinstitutions" target="_blank"
-                            class="w-10 h-10 bg-gray-800 hover:bg-orange-600 rounded-lg flex items-center justify-center transition">
+                            class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
                             <i class="fab fa-youtube"></i>
                         </a>
                         <a href="https://www.linkedin.com/school/snsinstitutions/" target="_blank"
-                            class="w-10 h-10 bg-gray-800 hover:bg-orange-600 rounded-lg flex items-center justify-center transition">
+                            class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
@@ -303,9 +303,9 @@ footerTemplate.innerHTML = `
 
             <div class="border-t border-gray-800 pt-8 text-center text-sm">
                 <p>&copy; 2026 SNS Physiotherapy. All rights reserved.</p>
-                <p class="mt-2 text-orange-400 font-semibold">Caring for Your Health | We are Physical Therapists</p>
+                <p class="mt-2 text-primary-400 font-semibold">Caring for Your Health | We are Physical Therapists</p>
                 <p class="mt-1 text-xs">SNS Core Value: Sincerity, Nobility, Service</p>
-                <p class="mt-3 text-orange-400 font-bold"><i class="fas fa-headset mr-2"></i>Helpline: 95644 23456</p>
+                <p class="mt-3 text-primary-400 font-bold"><i class="fas fa-headset mr-2"></i>Helpline: 95644 23456</p>
             </div>
         </div>
     </footer>
@@ -367,11 +367,11 @@ class AppHeader extends HTMLElement {
         if (path === '/' || path === '/index.html') {
             const homeLinks = Array.from(links).filter(link => link.getAttribute('href') === '/');
             homeLinks.forEach(link => {
-                link.classList.add('text-orange-600', 'font-bold');
+                link.classList.add('text-primary-600', 'font-bold');
                 link.classList.remove('text-gray-700');
             });
         } else if (currentLink) {
-            currentLink.classList.add('text-orange-600', 'font-bold');
+            currentLink.classList.add('text-primary-600', 'font-bold');
             currentLink.classList.remove('text-gray-700');
 
             // Highlight parent dropdown button
@@ -379,7 +379,7 @@ class AppHeader extends HTMLElement {
             if (dropdown) {
                 const btn = dropdown.querySelector('button');
                 if (btn) {
-                    btn.classList.add('text-orange-600', 'font-bold');
+                    btn.classList.add('text-primary-600', 'font-bold');
                     btn.classList.remove('text-gray-700');
                 }
             }

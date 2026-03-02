@@ -342,7 +342,7 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
         
         <!-- Floating CTA Button (Mobile) -->
         <div class="fixed bottom-6 left-6 z-50 lg:hidden">
-            <a href="/admissions" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-4 rounded-full shadow-2xl flex items-center space-x-2 pulse-slow">
+            <a href="/admissions" class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-4 rounded-full shadow-2xl flex items-center space-x-2 pulse-slow">
                 <i class="fas fa-pen-to-square"></i>
                 <span class="font-bold">Apply Now</span>
             </a>
@@ -361,63 +361,63 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                     </a>
                     
                     <div class="hidden md:flex items-center space-x-6">
-                        <a href="/" class="${activePage === 'home' ? 'text-orange-600 font-bold' : 'text-gray-700 hover:text-orange-600'} font-medium">Home</a>
+                        <a href="/" class="${activePage === 'home' ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium">Home</a>
                         
                         <!-- Academics Dropdown -->
                         <div class="relative group">
-                            <button class="${activePage.startsWith('academics') || activePage === 'stanford-pathway' ? 'text-orange-600 font-bold' : 'text-gray-700 hover:text-orange-600'} font-medium flex items-center">
+                            <button class="${activePage.startsWith('academics') || activePage === 'stanford-pathway' ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium flex items-center">
                                 Academics <i class="fas fa-chevron-down ml-1 text-xs"></i>
                             </button>
                             <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-64 mt-0 z-50">
-                                <a href="/academics/pre-primary" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Pre-Primary (Pre-KG, LKG, UKG)</a>
-                                <a href="/academics/primary" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Primary (Grades 1-5)</a>
-                                <a href="/academics/middle" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Middle School (Grades 6-8)</a>
-                                <a href="/academics/secondary" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Secondary & Senior Secondary (Grades 9-12)</a>
+                                <a href="/academics/pre-primary" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Pre-Primary (Pre-KG, LKG, UKG)</a>
+                                <a href="/academics/primary" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Primary (Grades 1-5)</a>
+                                <a href="/academics/middle" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Middle School (Grades 6-8)</a>
+                                <a href="/academics/secondary" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Secondary & Senior Secondary (Grades 9-12)</a>
                                 <div class="border-t my-2"></div>
-                                <a href="/stanford-pathway" class="block px-4 py-2 hover:bg-orange-50 text-gray-700 font-semibold">
-                                    <i class="fas fa-university text-orange-600 mr-2"></i>Pathway to Stanford
+                                <a href="/stanford-pathway" class="block px-4 py-2 hover:bg-primary-50 text-gray-700 font-semibold">
+                                    <i class="fas fa-university text-primary-600 mr-2"></i>Pathway to Stanford
                                 </a>
                             </div>
                         </div>
                         
                         <!-- Infrastructure Dropdown -->
                         <div class="relative group">
-                            <button class="${['facilities', 'gallery', 'transport'].includes(activePage) ? 'text-orange-600 font-bold' : 'text-gray-700 hover:text-orange-600'} font-medium flex items-center">
+                            <button class="${['facilities', 'gallery', 'transport'].includes(activePage) ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium flex items-center">
                                 Infrastructure <i class="fas fa-chevron-down ml-1 text-xs"></i>
                             </button>
                             <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-48 mt-0 z-50">
-                                <a href="/facilities" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Facilities</a>
-                                <a href="/gallery" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Gallery</a>
-                                <a href="/transport" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Transport</a>
+                                <a href="/facilities" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Facilities</a>
+                                <a href="/gallery" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Gallery</a>
+                                <a href="/transport" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Transport</a>
                             </div>
                         </div>
                         
                         <!-- Beyond Academics Dropdown -->
                         <div class="relative group">
-                            <button class="${['sports-clubs', 'innovation', 'events', 'success-stories'].includes(activePage) ? 'text-orange-600 font-bold' : 'text-gray-700 hover:text-orange-600'} font-medium flex items-center">
+                            <button class="${['sports-clubs', 'innovation', 'events', 'success-stories'].includes(activePage) ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium flex items-center">
                                 Beyond Academics <i class="fas fa-chevron-down ml-1 text-xs"></i>
                             </button>
                             <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-56 mt-0 z-50">
-                                <a href="/sports-clubs" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Sports & Clubs</a>
-                                <a href="/innovation" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Innovation Hub</a>
-                                <a href="/events" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Events & Celebrations</a>
-                                <a href="/success-stories" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Success Stories</a>
+                                <a href="/sports-clubs" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Sports & Clubs</a>
+                                <a href="/innovation" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Innovation Hub</a>
+                                <a href="/events" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Events & Celebrations</a>
+                                <a href="/success-stories" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Success Stories</a>
                             </div>
                         </div>
                         
                         <!-- Meet Us Dropdown -->
                         <div class="relative group">
-                            <button class="${['about', 'contact', 'mandatory-disclosure'].includes(activePage) ? 'text-orange-600 font-bold' : 'text-gray-700 hover:text-orange-600'} font-medium flex items-center">
+                            <button class="${['about', 'contact', 'mandatory-disclosure'].includes(activePage) ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium flex items-center">
                                 Meet Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
                             </button>
                             <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-56 mt-0 z-50">
-                                <a href="/about" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">About Us</a>
-                                <a href="/contact" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Contact Us</a>
-                                <a href="/mandatory-disclosure" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Mandatory Disclosure</a>
+                                <a href="/about" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">About Us</a>
+                                <a href="/contact" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Contact Us</a>
+                                <a href="/mandatory-disclosure" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Mandatory Disclosure</a>
                             </div>
                         </div>
                         
-                        <a href="/admissions" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-bold transition">
+                        <a href="/admissions" class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-bold transition">
                             Apply Now <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -431,63 +431,63 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
                 <div class="px-4 py-4 space-y-3">
-                    <a href="/" class="block text-gray-700 hover:text-orange-600 font-medium py-2">Home</a>
+                    <a href="/" class="block text-gray-700 hover:text-primary-600 font-medium py-2">Home</a>
                     
                     <!-- Academics -->
                     <div>
-                        <button class="w-full text-left text-gray-700 hover:text-orange-600 font-medium py-2 flex justify-between items-center" onclick="document.getElementById('mobile-academics').classList.toggle('hidden')">
+                        <button class="w-full text-left text-gray-700 hover:text-primary-600 font-medium py-2 flex justify-between items-center" onclick="document.getElementById('mobile-academics').classList.toggle('hidden')">
                             Academics <i class="fas fa-chevron-down"></i>
                         </button>
                         <div id="mobile-academics" class="hidden pl-4 space-y-2 mt-2">
-                            <a href="/academics/pre-primary" class="block text-gray-600 hover:text-orange-600 py-1">Pre-Primary (Pre-KG, LKG, UKG)</a>
-                            <a href="/academics/primary" class="block text-gray-600 hover:text-orange-600 py-1">Primary (Grades 1-5)</a>
-                            <a href="/academics/middle" class="block text-gray-600 hover:text-orange-600 py-1">Middle School (Grades 6-8)</a>
-                            <a href="/academics/secondary" class="block text-gray-600 hover:text-orange-600 py-1">Secondary & Senior Secondary (Grades 9-12)</a>
+                            <a href="/academics/pre-primary" class="block text-gray-600 hover:text-primary-600 py-1">Pre-Primary (Pre-KG, LKG, UKG)</a>
+                            <a href="/academics/primary" class="block text-gray-600 hover:text-primary-600 py-1">Primary (Grades 1-5)</a>
+                            <a href="/academics/middle" class="block text-gray-600 hover:text-primary-600 py-1">Middle School (Grades 6-8)</a>
+                            <a href="/academics/secondary" class="block text-gray-600 hover:text-primary-600 py-1">Secondary & Senior Secondary (Grades 9-12)</a>
                             <div class="border-t my-2"></div>
-                            <a href="/stanford-pathway" class="block text-gray-600 hover:text-orange-600 py-1 font-semibold">
-                                <i class="fas fa-university text-orange-600 mr-2"></i>Pathway to Stanford
+                            <a href="/stanford-pathway" class="block text-gray-600 hover:text-primary-600 py-1 font-semibold">
+                                <i class="fas fa-university text-primary-600 mr-2"></i>Pathway to Stanford
                             </a>
                         </div>
                     </div>
                     
                     <!-- Infrastructure -->
                     <div>
-                        <button class="w-full text-left text-gray-700 hover:text-orange-600 font-medium py-2 flex justify-between items-center" onclick="document.getElementById('mobile-infrastructure').classList.toggle('hidden')">
+                        <button class="w-full text-left text-gray-700 hover:text-primary-600 font-medium py-2 flex justify-between items-center" onclick="document.getElementById('mobile-infrastructure').classList.toggle('hidden')">
                             Infrastructure <i class="fas fa-chevron-down"></i>
                         </button>
                         <div id="mobile-infrastructure" class="hidden pl-4 space-y-2 mt-2">
-                            <a href="/facilities" class="block text-gray-600 hover:text-orange-600 py-1">Facilities</a>
-                            <a href="/gallery" class="block text-gray-600 hover:text-orange-600 py-1">Gallery</a>
-                            <a href="/transport" class="block text-gray-600 hover:text-orange-600 py-1">Transport</a>
+                            <a href="/facilities" class="block text-gray-600 hover:text-primary-600 py-1">Facilities</a>
+                            <a href="/gallery" class="block text-gray-600 hover:text-primary-600 py-1">Gallery</a>
+                            <a href="/transport" class="block text-gray-600 hover:text-primary-600 py-1">Transport</a>
                         </div>
                     </div>
                     
                     <!-- Beyond Academics -->
                     <div>
-                        <button class="w-full text-left text-gray-700 hover:text-orange-600 font-medium py-2 flex justify-between items-center" onclick="document.getElementById('mobile-beyond').classList.toggle('hidden')">
+                        <button class="w-full text-left text-gray-700 hover:text-primary-600 font-medium py-2 flex justify-between items-center" onclick="document.getElementById('mobile-beyond').classList.toggle('hidden')">
                             Beyond Academics <i class="fas fa-chevron-down"></i>
                         </button>
                         <div id="mobile-beyond" class="hidden pl-4 space-y-2 mt-2">
-                            <a href="/sports-clubs" class="block text-gray-600 hover:text-orange-600 py-1">Sports & Clubs</a>
-                            <a href="/innovation" class="block text-gray-600 hover:text-orange-600 py-1">Innovation Hub</a>
-                            <a href="/events" class="block text-gray-600 hover:text-orange-600 py-1">Events & Celebrations</a>
-                            <a href="/success-stories" class="block text-gray-600 hover:text-orange-600 py-1">Success Stories</a>
+                            <a href="/sports-clubs" class="block text-gray-600 hover:text-primary-600 py-1">Sports & Clubs</a>
+                            <a href="/innovation" class="block text-gray-600 hover:text-primary-600 py-1">Innovation Hub</a>
+                            <a href="/events" class="block text-gray-600 hover:text-primary-600 py-1">Events & Celebrations</a>
+                            <a href="/success-stories" class="block text-gray-600 hover:text-primary-600 py-1">Success Stories</a>
                         </div>
                     </div>
                     
                     <!-- Meet Us -->
                     <div>
-                        <button class="w-full text-left text-gray-700 hover:text-orange-600 font-medium py-2 flex justify-between items-center" onclick="document.getElementById('mobile-meetus').classList.toggle('hidden')">
+                        <button class="w-full text-left text-gray-700 hover:text-primary-600 font-medium py-2 flex justify-between items-center" onclick="document.getElementById('mobile-meetus').classList.toggle('hidden')">
                             Meet Us <i class="fas fa-chevron-down"></i>
                         </button>
                         <div id="mobile-meetus" class="hidden pl-4 space-y-2 mt-2">
-                            <a href="/about" class="block text-gray-600 hover:text-orange-600 py-1">About Us</a>
-                            <a href="/contact" class="block text-gray-600 hover:text-orange-600 py-1">Contact Us</a>
-                            <a href="/mandatory-disclosure" class="block text-gray-600 hover:text-orange-600 py-1">Mandatory Disclosure</a>
+                            <a href="/about" class="block text-gray-600 hover:text-primary-600 py-1">About Us</a>
+                            <a href="/contact" class="block text-gray-600 hover:text-primary-600 py-1">Contact Us</a>
+                            <a href="/mandatory-disclosure" class="block text-gray-600 hover:text-primary-600 py-1">Mandatory Disclosure</a>
                         </div>
                     </div>
                     
-                    <a href="/admissions" class="block bg-orange-500 text-white text-center px-6 py-3 rounded-lg font-bold">
+                    <a href="/admissions" class="block bg-primary-500 text-white text-center px-6 py-3 rounded-lg font-bold">
                         Apply Now <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
@@ -556,16 +556,16 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                             <li><a href="mailto:job@snsgroups.com" class="hover:text-white transition"><i class="fas fa-briefcase mr-2"></i>Career: job@snsgroups.com</a></li>
                         </ul>
                         <div class="flex space-x-3">
-                            <a href="https://www.facebook.com/snsinstitutions" target="_blank" class="w-10 h-10 bg-gray-800 hover:bg-orange-600 rounded-lg flex items-center justify-center transition">
+                            <a href="https://www.facebook.com/snsinstitutions" target="_blank" class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="https://www.instagram.com/snsacademyorg" target="_blank" class="w-10 h-10 bg-gray-800 hover:bg-orange-600 rounded-lg flex items-center justify-center transition">
+                            <a href="https://www.instagram.com/snsacademyorg" target="_blank" class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="https://www.youtube.com/@snsinstitutions" target="_blank" class="w-10 h-10 bg-gray-800 hover:bg-orange-600 rounded-lg flex items-center justify-center transition">
+                            <a href="https://www.youtube.com/@snsinstitutions" target="_blank" class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
                                 <i class="fab fa-youtube"></i>
                             </a>
-                            <a href="https://www.linkedin.com/school/snsinstitutions/" target="_blank" class="w-10 h-10 bg-gray-800 hover:bg-orange-600 rounded-lg flex items-center justify-center transition">
+                            <a href="https://www.linkedin.com/school/snsinstitutions/" target="_blank" class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </div>
@@ -574,9 +574,9 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                 
                 <div class="border-t border-gray-800 pt-8 text-center text-sm">
                     <p>&copy; 2026 SNS Academy. All rights reserved.</p>
-                    <p class="mt-2 text-orange-400 font-semibold">Redesigning Common Minds | We are Design Thinkers</p>
+                    <p class="mt-2 text-primary-400 font-semibold">Redesigning Common Minds | We are Design Thinkers</p>
                     <p class="mt-1 text-xs">SNS Core Value: Sincerity, Nobility, Service</p>
-                    <p class="mt-3 text-orange-400 font-bold"><i class="fas fa-headset mr-2"></i>Helpline: 95644 23456</p>
+                    <p class="mt-3 text-primary-400 font-bold"><i class="fas fa-headset mr-2"></i>Helpline: 95644 23456</p>
                 </div>
             </div>
         </footer>
