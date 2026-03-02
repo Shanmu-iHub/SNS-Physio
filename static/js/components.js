@@ -210,7 +210,7 @@ footerTemplate.innerHTML = `
 <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <div class="flex items-center space-x-3 mb-4">
                         <img src="/static/images/SNS%20Physio.jpg" alt="SNS Physiotherapy Logo"
@@ -242,6 +242,14 @@ footerTemplate.innerHTML = `
                         <li><a href="/brochure" class="hover:text-white transition">Download Brochure</a></li>
                         <li><a href="/admissions" class="hover:text-white transition">Admissions</a></li>
                         <li><a href="/contact" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Programs</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/academics/bpt/index.html" class="hover:text-white transition">B.P.T</a></li>
+                        <li><a href="/academics/mpt/index.html" class="hover:text-white transition">M.P.T</a></li>
                     </ul>
                 </div>
 
