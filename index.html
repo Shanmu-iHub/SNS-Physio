@@ -320,11 +320,19 @@
                 font-size: 28px;
             }
         }
+
+        /* Prevent bottom white line when dragging */
+        html,
+        body {
+            background-color: #111827;
+            /* Matches gray-900 footer */
+            overscroll-behavior-y: none;
+        }
     </style>
     <script src="/static/js/components.js?v=2026.02.28.01" defer></script>
 </head>
 
-<body class="antialiased bg-gray-50">
+<body class="antialiased">
 
     <app-header></app-header>
 
@@ -465,7 +473,7 @@
     <section class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-primary-600">Why Choose SNS College of Physiotherapy
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-red-600">Why Choose SNS College of Physiotherapy
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                     We combine academic rigour with clinical expertise and design thinking to create the next generation
@@ -478,8 +486,8 @@
                 <div
                     class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
                     <div
-                        class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-lightbulb text-3xl text-primary-600"></i>
+                        class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-lightbulb text-3xl text-red-600"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-4">Design Thinking Care</h3>
                     <p class="text-gray-600 leading-relaxed">
@@ -493,8 +501,8 @@
                 <div
                     class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
                     <div
-                        class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-stethoscope text-3xl text-primary-600"></i>
+                        class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-stethoscope text-3xl text-blue-600"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-4">5 Pillar Framework</h3>
                     <p class="text-gray-600 leading-relaxed">
@@ -521,8 +529,8 @@
                 <div
                     class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
                     <div
-                        class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-stethoscope text-3xl text-primary-600"></i>
+                        class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-stethoscope text-3xl text-purple-600"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-4">IIPC Clinical Hub</h3>
                     <p class="text-gray-600 leading-relaxed">
@@ -535,8 +543,8 @@
                 <div
                     class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
                     <div
-                        class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-heartbeat text-3xl text-primary-600"></i>
+                        class="w-16 h-16 bg-pink-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-heartbeat text-3xl text-pink-600"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-4">SCD Skill Development</h3>
                     <p class="text-gray-600 leading-relaxed">

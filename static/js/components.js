@@ -250,7 +250,6 @@ footerTemplate.innerHTML = `
                     <ul class="space-y-2 text-sm">
                         <li><a href="/academics/bpt/index.html" class="hover:text-white transition">B.P.T</a></li>
                         <li><a href="/academics/mpt/index.html" class="hover:text-white transition">M.P.T</a></li>
-                        <li><a href="/innovation" class="hover:text-white transition">Design Thinking</a></li>
                     </ul>
                 </div>
 
