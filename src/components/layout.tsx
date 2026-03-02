@@ -8,8 +8,9 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>\${title} | SNS College of Physiotherapy - Excellence in Care Coimbatore</title>
+        <title>${title} | SNS College of Physiotherapy - Excellence in Care Coimbatore</title>
         <meta name="description" content="SNS College of Physiotherapy - India's first Design Thinking Physiotherapy college in Coimbatore. B.P.T & M.P.T with world-class clinical training.">
+        <link rel="icon" type="image/png" href="/static/images/Favicon.png">
         
         <!-- Cache Control -->
         <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -325,19 +326,19 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
     </head>
     <body class="antialiased bg-gray-50">
         
-        <!-- Hanging Tag 1: CBSE -->
+        <!-- Hanging Tag 1: IAP -->
         <div class="fixed top-[22%] right-0 z-50 swing">
-            <div class="bg-gradient-to-br from-green-600 to-emerald-600 text-white px-4 py-6 rounded-l-2xl shadow-2xl">
-                <span class="font-extrabold text-sm uppercase tracking-widest" style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">CBSE</span>
+            <div class="bg-gradient-to-br from-blue-600 to-indigo-600 text-white px-4 py-6 rounded-l-2xl shadow-2xl">
+                <span class="font-extrabold text-sm uppercase tracking-widest" style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">IAP APPROVED</span>
             </div>
         </div>
         
-        <!-- Hanging Tag 2: Brochure -->
+        <!-- Hanging Tag 2: Clinical -->
         <div class="fixed top-[36%] right-0 z-50 swing" style="animation-delay: 0.3s;">
-            <a href="/static/SNS%20Academy%20Brochure%202026.pdf" target="_blank" class="bg-gradient-to-br from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white px-4 py-8 rounded-l-2xl shadow-2xl flex flex-col items-center space-y-3 group transition-all">
-                <i class="fas fa-file-pdf text-2xl group-hover:scale-110 transition-transform duration-300"></i>
-                <span class="font-extrabold text-sm uppercase tracking-widest" style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">BROCHURE</span>
-            </a>
+            <div class="bg-gradient-to-br from-primary-600 to-primary-800 text-white px-4 py-8 rounded-l-2xl shadow-2xl flex flex-col items-center space-y-3 group transition-all">
+                <i class="fas fa-hospital text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                <span class="font-extrabold text-sm uppercase tracking-widest" style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">CLINICAL</span>
+            </div>
         </div>
         
         <!-- Floating CTA Button (Mobile) -->
@@ -353,10 +354,10 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
                     <a href="/" class="flex items-center space-x-3">
-                        <img src="/static/images/Logo.png" alt="SNS Academy Logo" class="h-16 w-auto">
+                        <img src="/static/images/Logo.png" alt="SNS Physiotherapy Logo" class="h-16 w-auto">
                         <div>
-                            <h1 class="text-xl font-bold text-gray-900">SNS Academy</h1>
-                            <p class="text-xs text-gray-500">Design Thinking School</p>
+                            <h1 class="text-xl font-bold text-gray-900">SNS Physiotherapy</h1>
+                            <p class="text-xs text-gray-500">Excellence in Care</p>
                         </div>
                     </a>
                     
@@ -503,15 +504,15 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                 <div class="grid md:grid-cols-4 gap-8 mb-8">
                     <div>
                         <div class="flex items-center space-x-3 mb-4">
-                            <img src="/static/images/Logo.png" alt="SNS Academy Logo" class="h-12 w-auto bg-white rounded p-1">
+                            <img src="/static/images/Logo.png" alt="SNS Physiotherapy Logo" class="h-12 w-auto bg-white rounded p-1">
                             <div>
-                                <h3 class="text-white font-bold">SNS Academy</h3>
-                                <p class="text-xs">Design Thinking School</p>
+                                <h3 class="text-white font-bold">SNS Physiotherapy</h3>
+                                <p class="text-xs">Excellence in Care</p>
                             </div>
                         </div>
                         <p class="text-sm leading-relaxed">
-                            CBSE Affiliation: 1930610<br>
-                            Established: 2014<br>
+                            Affiliation: M.G.R Medical University<br>
+                            Established: 2019<br>
                             Coimbatore, Tamil Nadu
                         </p>
                     </div>
@@ -573,8 +574,8 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                 </div>
                 
                 <div class="border-t border-gray-800 pt-8 text-center text-sm">
-                    <p>&copy; 2026 SNS Academy. All rights reserved.</p>
-                    <p class="mt-2 text-primary-400 font-semibold">Redesigning Common Minds | We are Design Thinkers</p>
+                    <p>&copy; 2026 SNS Physiotherapy. All rights reserved.</p>
+                    <p class="mt-2 text-primary-400 font-semibold">Caring for Your Health | We are Physical Therapists</p>
                     <p class="mt-1 text-xs">SNS Core Value: Sincerity, Nobility, Service</p>
                     <p class="mt-3 text-primary-400 font-bold"><i class="fas fa-headset mr-2"></i>Helpline: 95644 23456</p>
                 </div>
