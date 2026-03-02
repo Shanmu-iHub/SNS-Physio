@@ -501,7 +501,7 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
         <!-- Footer -->
         <footer class="bg-gray-900 text-gray-300 py-12">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
                     <div>
                         <div class="flex items-center space-x-3 mb-4">
                             <img src="/static/images/Logo.png" alt="SNS Physiotherapy Logo" class="h-12 w-auto bg-white rounded p-1">
@@ -535,17 +535,7 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                         </ul>
                     </div>
                     
-                    <div>
-                        <h4 class="text-white font-bold mb-4">Academics</h4>
-                        <ul class="space-y-2 text-sm">
-                            <li><a href="/academics/pre-primary" class="hover:text-white transition">Pre-Primary</a></li>
-                            <li><a href="/academics/primary" class="hover:text-white transition">Primary</a></li>
-                            <li><a href="/academics/middle" class="hover:text-white transition">Middle School</a></li>
-                            <li><a href="/academics/secondary" class="hover:text-white transition">Secondary & Senior Secondary</a></li>
-                            <li><a href="/stanford-pathway" class="hover:text-white transition">Pathway to Stanford</a></li>
-                            <li><a href="/mandatory-disclosure" class="hover:text-white transition">Mandatory Disclosure</a></li>
-                        </ul>
-                    </div>
+
                     
                     <div>
                         <h4 class="text-white font-bold mb-4">Connect</h4>
