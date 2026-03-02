@@ -63,27 +63,17 @@ headerTemplate.innerHTML = `
                 <div class="hidden md:flex items-center space-x-6">
                     <a href="/" class="text-gray-700 hover:text-primary-600 font-medium">Home</a>
 
-                    <!-- Academics Dropdown -->
+                    <!-- Programs Dropdown -->
                     <div class="relative group">
                         <button class="text-gray-700 hover:text-primary-600 font-medium flex items-center">
-                            Academics <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                            Programs <i class="fas fa-chevron-down ml-1 text-xs"></i>
                         </button>
                         <div
                             class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-64 mt-0 z-50">
-                            <a href="/academics/bpt"
+                            <a href="/academics/bpt/index.html"
                                 class="block px-4 py-2 hover:bg-primary-50 text-gray-700">B.P.T (4.5 Years)</a>
-                            <a href="/academics/mpt"
+                            <a href="/academics/mpt/index.html"
                                 class="block px-4 py-2 hover:bg-primary-50 text-gray-700">M.P.T (2 Years)</a>
-                            <div class="border-t my-2"></div>
-                            <a href="/innovation"
-                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700 font-semibold">
-                                <i class="fas fa-lightbulb text-primary-600 mr-2"></i>Design Thinking
-                            </a>
-                            <div class="border-t my-2"></div>
-                            <a href="/stanford-pathway"
-                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700 font-semibold">
-                                <i class="fas fa-university text-primary-600 mr-2"></i>Pathway to Stanford
-                            </a>
                         </div>
                     </div>
 
@@ -147,23 +137,18 @@ headerTemplate.innerHTML = `
             <div class="px-4 py-4 space-y-3">
                 <a href="/" class="block text-gray-700 hover:text-primary-600 font-medium py-2">Home</a>
 
-                <!-- Academics -->
+                <!-- Programs -->
                 <div>
                     <button
                         class="w-full text-left text-gray-700 hover:text-primary-600 font-medium py-2 flex justify-between items-center"
-                        onclick="document.getElementById('mobile-academics').classList.toggle('hidden')">
-                        Academics <i class="fas fa-chevron-down"></i>
+                        onclick="document.getElementById('mobile-programs').classList.toggle('hidden')">
+                        Programs <i class="fas fa-chevron-down"></i>
                     </button>
-                    <div id="mobile-academics" class="hidden pl-4 space-y-2 mt-2">
-                        <a href="/academics/bpt"
+                    <div id="mobile-programs" class="hidden pl-4 space-y-2 mt-2">
+                        <a href="/academics/bpt/index.html"
                             class="block text-gray-600 hover:text-primary-600 py-1">B.P.T (4.5 Years)</a>
-                        <a href="/academics/mpt" class="block text-gray-600 hover:text-primary-600 py-1">M.P.T
+                        <a href="/academics/mpt/index.html" class="block text-gray-600 hover:text-primary-600 py-1">M.P.T
                             (2 Years)</a>
-                        <div class="border-t my-2"></div>
-                        <a href="/innovation"
-                            class="block text-gray-600 hover:text-primary-600 py-1 font-semibold">
-                            <i class="fas fa-lightbulb text-primary-600 mr-2"></i>Design Thinking
-                        </a>
                     </div>
                 </div>
 
@@ -261,10 +246,10 @@ footerTemplate.innerHTML = `
                 </div>
 
                 <div>
-                    <h4 class="text-white font-bold mb-4">Academics</h4>
+                    <h4 class="text-white font-bold mb-4">Programs</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="/academics/bpt" class="hover:text-white transition">B.P.T</a></li>
-                        <li><a href="/academics/mpt" class="hover:text-white transition">M.P.T</a></li>
+                        <li><a href="/academics/bpt/index.html" class="hover:text-white transition">B.P.T</a></li>
+                        <li><a href="/academics/mpt/index.html" class="hover:text-white transition">M.P.T</a></li>
                         <li><a href="/innovation" class="hover:text-white transition">Design Thinking</a></li>
                     </ul>
                 </div>

@@ -70,13 +70,22 @@ def rebrand_file(filepath):
     # Replace blue- derivatives with primary-
     content = re.sub(r'(bg|text|border|hover:bg|hover:text|from|to|via)-blue-(\d+)', r'\1-primary-\2', content)
 
-    # Specific school-related terms
     content = content.replace("school days", "college days")
     content = content.replace("Our school", "Our college")
     content = content.replace("at school", "at college")
     content = content.replace("schooling", "medical education")
+    content = content.replace("School Timings", "College Timings")
+    content = content.replace("School ID", "College ID")
+    content = content.replace("school uniform", "college dress code")
+    content = content.replace("School Campus", "College Campus")
+    content = content.replace("school community", "college community")
+    content = content.replace("school philosophy", "college philosophy")
+    content = content.replace("NAME OF THE SCHOOL", "NAME OF THE COLLEGE")
+    content = content.replace("SCHOOL CODE", "COLLEGE CODE")
+    content = content.replace("SCHOOL EMAIL ID", "COLLEGE EMAIL ID")
     content = content.replace("every child", "every student")
     content = content.replace("each child", "each student")
+    content = content.replace("your child", "the student")
     content = content.replace("child's unique potential", "student's unique potential")
     content = content.replace("Entrepreneurial Mindset", "Healthcare Excellence")
     content = content.replace("building an Entrepreneurial Mindset", "building clinical excellence")
