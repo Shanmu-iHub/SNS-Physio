@@ -1,7 +1,7 @@
 
 // Automatic Update & Cache Clear Script
 (function () {
-    const CURRENT_VERSION = "2026.02.28.01"; // UPDATE THIS NUMBER TO CLEAR CACHE FOR ALL USERS
+    const CURRENT_VERSION = "2026.03.02.01"; // UPDATE THIS NUMBER TO CLEAR CACHE FOR ALL USERS
     const storedVersion = localStorage.getItem('site_version');
 
     if (storedVersion && storedVersion !== CURRENT_VERSION) {
