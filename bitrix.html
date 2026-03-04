@@ -434,33 +434,123 @@
             if (loading) {
                 loading.style.display = 'none';
             }
-        }, 2000);
+        }, 3000);
 
-        // Placeholder + Asterisk Fix
-        setTimeout(function () {
-            document.querySelectorAll('.b24-form-field').forEach(function (field) {
+        // Advanced Form Fixer for Bitrix24
+        const snsColleges = [
+            "SNS College of Technology",
+            "SNS College of Engineering",
+            "Dr. SNS Rajalakshmi College of Arts and Science",
+            "SNS College of Allied Health Sciences",
+            "SNS College of Pharmacy",
+            "SNS College of Nursing",
+            "SNS College of Physiotherapy",
+            "Dr. SNS College of Education"
+        ];
+
+        function applyFormFixes() {
+            const fields = document.querySelectorAll('.b24-form-field');
+            fields.forEach(field => {
                 const label = field.querySelector('.b24-form-control-label');
                 const input = field.querySelector('.b24-form-control');
+                const container = field;
 
-                if (label && input) {
-                    let text = label.textContent.replace(/\s*\*$/, '').trim();
-                    let required = label.textContent.includes('*');
-                    input.placeholder = required ? text + ' *' : text;
+                if (label) {
+                    const text = label.textContent.trim();
+
+                    // 1. Remove "Admission To Grade"
+                    if (text.includes('Admission To Grade')) {
+                        container.style.display = 'none';
+                        return;
+                    }
+
+                    // 2. Replace Academy field with "Choose College" Dropdown
+                    if (text.includes('SNSACD') || text.includes('SNS Academy') || text.includes('CBSE SCHOOL')) {
+                        label.textContent = "Choose College *";
+
+                        // If it's not already a select, swap it
+                        if (input && input.tagName !== 'SELECT' && !input.dataset.replaced) {
+                            const select = document.createElement('select');
+                            select.className = input.className;
+                            select.name = input.name;
+                            select.required = true;
+                            select.dataset.replaced = "true";
+
+                            select.innerHTML = '<option value="">Choose College *</option>' +
+                                snsColleges.map(c => `<option value="${c}">${c}</option>`).join('');
+
+                            input.parentNode.replaceChild(select, input);
+
+                            // Handle Bitrix dynamic value binding if needed
+                            select.addEventListener('change', (e) => {
+                                const event = new Event('input', { bubbles: true });
+                                select.dispatchEvent(event);
+                            });
+                        }
+                        return;
+                    }
+
+                    // 3. Rename "Name of the Child" -> "Name of the Candidate"
+                    if (text.includes('Name of the Child')) {
+                        label.textContent = text.replace('Name of the Child', 'Name of the Candidate');
+                        if (input && input.tagName !== 'SELECT') {
+                            let required = text.includes('*');
+                            input.placeholder = 'Name of the Candidate' + (required ? ' *' : '');
+                        }
+                    }
+
+                    // 4. Rename "Parent Name" -> "Parent / Guardian Name"
+                    if (text.includes('Parent Name')) {
+                        label.textContent = text.replace('Parent Name', 'Parent / Guardian Name');
+                        if (input && input.tagName !== 'SELECT') {
+                            let required = text.includes('*');
+                            input.placeholder = 'Parent / Guardian Name' + (required ? ' *' : '');
+                        }
+                    }
+
+                    // Generic Placeholder Fix for other fields
+                    if (input && input.tagName !== 'SELECT' && !input.placeholder) {
+                        let cleanText = text.replace(/\s*\*$/, '').trim();
+                        let required = text.includes('*');
+                        input.placeholder = required ? cleanText + ' *' : cleanText;
+                    }
                 }
             });
+        }
 
-            // Hide loading after form is ready
-            var loading = document.getElementById('loading');
-            if (loading) {
-                loading.style.display = 'none';
+        // Use MutationObserver for robust dynamic loading handling
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                if (mutation.addedNodes.length) {
+                    applyFormFixes();
+                }
+            });
+        });
+
+        const target = document.getElementById('bitrix-form-container');
+        if (target) {
+            observer.observe(target, { childList: true, subtree: true });
+        }
+
+        // Initial apply just in case
+        applyFormFixes();
+
+        // Backup periodic check
+        const fixInterval = setInterval(() => {
+            applyFormFixes();
+            // If the form is clearly loaded and we've hidden fields, we can slow down or stop
+            if (document.querySelector('.b24-form')) {
+                // Keep running to ensure dynamic errors/re-renders stay fixed
             }
         }, 1000);
 
-        // Form submission tracking (optional)
+        // Stop interval after 15 seconds to save resources
+        setTimeout(() => clearInterval(fixInterval), 15000);
+
+        // Form submission tracking
         document.addEventListener('submit', function (e) {
             if (e.target.classList.contains('b24-form')) {
                 console.log('Form submitted successfully!');
-                // You can add analytics tracking here
             }
         });
     </script>

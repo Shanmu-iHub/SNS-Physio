@@ -5,7 +5,7 @@ export const InnovationPage = () => {
     return `
     ${PageHeader(
         'SNS Innovation Hub',
-        'Powered by India\'s First Patented GenAI Design Thinking Framework | India\'s Y-Combinator for Schools',
+        'Powered by India\'s First Patented GenAI Design Thinking Framework | India\'s Y-Combinator for Institutions',
         '/static/images/pillar_industry.jpg',
         'Innovation Hub'
     )}
@@ -388,8 +388,8 @@ export const InnovationPage = () => {
 export const AboutPage = () => {
     return `
     ${PageHeader(
-        'About SNS Academy',
-        'Redesigning Common Minds & Business Towards Excellence',
+        'About SNS College of Physiotherapy',
+        'Empowering Healers Through Design Thinking & Excellence in Care',
         '/static/images/hero.png',
         'About Us'
     )}
@@ -404,7 +404,7 @@ export const AboutPage = () => {
                     <img src="/static/images/secondary.png" alt="Students Learning" class="relative rounded-2xl shadow-2xl w-full object-cover h-[500px]">
                     <div class="absolute bottom-8 right-8 bg-white/90 backdrop-blur p-6 rounded-xl shadow-lg max-w-xs">
                         <p class="text-primary-600 font-bold text-lg mb-1">Our Tagline</p>
-                        <p class="text-gray-800 text-sm font-medium">Redesigning Common Minds & Business Towards Excellence</p>
+                        <p class="text-gray-800 text-sm font-medium">Empowering Healers Through Design Thinking & Excellence in Care</p>
                     </div>
                 </div>
                 
@@ -418,7 +418,7 @@ export const AboutPage = () => {
                             We believe in nurturing the next generation of innovators through our <strong>GenAI-Powered Design Thinking Framework (Patented)</strong>. Our approach goes beyond textbooks, embedding empathy and creativity into the core of learning.
                         </p>
                         <p class="text-lg text-gray-600 leading-relaxed">
-                            <strong>Sincerity, Nobility, and Service</strong> are not just our core values—they are the guiding principles that shape every student's character at SNS Academy.
+                            <strong>Sincerity, Nobility, and Service</strong> are not just our core values—they are the guiding principles that shape every student's character at SNS College of Physiotherapy.
                         </p>
                     </div>
 
@@ -581,7 +581,7 @@ export const AboutPage = () => {
                     </div>
                     <div class="space-y-4">
                         <p class="text-gray-600 text-sm leading-relaxed italic">
-                            "We believe that every child is a design thinker. Through our unique Design Thinking framework and 3P Culture, we prepare students not just for exams, but for life."
+                            "We believe that every student is a design thinker. Through our unique Design Thinking framework and 3P Culture, we prepare students not just for exams, but for life."
                         </p>
                     </div>
                 </div>
@@ -597,7 +597,7 @@ export const AboutPage = () => {
                     </div>
                     <div class="space-y-4">
                         <p class="text-gray-600 text-sm leading-relaxed italic">
-                            "We focus on holistic development through our 5 Pillars Mission. Our experienced faculty nurtures each child's unique potential, preparing them for global opportunities."
+                            "We focus on holistic development through our 5 Pillars Mission. Our experienced faculty nurtures each student's unique potential, preparing them for global opportunities."
                         </p>
                     </div>
                 </div>
@@ -643,21 +643,21 @@ export const ContactPage = () => {
                             <i class="fas fa-map-marker-alt text-3xl text-primary-600 mr-4"></i>
                             <div>
                                 <h3 class="font-bold text-xl mb-2">Address</h3>
-                                <p class="text-gray-700">SNS Academy,<br>Thudiyalur - Saravanampatti Road,<br>Vellakinar Post,<br>Coimbatore - 641029.</p>
+                                <p class="text-gray-700">SNS College of Physiotherapy,<br>SNS Kalvi Nagar, Sathy Main Road (Opp. CRI Pumps),<br>Kurumbapalayam (Po),<br>Coimbatore – 641 107.</p>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <i class="fas fa-phone text-3xl text-primary-600 mr-4"></i>
                             <div>
                                 <h3 class="font-bold text-xl mb-2">Phone</h3>
-                                <p class="text-gray-700">Admission: +91 96299 37861<br>Landline: +91 75300 93730</p>
+                                <p class="text-gray-700">Admission: +91 90036 55855<br>General: +91 99527 94297</p>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <i class="fas fa-envelope text-3xl text-green-600 mr-4"></i>
                             <div>
                                 <h3 class="font-bold text-xl mb-2">Email</h3>
-                                <p class="text-gray-700">General: info@snsacademy.org<br>Career: job@snsgroups.com</p>
+                                <p class="text-gray-700">General: snsphysio@gmail.com<br>Career: snsphysio@gmail.com</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -785,19 +785,105 @@ export const ContactPage = () => {
                     </script>
                     
                     <script>
-                    /* Placeholder + Asterisk Fix */
-                    setTimeout(function () {
-                        document.querySelectorAll('.b24-form-field').forEach(function (field) {
-                            const label = field.querySelector('.b24-form-control-label');
-                            const input = field.querySelector('.b24-form-control');
-                            
-                            if (label && input) {
-                                let text = label.textContent.replace(/\\s*\\*$/, '').trim();
-                                let required = label.textContent.includes('*');
-                                input.placeholder = required ? text + ' *' : text;
+                        // Advanced Form Fixer for Bitrix24
+                        var snsColleges = [
+                            "SNS College of Technology",
+                            "SNS College of Engineering",
+                            "Dr. SNS Rajalakshmi College of Arts and Science",
+                            "SNS College of Allied Health Sciences",
+                            "SNS College of Pharmacy",
+                            "SNS College of Nursing",
+                            "SNS College of Physiotherapy",
+                            "Dr. SNS College of Education"
+                        ];
+
+                        function applyFormFixes() {
+                            var fields = document.querySelectorAll('.b24-form-field');
+                            for (var i = 0; i < fields.length; i++) {
+                                var field = fields[i];
+                                var label = field.querySelector('.b24-form-control-label');
+                                var input = field.querySelector('.b24-form-control');
+                                var container = field;
+
+                                if (label) {
+                                    var text = label.textContent.trim();
+
+                                    // 1. Remove "Admission To Grade"
+                                    if (text.indexOf('Admission To Grade') !== -1) {
+                                        container.style.display = 'none';
+                                        continue;
+                                    }
+
+                                    // 2. Replace Academy field with "Choose College" Dropdown
+                                    if (text.indexOf('SNSACD') !== -1 || text.indexOf('SNS Academy') !== -1 || text.indexOf('CBSE SCHOOL') !== -1) {
+                                        label.textContent = "Choose College *";
+                                        
+                                        if (input && input.tagName !== 'SELECT' && !input.getAttribute('data-replaced')) {
+                                            var select = document.createElement('select');
+                                            select.className = input.className;
+                                            select.name = input.name;
+                                            select.required = true;
+                                            select.setAttribute('data-replaced', 'true');
+                                            
+                                            var options = '<option value="">Choose College *</option>';
+                                            for (var j = 0; j < snsColleges.length; j++) {
+                                                options += '<option value="' + snsColleges[j] + '">' + snsColleges[j] + '</option>';
+                                            }
+                                            select.innerHTML = options;
+                                            
+                                            input.parentNode.replaceChild(select, input);
+                                            
+                                            select.addEventListener('change', function() {
+                                                var event = new Event('input', { bubbles: true });
+                                                this.dispatchEvent(event);
+                                            });
+                                        }
+                                        continue;
+                                    }
+
+                                    // 3. Rename "Name of the Child" -> "Name of the Candidate"
+                                    if (text.indexOf('Name of the Child') !== -1) {
+                                        label.textContent = text.replace('Name of the Child', 'Name of the Candidate');
+                                        if (input && input.tagName !== 'SELECT') {
+                                            var required = text.indexOf('*') !== -1;
+                                            input.placeholder = 'Name of the Candidate' + (required ? ' *' : '');
+                                        }
+                                    }
+
+                                    // 4. Rename "Parent Name" -> "Parent / Guardian Name"
+                                    if (text.indexOf('Parent Name') !== -1) {
+                                        label.textContent = text.replace('Parent Name', 'Parent / Guardian Name');
+                                        if (input && input.tagName !== 'SELECT') {
+                                            var required = text.indexOf('*') !== -1;
+                                            input.placeholder = 'Parent / Guardian Name' + (required ? ' *' : '');
+                                        }
+                                    }
+
+                                    // Generic Placeholder Fix
+                                    if (input && input.tagName !== 'SELECT' && !input.placeholder) {
+                                        var cleanText = text.replace(/\s*\*$/, '').trim();
+                                        var required = text.indexOf('*') !== -1;
+                                        input.placeholder = required ? cleanText + ' *' : cleanText;
+                                    }
+                                }
                             }
+                        }
+
+                        // Use MutationObserver for robust dynamic loading handling
+                        const observer = new MutationObserver((mutations) => {
+                            mutations.forEach((mutation) => {
+                                if (mutation.addedNodes.length) {
+                                    applyFormFixes();
+                                }
+                            });
                         });
-                    }, 500);
+
+                        // Start observing the whole body as Bitrix might inject anywhere
+                        observer.observe(document.body, { childList: true, subtree: true });
+
+                        // Backup periodic check
+                        const fixInterval = setInterval(applyFormFixes, 1000);
+                        setTimeout(() => clearInterval(fixInterval), 15000);
                     </script>
                 </div>
             </div>

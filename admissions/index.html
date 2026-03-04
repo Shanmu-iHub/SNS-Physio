@@ -357,8 +357,9 @@
 
 
             <h1 class="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight">Admissions 2026-27</h1>
-            <p class="text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">Begin Your Child's Journey to
-                Excellence</p>
+            <p class="text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">Begin Your Professional
+                Journey
+                to Excellence</p>
 
             <!-- Decorative Element -->
             <div class="mt-8 flex justify-center">
@@ -384,8 +385,8 @@
                     </div>
                     <div>
                         <h3 class="text-2xl font-bold mb-2">Register</h3>
-                        <p class="text-gray-700">Visit school on any working day between 9:00 AM to 5:00 PM and register
-                            for the student's admission.</p>
+                        <p class="text-gray-700">Visit college on any working day between 9:00 AM to 5:00 PM and
+                            register for admission.</p>
                     </div>
                 </div>
                 <div class="flex items-start">
@@ -396,7 +397,7 @@
                     <div>
                         <h3 class="text-2xl font-bold mb-2">Assessment</h3>
                         <p class="text-gray-700">Written assessment in English, Mathematics, Language, and General
-                            Knowledge according to School's syllabi.</p>
+                            Knowledge according to the College's standards.</p>
                     </div>
                 </div>
                 <div class="flex items-start">
@@ -543,19 +544,103 @@
                 </script>
 
                 <script>
-                    /* Placeholder + Asterisk Fix */
-                    setTimeout(function () {
-                        document.querySelectorAll('.b24-form-field').forEach(function (field) {
+                    // Advanced Form Fixer for Bitrix24
+                    const snsColleges = [
+                        "SNS College of Technology",
+                        "SNS College of Engineering",
+                        "Dr. SNS Rajalakshmi College of Arts and Science",
+                        "SNS College of Allied Health Sciences",
+                        "SNS College of Pharmacy",
+                        "SNS College of Nursing",
+                        "SNS College of Physiotherapy",
+                        "Dr. SNS College of Education"
+                    ];
+
+                    function applyFormFixes() {
+                        const fields = document.querySelectorAll('.b24-form-field');
+                        fields.forEach(field => {
                             const label = field.querySelector('.b24-form-control-label');
                             const input = field.querySelector('.b24-form-control');
+                            const container = field;
 
-                            if (label && input) {
-                                let text = label.textContent.replace(/\s*\*$/, '').trim();
-                                let required = label.textContent.includes('*');
-                                input.placeholder = required ? text + ' *' : text;
+                            if (label) {
+                                const text = label.textContent.trim();
+
+                                // 1. Remove "Admission To Grade"
+                                if (text.includes('Admission To Grade')) {
+                                    container.style.display = 'none';
+                                    return;
+                                }
+
+                                // 2. Replace Academy field with "Choose College" Dropdown
+                                if (text.includes('SNSACD') || text.includes('SNS Academy') || text.includes('CBSE SCHOOL')) {
+                                    label.textContent = "Choose College *";
+
+                                    // If it's not already a select, swap it
+                                    if (input && input.tagName !== 'SELECT' && !input.dataset.replaced) {
+                                        const select = document.createElement('select');
+                                        select.className = input.className;
+                                        select.name = input.name;
+                                        select.required = true;
+                                        select.dataset.replaced = "true";
+
+                                        select.innerHTML = '<option value="">Choose College *</option>' +
+                                            snsColleges.map(c => `<option value="${c}">${c}</option>`).join('');
+
+                                        input.parentNode.replaceChild(select, input);
+
+                                        // Handle Bitrix dynamic value binding
+                                        select.addEventListener('change', (e) => {
+                                            const event = new Event('input', { bubbles: true });
+                                            select.dispatchEvent(event);
+                                        });
+                                    }
+                                    return;
+                                }
+
+                                // 3. Rename "Name of the Child" -> "Name of the Candidate"
+                                if (text.includes('Name of the Child')) {
+                                    label.textContent = text.replace('Name of the Child', 'Name of the Candidate');
+                                    if (input && input.tagName !== 'SELECT') {
+                                        let required = text.includes('*');
+                                        input.placeholder = 'Name of the Candidate' + (required ? ' *' : '');
+                                    }
+                                }
+
+                                // 4. Rename "Parent Name" -> "Parent / Guardian Name"
+                                if (text.includes('Parent Name')) {
+                                    label.textContent = text.replace('Parent Name', 'Parent / Guardian Name');
+                                    if (input && input.tagName !== 'SELECT') {
+                                        let required = text.includes('*');
+                                        input.placeholder = 'Parent / Guardian Name' + (required ? ' *' : '');
+                                    }
+                                }
+
+                                // Generic Placeholder Fix
+                                if (input && input.tagName !== 'SELECT' && !input.placeholder) {
+                                    let cleanText = text.replace(/\s*\*$/, '').trim();
+                                    let required = text.includes('*');
+                                    input.placeholder = required ? cleanText + ' *' : cleanText;
+                                }
                             }
                         });
-                    }, 500);
+                    }
+
+                    // Use MutationObserver for robust dynamic loading handling
+                    const observer = new MutationObserver((mutations) => {
+                        mutations.forEach((mutation) => {
+                            if (mutation.addedNodes.length) {
+                                applyFormFixes();
+                            }
+                        });
+                    });
+
+                    // Start observing the whole body as Bitrix might inject anywhere
+                    observer.observe(document.body, { childList: true, subtree: true });
+
+                    // Backup periodic check
+                    const fixInterval = setInterval(applyFormFixes, 1000);
+                    setTimeout(() => clearInterval(fixInterval), 15000);
                 </script>
             </div>
         </div>
