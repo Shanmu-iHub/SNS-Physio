@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="static/images/Favicon.png?v=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | SNS College of Physiotherapy - Excellence in Care Coimbatore</title>
+    <meta name="description"
+        content="SNS College of Physiotherapy - India's first Physiotherapy college in Coimbatore with Excellence in Care. B.P.T & M.P.T with world-class clinical training.">
+
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f4f5f9',
+                            100: '#e8eaf2',
+                            200: '#d1d5e6',
+                            300: '#babfd9',
+                            400: '#a4a9cc',
+                            500: '#9298CB',
+                            600: '#7a7fac',
+                            700: '#62668d',
+                            800: '#4b4e6e',
+                            900: '#33354f',
+                            DEFAULT: '#9298CB',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(-45deg, #4a549e, #7a7fac, #a4a9cc, #9298CB);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* Gradient Text Effect */
+        .gradient-text {
+            background: linear-gradient(135deg, #9298CB 0%, #7a7fac 50%, #babfd9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gradient-text-blue {
+            background: linear-gradient(135deg, #9298CB 0%, #7a7fac 50%, #4a549e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Softer Hero Gradients */
+        .hero-gradient-warm {
+            background: linear-gradient(135deg, #f4f5fa 0%, #e8eaf5 25%, #d1d5eb 50%, #babfd9 75%, #9298CB 100%);
+        }
+
+        .hero-gradient-cool {
+            background: linear-gradient(135deg, #f4f5fa 0%, #e8eaf5 25%, #d1d5eb 50%, #babfd9 75%, #9298CB 100%);
+        }
+
+        /* Better Card Shadows */
+        .card-shadow-sm {
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .card-shadow-lg {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-shadow-xl {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes swing {
+
+            0%,
+            100% {
+                transform: rotate(-3deg);
+            }
+
+            50% {
+                transform: rotate(3deg);
+            }
+        }
+
+        .swing {
+            animation: swing 2s ease-in-out infinite;
+            transform-origin: top center;
+        }
+
+        /* Badge/Tag Styles */
+        .badge-glow {
+            box-shadow: 0 0 20px rgba(146, 152, 203, 0.5);
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(146, 152, 203, 0.5);
+            }
+
+            50% {
+                box-shadow: 0 0 30px rgba(146, 152, 203, 0.8);
+            }
+        }
+
+        /* Smooth Transitions */
+        .transition-smooth {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Better Line Heights */
+        body {
+            line-height: 1.6;
+        }
+
+        h1 {
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            line-height: 1.4;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            background-color: #128c7e;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        /* Instagram Floating Button */
+        .instagram-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 110px;
+            right: 40px;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: pulse-instagram 2s infinite;
+        }
+
+        .instagram-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            background: linear-gradient(45deg, #e6683c 0%, #dc2743 25%, #cc2366 50%, #bc1888 75%, #f09433 100%);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        @keyframes pulse-instagram {
+            0% {
+                box-shadow: 0 0 0 0 rgba(225, 48, 108, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(225, 48, 108, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(225, 48, 108, 0);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 25px;
+                right: 25px;
+                font-size: 28px;
+            }
+
+            .instagram-float {
+                width: 50px;
+                height: 50px;
+                bottom: 85px;
+                right: 25px;
+                font-size: 28px;
+            }
+        }
+
+        /* Prevent bottom white line when dragging */
+        html,
+        body {
+            background-color: #111827;
+            /* Matches gray-900 footer */
+            overscroll-behavior-y: none;
+        }
+    </style>
+    <script src="/static/js/components.js?v=2026.03.02.01" defer></script>
+</head>
+
+<body class="antialiased">
+
+    <app-header></app-header>
+
+    <!-- Content -->
+
+    <!-- Hero Section with Real SNS Content -->
+    <section class="relative text-white py-24 lg:py-32 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="/static/images/physio/phy.jpg.jpeg" alt="SNS College of Physiotherapy Campus"
+                class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+            <div class="absolute inset-0 bg-black/20"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div
+                        class="inline-flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 mb-6">
+                        <i class="fas fa-microscope text-primary-400 mr-2"></i>
+                        <span class="text-sm font-semibold tracking-wide">India's First Physiotherapy College with
+                            Excellence in Care</span>
+                    </div>
+
+                    <h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight font-display">
+                        Empowering <br />
+                        <span class="text-primary-500">Healers</span>
+                    </h1>
+
+                    <div class="h-1 w-24 bg-primary-500 mb-8 rounded-full"></div>
+
+                    <p class="text-xl lg:text-2xl mb-6 text-gray-200 leading-relaxed max-w-xl">
+                        At SNS College of Physiotherapy, we redefine medical education through <strong
+                            class="text-white">Hands-on Clinical Excellence</strong> and hands-on clinical excellence.
+                    </p>
+
+                    <p class="text-sm lg:text-base mb-8 text-gray-200 leading-relaxed max-w-xl">
+                        Transform into a highly qualified healthcare professional with our industry-integrated B.P.T and
+                        M.P.T programs.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                        <a href="/admissions"
+                            class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-blue-500/30 transition transform hover:-translate-y-1 flex items-center justify-center">
+                            Apply for Admissions
+                            <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                        <a href="/about"
+                            class="bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition flex items-center justify-center">
+                            <i class="fas fa-play mr-2 text-sm"></i>
+                            About Us
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 text-xs text-gray-200">
+                        <div class="inline-flex items-center">
+                            <i class="fas fa-circle-check text-green-400 mr-2"></i>
+                            The Tamil Nadu Dr. M.G.R. Medical University affiliated
+                        </div>
+                        <div class="inline-flex items-center">
+                            <i class="fas fa-hospital text-green-400 mr-2"></i>
+                            Clinical Training with Top Hospitals
+                        </div>
+                        <div class="inline-flex items-center">
+                            <i class="fas fa-calendar text-green-400 mr-2"></i>
+                            Since 2020
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden lg:block relative">
+                    <!-- Optional: Add a floated refined card or keep clean to show the background image -->
+                    <!-- Keeping it clean to showcase the 'Real' image -->
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 shadow-2xl">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div
+                                class="bg-white/10 border border-white/10 rounded-xl p-5 text-center transition-all duration-300 ease-out hover:scale-105 hover:bg-white/20 hover:shadow-xl hover:border-white/30 cursor-pointer">
+                                <div
+                                    class="text-4xl font-extrabold text-white transition-transform duration-300 hover:scale-110">
+                                    100%</div>
+                                <div class="text-xs text-gray-200 mt-1">Clinical Placement</div>
+                            </div>
+                            <div
+                                class="bg-white/10 border border-white/10 rounded-xl p-5 text-center transition-all duration-300 ease-out hover:scale-105 hover:bg-white/20 hover:shadow-xl hover:border-white/30 cursor-pointer">
+                                <div
+                                    class="text-4xl font-extrabold text-white transition-transform duration-300 hover:scale-110">
+                                    IAP</div>
+                                <div class="text-xs text-gray-200 mt-1">Standard Labs</div>
+                            </div>
+                            <div
+                                class="bg-white/10 border border-white/10 rounded-xl p-5 text-center transition-all duration-300 ease-out hover:scale-105 hover:bg-white/20 hover:shadow-xl hover:border-white/30 cursor-pointer">
+                                <div
+                                    class="text-4xl font-extrabold text-white transition-transform duration-300 hover:scale-110">
+                                    5+</div>
+                                <div class="text-xs text-gray-200 mt-1">Specializations</div>
+                            </div>
+                            <div
+                                class="bg-white/10 border border-white/10 rounded-xl p-5 text-center transition-all duration-300 ease-out hover:scale-105 hover:bg-white/20 hover:shadow-xl hover:border-white/30 cursor-pointer">
+                                <div
+                                    class="text-4xl font-extrabold text-white transition-transform duration-300 hover:scale-110">
+                                    25+</div>
+                                <div class="text-xs text-gray-200 mt-1">Hospital Tie-ups</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="py-10 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center text-center divide-x divide-gray-100">
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">2020</div>
+                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Inception</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">500+</div>
+                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Professional Students</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">A+</div>
+                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Clinical Rating</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">SNS SRI</div>
+                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Social Initiatives</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Why SNS College of Physiotherapy -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-primary-600">Why Choose SNS College of Physiotherapy
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    We combine academic rigour with clinical expertise and design thinking to create the next generation
+                    of healthcare leaders.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-lightbulb text-3xl text-orange-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Design Thinking Education</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        India's first physiotherapy college with <strong>GenAI-Powered Design Thinking Framework
+                            (Patented)</strong>. Built on <strong>Empathy</strong>, every student learns to solve
+                        clinical
+                        problems creatively using AI-enhanced methodologies from day one.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-users text-3xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">3P Culture Framework</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        <strong>Purpose, Process, People</strong>—our holistic approach ensures every student develops
+                        academically, clinically, emotionally, and ethically as a complete healthcare professional.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-hand-holding-heart text-3xl text-green-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">10:1 Personalized Care</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Ultra-low student-teacher ratio ensures every student receives individual attention and clinical
+                        mentorship. 60% of our faculty have 10+ years of hands-on clinical experience.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-rocket text-3xl text-purple-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">SNS Innovation Hub</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Access to SNS iHub—India's Y-Combinator equivalent. Students work with AI, IoT, Robotics, and
+                        AR/VR rehabilitation labs preparing them for the future of healthcare careers.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 bg-pink-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-hospital text-3xl text-pink-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">World-Class SPINE Center</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        5-level activity center with advanced physiotherapy labs, hydrotherapy pool, gymnasium, sports
+                        rehabilitation studio, and more—everything under one roof.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-layer-group text-3xl text-indigo-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">5 Pillars Development</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        <strong>Learning, Upskilling, Innovation, Networking, Character Building</strong>—comprehensive
+                        development for future healthcare leaders.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Programs Overview -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
+                    <span class="text-primary-600">Academic Excellence in Healthcare</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Physiotherapy curriculum enhanced with experiential learning and advanced clinical
+                    practices.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Program 1 -->
+                <a href="/academics/bpt/index.html"
+                    class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 block">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition z-10"></div>
+                        <img src="/static/images/physio/7.jpg" alt="B.P.T"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-1">Bachelor of Physiotherapy (B.P.T)</h3>
+                        <p class="text-primary-600 font-semibold text-sm mb-3">4.5 Years Program</p>
+                        <p class="text-gray-600 text-base">
+                            Comprehensive undergraduate program including a 6-month compulsory internship in
+                            multi-specialty hospitals.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Program 2 -->
+                <a href="/academics/mpt/index.html"
+                    class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 block">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition z-10"></div>
+                        <img src="/static/images/physio/1.jpg" alt="M.P.T"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-1">Master of Physiotherapy (M.P.T)</h3>
+                        <p class="text-purple-600 font-semibold text-sm mb-3">2 Years PG Program</p>
+                        <p class="text-gray-600 text-base">
+                            Advanced specializations in Orthopaedics, Neurology, and Paediatrics.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Parents Testimonials Section -->
+    <section class="py-16 bg-gradient-to-br from-primary-50 to-red-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">What Our Students Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Hear from the future healthcare professionals training at SNS College of Physiotherapy
+                </p>
+            </div>
+
+            <!-- Carousel Container -->
+            <div class="relative">
+                <div id="testimonials-carousel" class="overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="testimonials-track">
+
+                        <!-- Testimonial 1 -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                                <div class="flex items-center mb-6">
+                                    <div
+                                        class="w-16 h-16 bg-gradient-to-br from-primary-500 to-red-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+
+                                        <svg aria-hidden="true" viewBox="0 0 24 24" class="w-9 h-9 text-white/95">
+                                            <path fill="currentColor"
+                                                d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Zm0 2c-3.866 0-7 3.134-7 7v1h14v-1c0-3.866-3.134-7-7-7Z" />
+                                        </svg>
+
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-bold text-gray-900">Arjun Saravanan</h4>
+                                        <p class="text-gray-600">B.P.T Final Year Student</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                                    "The clinical exposure at SNS is unparalleled. Being able to practice at
+                                    Adhiparasakthi Hospital has given me the confidence to handle real-world cases. The
+                                    clinical workshops help us approach patient rehabilitation with a fresh,
+                                    empathetic perspective."
+                                </p>
+                                <div class="flex items-center text-primary-600 font-semibold">
+                                    <i class="fas fa-check-circle mr-2"></i>
+                                    <span>Verified Student Review</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                                <div class="flex items-center mb-6">
+                                    <div
+                                        class="w-16 h-16 bg-gradient-to-br from-red-500 to-primary-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+
+                                        <svg aria-hidden="true" viewBox="0 0 24 24" class="w-9 h-9 text-white/95">
+                                            <path fill="currentColor"
+                                                d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Zm0 2c-3.866 0-7 3.134-7 7v1h14v-1c0-3.866-3.134-7-7-7Z" />
+                                        </svg>
+
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-bold text-gray-900">Deepika R.</h4>
+                                        <p class="text-gray-600">M.P.T (Neurology) Student</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                                    "Specializing in Neurology at SNS has been a rewarding experience. The advanced labs
+                                    and research facilities, combined with guidance from experienced faculty, have
+                                    significantly enhanced my clinical reasoning and specialized treatment techniques."
+                                </p>
+                                <div class="flex items-center text-primary-600 font-semibold">
+                                    <i class="fas fa-check-circle mr-2"></i>
+                                    <span>Verified Student Review</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                                <div class="flex items-center mb-6">
+                                    <div
+                                        class="w-16 h-16 bg-gradient-to-br from-primary-600 to-amber-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+
+                                        <svg aria-hidden="true" viewBox="0 0 24 24" class="w-9 h-9 text-white/95">
+                                            <path fill="currentColor"
+                                                d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Zm0 2c-3.866 0-7 3.134-7 7v1h14v-1c0-3.866-3.134-7-7-7Z" />
+                                        </svg>
+
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-bold text-gray-900">Mrs. Anita Menon</h4>
+                                        <p class="text-gray-600">Parent of B.P.T Student</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                                    "What sets SNS College of Physiotherapy apart is their genuine care for each
+                                    student's professional
+                                    development. The SPINE wellness program, 25+ clubs, and therapeutic facilities are
+                                    outstanding. My daughter loves the personalized approach where her clinical skills
+                                    are
+                                    recognized and nurtured. The professors are experienced and truly dedicated."
+                                </p>
+                                <div class="flex items-center text-primary-600 font-semibold">
+                                    <i class="fas fa-check-circle mr-2"></i>
+                                    <span>Verified Parent Review</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                                <div class="flex items-center mb-6">
+                                    <div
+                                        class="w-16 h-16 bg-gradient-to-br from-red-600 to-primary-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+
+                                        <svg aria-hidden="true" viewBox="0 0 24 24" class="w-9 h-9 text-white/95">
+                                            <path fill="currentColor"
+                                                d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Zm0 2c-3.866 0-7 3.134-7 7v1h14v-1c0-3.866-3.134-7-7-7Z" />
+                                        </svg>
+
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-bold text-gray-900">Dr. Vijay Narayan</h4>
+                                        <p class="text-gray-600">Alumni, B.P.T Batch of 2023</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                                    "SNS College of Physiotherapy provided the perfect foundation for my career. The
+                                    faculty's emphasis on evidence-based practice and clinical skills helped me secure a
+                                    position at a prestigious multispecialty hospital immediately after my internship.
+                                    Proud to be an SNSian!"
+                                </p>
+                                <div class="flex items-center text-primary-600 font-semibold">
+                                    <i class="fas fa-check-circle mr-2"></i>
+                                    <span>Verified Alumni Review</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button id="prev-testimonial"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 bg-white hover:bg-primary-600 text-gray-900 hover:text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center transition-all z-10">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="next-testimonial"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 bg-white hover:bg-primary-600 text-gray-900 hover:text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center transition-all z-10">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Dots Indicator -->
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-primary-600 transition-all"
+                        data-index="0"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-primary-400 transition-all"
+                        data-index="1"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-primary-400 transition-all"
+                        data-index="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel Script -->
+    <script>
+            (function () {
+                let currentIndex = 0;
+                const track = document.getElementById('testimonials-track');
+                const dots = document.querySelectorAll('.testimonial-dot');
+                const totalSlides = 4;
+
+                function updateCarousel() {
+                    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                    dots.forEach((dot, index) => {
+                        if (index === currentIndex) {
+                            dot.classList.remove('bg-gray-300');
+                            dot.classList.add('bg-primary-600');
+                        } else {
+                            dot.classList.remove('bg-primary-600');
+                            dot.classList.add('bg-gray-300');
+                        }
+                    });
+                }
+
+                document.getElementById('next-testimonial').addEventListener('click', () => {
+                    currentIndex = (currentIndex + 1) % totalSlides;
+                    updateCarousel();
+                });
+
+                document.getElementById('prev-testimonial').addEventListener('click', () => {
+                    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                    updateCarousel();
+                });
+
+                dots.forEach(dot => {
+                    dot.addEventListener('click', () => {
+                        currentIndex = parseInt(dot.dataset.index);
+                        updateCarousel();
+                    });
+                });
+
+                // Auto-advance every 5 seconds
+                setInterval(() => {
+                    currentIndex = (currentIndex + 1) % totalSlides;
+                    updateCarousel();
+                }, 5000);
+            })();
+    </script>
+
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary-600 to-indigo-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-4">
+                Ready to Start Your Career in Healthcare?
+            </h2>
+            <p class="text-xl opacity-90 mb-8">
+                Admissions open for B.P.T & M.P.T programs. Limited seats available.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/admissions"
+                    class="bg-white text-primary-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition shadow-xl">
+                    <i class="fas fa-pen-to-square mr-2"></i>
+                    Apply for Admission
+                </a>
+                <a href="/contact"
+                    class="bg-white/20 backdrop-blur-lg hover:bg-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition">
+                    <i class="fas fa-phone mr-2"></i>
+                    Contact for Inquiry
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <app-footer></app-footer>
+</body>
+
+</html>

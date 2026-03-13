@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../../static/images/Favicon.png?v=2">
+    <title>Admission Enquiry – SNS College of Physiotherapy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ================= BASE ================= */
+        body {
+            margin: 0;
+            background: #f5f6f8;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* ================= CARD ================= */
+        .form-card {
+            max-width: 640px;
+            margin: 40px auto;
+            padding: 40px 36px 44px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+        }
+
+        /* ================= HEADER ================= */
+        .form-title {
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        .form-title h2 {
+            margin: 0;
+            font-size: 30px;
+            font-weight: 700;
+            color: #111;
+        }
+
+        .form-title p {
+            margin-top: 6px;
+            font-size: 15px;
+            color: #6b6f76;
+        }
+
+        /* ================= BITRIX RESET ================= */
+        .b24-form-wrapper {
+            background: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+            box-shadow: none !important;
+        }
+
+        .b24-form-header {
+            display: none !important;
+        }
+
+        .b24-form-field {
+            margin-bottom: 24px !important;
+        }
+
+        /* ================= CRITICAL FIX ================= */
+        /* Remove Bitrix auto separators (DOB & dropdown lines) */
+        .b24-form-separator,
+        .b24-form-field-separator,
+        .b24-form-field::before,
+        .b24-form-field::after {
+            display: none !important;
+            content: none !important;
+            height: 0 !important;
+            border: none !important;
+        }
+
+        /* ================= LABEL HANDLING ================= */
+        /* Keep labels for Bitrix logic, hide visually */
+        .b24-form-control-label {
+            position: absolute !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+
+        /* ================= INPUTS ================= */
+        .b24-form-control {
+            width: 100% !important;
+            background: #ffffff !important;
+            border: 1px solid #dfe3e8 !important;
+            border-radius: 14px !important;
+            padding: 16px 18px !important;
+            font-size: 15px !important;
+            font-family: 'Poppins', sans-serif !important;
+            color: #111 !important;
+            box-shadow: none !important;
+        }
+
+        .b24-form-control::placeholder {
+            color: #9aa0a6 !important;
+            font-weight: 400;
+        }
+
+        .b24-form-control:focus {
+            border-color: #111 !important;
+        }
+
+        /* ================= DROPDOWN LIST ================= */
+        .b24-form-dropdown {
+            border-radius: 14px !important;
+            border: 1px solid #fcfcfc !important;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12) !important;
+        }
+
+        .b24-form-dropdown-item {
+            padding: 14px 18px !important;
+            font-size: 15px !important;
+            font-family: 'Poppins', sans-serif !important;
+        }
+
+        .b24-form-dropdown-item:hover {
+            background: #f5f6f8 !important;
+        }
+
+        /* ================= CTA ================= */
+        .b24-form-btn {
+            width: 100% !important;
+            margin-top: 28px !important;
+            padding: 18px !important;
+            border-radius: 16px !important;
+            background: #9298CB !important;
+            color: #000 !important;
+            font-size: 18px !important;
+            font-weight: 600 !important;
+            border: none !important;
+            font-family: 'Poppins', sans-serif !important;
+        }
+
+        /* ================= FOOTER ================= */
+        .b24-form-sign {
+            margin-top: 20px !important;
+            font-size: 13px !important;
+            color: #9aa0a6 !important;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f4f5f9',
+                            100: '#e8eaf2',
+                            200: '#d1d5e6',
+                            300: '#babfd9',
+                            400: '#a4a9cc',
+                            500: '#9298CB',
+                            600: '#7a7fac',
+                            700: '#62668d',
+                            800: '#4b4e6e',
+                            900: '#33354f',
+                            DEFAULT: '#9298CB',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="form-card">
+        <div class="form-title">
+            <h2>Admission Enquiry</h2>
+            <p>SNS College of Physiotherapy</p>
+        </div>
+
+        <!-- BITRIX FORM (UNCHANGED FUNCTIONALITY) -->
+        <script data-b24-form="inline/18/m4ecvi" data-skip-moving="true">
+                (function (w, d, u) {
+                    var s = d.createElement('script');
+                    s.async = true;
+                    s.src = u + '?' + (Date.now() / 180000 | 0);
+                    var h = d.getElementsByTagName('script')[0];
+                    h.parentNode.insertBefore(s, h);
+                })(window, document, 'https://cdn.bitrix24.com/b11752903/crm/form/loader_18.js');
+        </script>
+    </div>
+
+    <script>
+        // Advanced Form Fixer for Bitrix24
+        const snsColleges = [
+            "SNS College of Technology",
+            "SNS College of Engineering",
+            "Dr. SNS Rajalakshmi College of Arts and Science",
+            "SNS College of Allied Health Sciences",
+            "SNS College of Pharmacy",
+            "SNS College of Nursing",
+            "SNS College of Physiotherapy",
+            "Dr. SNS College of Education"
+        ];
+
+        function applyFormFixes() {
+            const fields = document.querySelectorAll('.b24-form-field');
+            fields.forEach(field => {
+                const label = field.querySelector('.b24-form-control-label');
+                const input = field.querySelector('.b24-form-control');
+                const container = field;
+
+                if (label) {
+                    const text = label.textContent.trim();
+
+                    // 1. Remove "Admission To Grade"
+                    if (text.includes('Admission To Grade')) {
+                        container.style.display = 'none';
+                        return;
+                    }
+
+                    // 2. Replace Academy field with "Choose College" Dropdown
+                    if (text.includes('SNSACD') || text.includes('SNS Academy') || text.includes('CBSE SCHOOL')) {
+                        label.textContent = "Choose College *";
+
+                        // If it's not already a select, swap it
+                        if (input && input.tagName !== 'SELECT' && !input.dataset.replaced) {
+                            const select = document.createElement('select');
+                            select.className = input.className;
+                            select.name = input.name;
+                            select.required = true;
+                            select.dataset.replaced = "true";
+
+                            select.innerHTML = '<option value="">Choose College *</option>' +
+                                snsColleges.map(c => `<option value="${c}">${c}</option>`).join('');
+
+                            input.parentNode.replaceChild(select, input);
+
+                            // Handle Bitrix dynamic value binding
+                            select.addEventListener('change', (e) => {
+                                const event = new Event('input', { bubbles: true });
+                                select.dispatchEvent(event);
+                            });
+                        }
+                        return;
+                    }
+
+                    // 3. Rename "Name of the Child" -> "Name of the Candidate"
+                    if (text.includes('Name of the Child')) {
+                        label.textContent = text.replace('Name of the Child', 'Name of the Candidate');
+                        if (input && input.tagName !== 'SELECT') {
+                            let required = text.includes('*');
+                            input.placeholder = 'Name of the Candidate' + (required ? ' *' : '');
+                        }
+                    }
+
+                    // 4. Rename "Parent Name" -> "Parent / Guardian Name"
+                    if (text.includes('Parent Name')) {
+                        label.textContent = text.replace('Parent Name', 'Parent / Guardian Name');
+                        if (input && input.tagName !== 'SELECT') {
+                            let required = text.includes('*');
+                            input.placeholder = 'Parent / Guardian Name' + (required ? ' *' : '');
+                        }
+                    }
+
+                    // Generic Placeholder Fix
+                    if (input && input.tagName !== 'SELECT' && !input.placeholder) {
+                        let cleanText = text.replace(/\s*\*$/, '').trim();
+                        let required = text.includes('*');
+                        input.placeholder = required ? cleanText + ' *' : cleanText;
+                    }
+                }
+            });
+        }
+
+        // Use MutationObserver for robust dynamic loading handling
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                if (mutation.addedNodes.length) {
+                    applyFormFixes();
+                }
+            });
+        });
+
+        // Start observing the whole body as Bitrix might inject anywhere
+        observer.observe(document.body, { childList: true, subtree: true });
+
+        // Backup periodic check
+        const fixInterval = setInterval(applyFormFixes, 1000);
+        setTimeout(() => clearInterval(fixInterval), 15000);
+    </script>
+
+</body>
+
+</html>

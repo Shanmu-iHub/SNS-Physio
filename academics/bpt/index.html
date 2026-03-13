@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../../static/images/Favicon.png?v=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelor of Physiotherapy (B.P.T) | SNS College of Physiotherapy - Design Thinking Physiotherapy College
+        Coimbatore</title>
+    <meta name="description"
+        content="Bachelor of Physiotherapy (B.P.T) at SNS College of Physiotherapy - India's first Design Thinking Physiotherapy college. 4.5 years comprehensive program with 6 months internship.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f4f5f9',
+                            100: '#e8eaf2',
+                            200: '#d1d5e6',
+                            300: '#babfd9',
+                            400: '#a4a9cc',
+                            500: '#9298CB',
+                            600: '#7a7fac',
+                            700: '#62668d',
+                            800: '#4b4e6e',
+                            900: '#33354f',
+                            DEFAULT: '#9298CB',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(-45deg, #7a7fac, #9298CB, #a4a9cc, #babfd9);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Prevent bottom white line when dragging */
+        html,
+        body {
+            background-color: #111827;
+            /* Matches gray-900 footer */
+            overscroll-behavior-y: none;
+        }
+    </style>
+    <script src="/static/js/components.js?v=2026.03.02.01" defer></script>
+</head>
+
+<body class="antialiased">
+    <app-header></app-header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[40vh] min-h-[400px] flex items-center justify-center text-white overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="/static/images/physio/7.jpg" alt="B.P.T Program" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <nav class="mb-6">
+                <div class="flex items-center justify-center space-x-2 text-sm text-white/80">
+                    <a href="/" class="hover:text-white transition">Home</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <span class="text-white">Undergraduate (B.P.T)</span>
+                </div>
+            </nav>
+            <h1 class="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight">Bachelor of Physiotherapy (B.P.T)</h1>
+            <p class="text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">A 4.5-year comprehensive
+                journey to becoming a skilled healthcare professional with a 6-month compulsory clinical internship.</p>
+            <div class="mt-8 flex justify-center">
+                <div class="w-24 h-1 bg-primary-500 rounded-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Overview -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900">Program Overview</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        The Bachelor of Physiotherapy (B.P.T) at SNS College of Physiotherapy is designed to provide
+                        students with an in-depth understanding of human anatomy, physiology, and the therapeutic
+                        practices required for physical rehabilitation. Our curriculum is uniquely enhanced with
+                        <strong>Design Thinking</strong>, enabling students to innovate patient care.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Students gain hands-on experience through clinical postings in multi-specialty hospitals
+                        starting from their early years, ensuring they are well-prepared for real-world medical
+                        challenges.
+                    </p>
+                </div>
+                <div class="bg-primary-50 rounded-2xl p-8 shadow-inner">
+                    <h3 class="text-2xl font-bold mb-6 text-primary-700">Course Highlights</h3>
+                    <ul class="space-y-4 text-gray-800 font-medium">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-600 mt-1 mr-3"></i>
+                            <span>4-Year Academic Study + 6 Months Internship</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-600 mt-1 mr-3"></i>
+                            <span>Clinical Training in Multi-specialty Hospitals</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-600 mt-1 mr-3"></i>
+                            <span>Advanced Labs & Modern Equipment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-600 mt-1 mr-3"></i>
+                            <span>Research-oriented Skill Development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-600 mt-1 mr-3"></i>
+                            <span>Design Thinking in Healthcare Practice</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Opportunities -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Career Opportunities</h2>
+                <p class="text-xl text-gray-600">The field of Physiotherapy offers diverse and rewarding career paths
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <i class="fas fa-hospital text-4xl text-primary-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Clinical Practice</h3>
+                    <p class="text-gray-600">Work in major hospitals, private clinics, and rehabilitation centers.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <i class="fas fa-running text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Sports Physiotherapy</h3>
+                    <p class="text-gray-600">Join sports teams, fitness centers, and athlete management organizations.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <i class="fas fa-graduation-cap text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Academic & Research</h3>
+                    <p class="text-gray-600">Pursue teaching roles in medical colleges or engage in cutting-edge
+                        research.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-primary-600 to-primary-800 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">Begin Your Journey to Healthcare Excellence</h2>
+            <p class="text-xl mb-8 opacity-90">Join SNS College of Physiotherapy and shape the future of physical
+                wellness.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/admissions"
+                    class="bg-white text-primary-700 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition shadow-xl">
+                    Apply Now
+                </a>
+                <a href="/contact"
+                    class="bg-primary-500/20 backdrop-blur-lg hover:bg-primary-500/30 border border-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition">
+                    Enquire Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <app-footer></app-footer>
+</body>
+
+</html>
