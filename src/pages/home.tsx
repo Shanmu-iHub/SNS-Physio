@@ -6,7 +6,7 @@ export const HomePage = () => {
     <section class="relative text-white py-24 lg:py-32 overflow-hidden">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
-            <img src="/static/images/hero.png" alt="SNS Academy Campus" class="w-full h-full object-cover">
+            <img src="/static/images/hero.png" alt="SNS College of Physiotherapy Campus" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-r from-black/10 via-black/10 to-transparent"></div>
         </div>
         
@@ -14,15 +14,13 @@ export const HomePage = () => {
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                     <div class="inline-flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 mb-6">
-                        <i class="fas fa-trophy text-yellow-400 mr-2"></i>
-                        <span class="text-sm font-semibold tracking-wide">India's First GenAI-Powered Design Thinking CBSE School (Patented)</span>
+                        <i class="fas fa-certificate text-yellow-400 mr-2"></i>
+                        <span class="text-sm font-semibold tracking-wide">Premier Institution for Physiotherapy Education</span>
                     </div>
                     
                     <h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight font-display">
-                        <a href="/stanford-pathway" class="hover:text-primary-400 transition duration-300">
-                            Your Pathway to <br/>
-                            <span class="text-primary-500">Stanford</span>
-                        </a>
+                            Shaping Future <br/>
+                            <span class="text-primary-500">Healthcare Professionals</span>
                     </h1>
                     
                     <div class="h-1 w-24 bg-primary-500 mb-8 rounded-full"></div>
@@ -114,11 +112,11 @@ export const HomePage = () => {
         </div>
     </section>
 
-    <!-- Why SNS Academy -->
+    <!-- Why SNS College of Physiotherapy -->
     <section class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-primary-600">Why Parents Choose SNS Academy</h2>
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-primary-600">Why Parents Choose SNS College of Physiotherapy</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                     We don't just teach subjects—we redesign common minds through design thinking, preparing your child for tomorrow's challenges.
                 </p>
@@ -199,81 +197,45 @@ export const HomePage = () => {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
-                 <span class="text-primary-600">Academic Excellence at Every Level</span>
+                 <span class="text-primary-600">Academic Excellence in Physiotherapy</span>
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    CBSE curriculum enhanced with design thinking, experiential learning, and innovation from Nursery to Grade XII.
+                    World-class clinical training enhanced with design thinking, experiential learning, and innovation.
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
                 <!-- Program 1 -->
-                <a href="/academics/pre-primary" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-56 overflow-hidden relative">
+                <a href="/academics/bpt" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition z-10"></div>
-                        <img src="/static/images/pre-primary.png" alt="Pre-Primary" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <img src="/static/images/hero.png" alt="B.P.T" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     </div>
-                    <div class="p-6 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Pre-Primary</h3>
-                        <p class="text-primary-600 font-semibold text-sm mb-3">Nursery - UKG</p>
-                        <p class="text-gray-600 text-sm line-clamp-3">
-                            Play-based learning with early literacy, numeracy, and social development.
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">B.P.T</h3>
+                        <p class="text-primary-600 font-semibold mb-4">Bachelor of Physiotherapy</p>
+                        <p class="text-gray-600 line-clamp-3">
+                            A comprehensive 4.5-year undergraduate program focusing on human anatomy, physiology, and physical therapy techniques with a 6-month mandatory internship.
                         </p>
-                        <div class="mt-4 text-primary-600 font-bold text-sm flex items-center">
+                        <div class="mt-6 text-primary-600 font-bold flex items-center">
                             Explore <i class="fas fa-arrow-right ml-2 opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0"></i>
                         </div>
                     </div>
                 </a>
                 
                 <!-- Program 2 -->
-                <a href="/academics/primary" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-56 overflow-hidden relative">
+                <a href="/academics/mpt" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition z-10"></div>
-                        <img src="/static/images/primary.png" alt="Primary" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <img src="/static/images/secondary.png" alt="M.P.T" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     </div>
-                    <div class="p-6 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Primary</h3>
-                        <p class="text-blue-600 font-semibold text-sm mb-3">Grades 1 - 5</p>
-                        <p class="text-gray-600 text-sm line-clamp-3">
-                            Conceptual understanding, creativity, and skill development with hands-on learning.
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">M.P.T</h3>
+                        <p class="text-blue-600 font-semibold mb-4">Master of Physiotherapy</p>
+                        <p class="text-gray-600 line-clamp-3">
+                            A 2-year postgraduate program specializing in areas like Orthopaedics, Neurology, Sports Physiotherapy, and Cardiopulmonary Sciences.
                         </p>
-                        <div class="mt-4 text-blue-600 font-bold text-sm flex items-center">
-                            Explore <i class="fas fa-arrow-right ml-2 opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0"></i>
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- Program 3 -->
-                <a href="/academics/middle" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-56 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition z-10"></div>
-                        <img src="/static/images/middle.png" alt="Middle School" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    </div>
-                    <div class="p-6 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Middle School</h3>
-                        <p class="text-purple-600 font-semibold text-sm mb-3">Grades 6 - 8</p>
-                        <p class="text-gray-600 text-sm line-clamp-3">
-                            Critical thinking, problem-solving, and project-based collaborative learning.
-                        </p>
-                        <div class="mt-4 text-purple-600 font-bold text-sm flex items-center">
-                            Explore <i class="fas fa-arrow-right ml-2 opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0"></i>
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- Program 4 -->
-                <a href="/academics/secondary" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-56 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition z-10"></div>
-                        <img src="/static/images/secondary.png" alt="Secondary" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    </div>
-                    <div class="p-6 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Secondary</h3>
-                        <p class="text-green-600 font-semibold text-sm mb-3">Grades 9 - 12</p>
-                        <p class="text-gray-600 text-sm line-clamp-3">
-                            Board exam excellence with career pathways and university preparation.
-                        </p>
-                        <div class="mt-4 text-green-600 font-bold text-sm flex items-center">
+                        <div class="mt-6 text-blue-600 font-bold flex items-center">
                             Explore <i class="fas fa-arrow-right ml-2 opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0"></i>
                         </div>
                     </div>

@@ -193,14 +193,7 @@
     <script>
         // Advanced Form Fixer for Bitrix24
         const snsColleges = [
-            "SNS College of Technology",
-            "SNS College of Engineering",
-            "Dr. SNS Rajalakshmi College of Arts and Science",
-            "SNS College of Allied Health Sciences",
-            "SNS College of Pharmacy",
-            "SNS College of Nursing",
-            "SNS College of Physiotherapy",
-            "Dr. SNS College of Education"
+            "SNS College of Physiotherapy"
         ];
 
         function applyFormFixes() {
@@ -213,39 +206,38 @@
                 if (label) {
                     const text = label.textContent.trim();
 
-                    // 1. Remove "Admission To Grade"
-                    if (text.includes('Admission To Grade')) {
-                        container.style.display = 'none';
-                        return;
-                    }
-
-                    // 2. Replace Academy field with "Choose College" Dropdown
-                    if (text.includes('SNSACD') || text.includes('SNS Academy') || text.includes('CBSE SCHOOL')) {
-                        label.textContent = "Choose College *";
-
-                        // If it's not already a select, swap it
-                        if (input && input.tagName !== 'SELECT' && !input.dataset.replaced) {
+                    // 1. Course Applying For (replacing Admission To Grade)
+                    if (text.includes('Admission To Grade') || text.includes('Course')) {
+                        label.textContent = "Course Applying For *";
+                        if (input && input.tagName !== 'SELECT' && !input.dataset.replacedCourse) {
                             const select = document.createElement('select');
                             select.className = input.className;
                             select.name = input.name;
                             select.required = true;
-                            select.dataset.replaced = "true";
-
-                            select.innerHTML = '<option value="">Choose College *</option>' +
-                                snsColleges.map(c => `<option value="${c}">${c}</option>`).join('');
-
+                            select.dataset.replacedCourse = "true";
+                            select.innerHTML = '<option value="">Select Course *</option><option value="BPT">BPT</option><option value="MPT">MPT</option>';
                             input.parentNode.replaceChild(select, input);
-
-                            // Handle Bitrix dynamic value binding
                             select.addEventListener('change', (e) => {
-                                const event = new Event('input', { bubbles: true });
-                                select.dispatchEvent(event);
+                                select.dispatchEvent(new Event('input', { bubbles: true }));
                             });
                         }
                         return;
                     }
 
-                    // 3. Rename "Name of the Child" -> "Name of the Candidate"
+                    // 2. Replace Academy field with "Choose College" Read-only
+                    if (text.includes('SNSACD') || text.includes('SNS Academy') || text.includes('CBSE SCHOOL') || text.includes('College')) {
+                        label.textContent = "College *";
+                        if (input && input.tagName !== 'SELECT' && !input.dataset.replaced) {
+                            input.value = "SNS College of Physiotherapy";
+                            input.readOnly = true;
+                            input.className += ' bg-gray-100 cursor-not-allowed';
+                            input.dataset.replaced = "true";
+                            input.dispatchEvent(new Event('input', { bubbles: true }));
+                        }
+                        return;
+                    }
+
+                    // 3. Rename Form fields
                     if (text.includes('Name of the Child')) {
                         label.textContent = text.replace('Name of the Child', 'Name of the Candidate');
                         if (input && input.tagName !== 'SELECT') {
@@ -254,7 +246,14 @@
                         }
                     }
 
-                    // 4. Rename "Parent Name" -> "Parent / Guardian Name"
+                    // Date Picker restriction
+                    if (input && input.type === 'date' && !input.dataset.dateFixed) {
+                        input.min = "2000-01-01";
+                        input.max = new Date().toISOString().split('T')[0];
+                        input.dataset.dateFixed = 'true';
+                    }
+
+                    // 4. Rename Parent Name
                     if (text.includes('Parent Name')) {
                         label.textContent = text.replace('Parent Name', 'Parent / Guardian Name');
                         if (input && input.tagName !== 'SELECT') {
@@ -264,13 +263,56 @@
                     }
 
                     // Generic Placeholder Fix
-                    if (input && input.tagName !== 'SELECT' && !input.placeholder) {
+                    if (input && input.tagName !== 'SELECT' && !input.placeholder && input.type !== 'date') {
                         let cleanText = text.replace(/\s*\*$/, '').trim();
                         let required = text.includes('*');
                         input.placeholder = required ? cleanText + ' *' : cleanText;
                     }
                 }
             });
+
+            // Submit Button Fix
+            const submitBtn = document.querySelector('.b24-form-btn');
+            if (submitBtn && submitBtn.textContent.trim() !== 'Apply Now' && submitBtn.textContent.trim() !== 'Processing...') {
+                submitBtn.textContent = 'Apply Now';
+                if (!submitBtn.dataset.submitFixed) {
+                    submitBtn.dataset.submitFixed = 'true';
+                    submitBtn.addEventListener('click', function() {
+                        const form = this.closest('form');
+                        if (form && form.checkValidity()) {
+                            this.textContent = 'Processing...';
+                            this.style.opacity = '0.7';
+                            this.style.cursor = 'wait';
+                        }
+                    });
+                }
+            }
+
+            // Headings injection
+            const fieldsArray = Array.from(fields);
+            const firstPersonalField = fieldsArray.find(f => {
+                const l = f.querySelector('.b24-form-control-label');
+                return l && (l.textContent.includes('Candidate') || l.textContent.includes('Name'));
+            });
+            if (firstPersonalField && !firstPersonalField.previousElementSibling?.classList.contains('form-section-heading')) {
+                const heading = document.createElement('h3');
+                heading.className = 'form-section-heading';
+                heading.style.cssText = 'font-size: 20px; font-weight: 700; color: #111; margin: 24px 0 16px;';
+                heading.textContent = 'Personal Details';
+                firstPersonalField.parentNode.insertBefore(heading, firstPersonalField);
+            }
+
+            const firstAcademicField = fieldsArray.find(f => {
+                const l = f.querySelector('.b24-form-control-label');
+                return l && (l.textContent.includes('Course') || l.textContent.includes('Grade') || l.textContent.includes('College') || l.textContent.includes('Education'));
+            });
+            if (firstAcademicField && firstAcademicField !== firstPersonalField && !firstAcademicField.previousElementSibling?.classList.contains('form-section-heading')) {
+                const heading = document.createElement('h3');
+                heading.className = 'form-section-heading';
+                heading.style.cssText = 'font-size: 20px; font-weight: 700; color: #111; margin: 32px 0 16px;';
+                heading.textContent = 'Academic Details';
+                firstAcademicField.parentNode.insertBefore(heading, firstAcademicField);
+            }
         }
 
         // Use MutationObserver for robust dynamic loading handling
@@ -284,6 +326,26 @@
 
         // Start observing the whole body as Bitrix might inject anywhere
         observer.observe(document.body, { childList: true, subtree: true });
+
+        // Handle Form Submission Interception
+        window.addEventListener('message', function(event) {
+            // Check if the message is from Bitrix24 form indicating successful submission
+            if (event.data && typeof event.data === 'string' && event.data.indexOf('b24:form:submit') !== -1) {
+                event.preventDefault();
+                event.stopPropagation();
+                
+                const formWrapper = document.querySelector('.b24-form-wrapper') || document.querySelector('.b24-form');
+                if (formWrapper) {
+                    formWrapper.innerHTML = `<div style="text-align: center; padding: 48px 20px;">
+                        <div style="width: 80px; height: 80px; background: #dcfce7; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
+                            <span style="font-size: 36px; color: #16a34a;">✓</span>
+                        </div>
+                        <h3 style="font-size: 28px; font-weight: 700; color: #111; margin-bottom: 16px;">Application Submitted!</h3>
+                        <p style="font-size: 16px; color: #6b7280;">Thank you for applying to SNS College of Physiotherapy. Our admissions team will contact you shortly.</p>
+                    </div>`;
+                }
+            }
+        });
 
         // Backup periodic check
         const fixInterval = setInterval(applyFormFixes, 1000);

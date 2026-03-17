@@ -4,7 +4,7 @@ import { PageHeader } from '../components/page-header'
 export const TransportPage = () => {
     return `
     ${PageHeader(
-        'School Transport Services',
+        'College Transport Services',
         'Safe, comfortable, and punctual transportation for your child',
         '/static/images/SNS_BUS.jpg',
         'Transport'
@@ -63,32 +63,24 @@ export const TransportPage = () => {
                 <p class="text-lg text-primary-600 font-semibold">🚨 Check if your area is covered before admission!</p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                 <div class="bg-white rounded-2xl p-8 shadow-lg">
                     <h3 class="text-2xl font-bold mb-6 text-blue-600 flex items-center">
                         <i class="fas fa-map-marker-alt mr-3"></i>
-                        Central Coimbatore
+                        Mettupalayam
                     </h3>
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>RS Puram</span>
+                            <span>Karamadai</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Race Course</span>
+                            <span>Mathampalayam</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Town Hall</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Gandhipuram</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Saibaba Colony</span>
+                            <span>Avinashi Road Route</span>
                         </li>
                     </ul>
                 </div>
@@ -96,28 +88,16 @@ export const TransportPage = () => {
                 <div class="bg-white rounded-2xl p-8 shadow-lg">
                     <h3 class="text-2xl font-bold mb-6 text-purple-600 flex items-center">
                         <i class="fas fa-map-marker-alt mr-3"></i>
-                        East Coimbatore
+                        Sathyamangalam
                     </h3>
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Peelamedu</span>
+                            <span>Puliampatti</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Hopes College</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Singanallur</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Ramanathapuram</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Ganapathy</span>
+                            <span>Annur</span>
                         </li>
                     </ul>
                 </div>
@@ -125,28 +105,33 @@ export const TransportPage = () => {
                 <div class="bg-white rounded-2xl p-8 shadow-lg">
                     <h3 class="text-2xl font-bold mb-6 text-green-600 flex items-center">
                         <i class="fas fa-map-marker-alt mr-3"></i>
-                        West & South
+                        Tiruppur
                     </h3>
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Vadavalli</span>
+                            <span>Avinashi</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Thudiyalur</span>
+                            <span>Mangalam Road</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-red-600 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-3"></i>
+                        Nearby Regions
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Kurumbapalayam</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Podanur</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Ukkadam</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Kuniyamuthur</span>
+                            <span>Saravanampatti</span>
                         </li>
                     </ul>
                 </div>
@@ -235,7 +220,7 @@ export const TransportPage = () => {
                         <li class="flex items-start">
                             <i class="fas fa-user-check text-blue-600 mt-1 mr-3"></i>
                             <div>
-                                <strong>Pick-up (Nursery-VII):</strong> Parents must receive child at bus stop
+                                <strong>Pick-up:</strong> Students must board only at prescribed stops
                             </div>
                         </li>
                         <li class="flex items-start">
@@ -259,13 +244,13 @@ export const TransportPage = () => {
                         <li class="flex items-start">
                             <i class="fas fa-user-tie text-purple-600 mt-1 mr-3"></i>
                             <div>
-                                <strong>Uniform:</strong> Proper school uniform mandatory
+                                <strong>Uniform:</strong> Proper college uniform mandatory
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-id-badge text-purple-600 mt-1 mr-3"></i>
                             <div>
-                                <strong>ID Card:</strong> School ID with bus number required
+                                <strong>ID Card:</strong> College ID with bus number required
                             </div>
                         </li>
                         <li class="flex items-start">
@@ -291,9 +276,9 @@ export const TransportPage = () => {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gradient-to-br from-primary-50 to-amber-50 rounded-2xl p-12 text-center">
                 <i class="fas fa-clock text-6xl text-blue-600 mb-6"></i>
-                <h2 class="text-4xl font-bold mb-4">School Timings</h2>
+                <h2 class="text-4xl font-bold mb-4">College Timings</h2>
                 <p class="text-xl text-gray-700 mb-6">
-                    Buses are scheduled to ensure students arrive by <strong class="text-blue-600">8:15 AM</strong> daily
+                    Buses are scheduled to ensure students arrive promptly for clinical and academic sessions.
                 </p>
                 <p class="text-gray-600 mb-8">
                     Routes are designed to minimize transit time and provide comfortable journeys
@@ -318,9 +303,9 @@ export const TransportPage = () => {
                     <i class="fas fa-phone mr-2"></i>
                     +91 96299 37861
                 </a>
-                <a href="mailto:info@snsacademy.org" class="bg-white/20 backdrop-blur-lg hover:bg-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
+                <a href="mailto:snsphysio@gmail.com" class="bg-white/20 backdrop-blur-lg hover:bg-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
                     <i class="fas fa-envelope mr-2"></i>
-                    info@snsacademy.org
+                    snsphysio@gmail.com
                 </a>
             </div>
         </div>

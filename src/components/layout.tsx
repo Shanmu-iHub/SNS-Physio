@@ -370,14 +370,9 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                                 Academics <i class="fas fa-chevron-down ml-1 text-xs"></i>
                             </button>
                             <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-64 mt-0 z-50">
-                                <a href="/academics/pre-primary" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Pre-Primary (Pre-KG, LKG, UKG)</a>
-                                <a href="/academics/primary" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Primary (Grades 1-5)</a>
-                                <a href="/academics/middle" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Middle School (Grades 6-8)</a>
-                                <a href="/academics/secondary" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Secondary & Senior Secondary (Grades 9-12)</a>
-                                <div class="border-t my-2"></div>
-                                <a href="/stanford-pathway" class="block px-4 py-2 hover:bg-primary-50 text-gray-700 font-semibold">
-                                    <i class="fas fa-university text-primary-600 mr-2"></i>Pathway to Stanford
-                                </a>
+                                <a href="/academics/bpt" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">B.P.T (Bachelor of Physiotherapy)</a>
+                                <a href="/academics/mpt" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">M.P.T (Master of Physiotherapy)</a>
+
                             </div>
                         </div>
                         
@@ -440,14 +435,9 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                             Academics <i class="fas fa-chevron-down"></i>
                         </button>
                         <div id="mobile-academics" class="hidden pl-4 space-y-2 mt-2">
-                            <a href="/academics/pre-primary" class="block text-gray-600 hover:text-primary-600 py-1">Pre-Primary (Pre-KG, LKG, UKG)</a>
-                            <a href="/academics/primary" class="block text-gray-600 hover:text-primary-600 py-1">Primary (Grades 1-5)</a>
-                            <a href="/academics/middle" class="block text-gray-600 hover:text-primary-600 py-1">Middle School (Grades 6-8)</a>
-                            <a href="/academics/secondary" class="block text-gray-600 hover:text-primary-600 py-1">Secondary & Senior Secondary (Grades 9-12)</a>
-                            <div class="border-t my-2"></div>
-                            <a href="/stanford-pathway" class="block text-gray-600 hover:text-primary-600 py-1 font-semibold">
-                                <i class="fas fa-university text-primary-600 mr-2"></i>Pathway to Stanford
-                            </a>
+                            <a href="/academics/bpt" class="block text-gray-600 hover:text-primary-600 py-1">B.P.T (Bachelor of Physiotherapy)</a>
+                            <a href="/academics/mpt" class="block text-gray-600 hover:text-primary-600 py-1">M.P.T (Master of Physiotherapy)</a>
+
                         </div>
                     </div>
                     
@@ -546,17 +536,17 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                     <div>
                         <h4 class="text-white font-bold mb-4">Connect</h4>
                         <ul class="space-y-2 text-sm mb-4">
-                            <li><i class="fas fa-map-marker-alt mr-2"></i>SNS Academy,<br />Thudiyalur - Saravanampatti Road,<br />Vellakinar Post,<br />Coimbatore - 641029.</li>
-                            <li><a href="tel:+919629937861" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>Admission: +91 96299 37861</a></li>
-                            <li><a href="tel:+917530093730" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>Landline: +91 75300 93730</a></li>
-                            <li><a href="mailto:info@snsacademy.org" class="hover:text-white transition"><i class="fas fa-envelope mr-2"></i>info@snsacademy.org</a></li>
+                            <li><i class="fas fa-map-marker-alt mr-2"></i>SNS College of Physiotherapy,<br />SNS Kalvi Nagar, Sathy Main Road,<br />Kurumbapalayam (Po),<br />Coimbatore - 641107.</li>
+                            <li><a href="tel:+919003655855" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>Admission: +91 90036 55855</a></li>
+                            <li><a href="tel:+919952794297" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>General: +91 99527 94297</a></li>
+                            <li><a href="mailto:snsphysio@gmail.com" class="hover:text-white transition"><i class="fas fa-envelope mr-2"></i>snsphysio@gmail.com</a></li>
                             <li><a href="mailto:job@snsgroups.com" class="hover:text-white transition"><i class="fas fa-briefcase mr-2"></i>Career: job@snsgroups.com</a></li>
                         </ul>
                         <div class="flex space-x-3">
                             <a href="https://www.facebook.com/snsinstitutions" target="_blank" class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="https://www.instagram.com/snsacademyorg" target="_blank" class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
+                            <a href="#" target="_blank" class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
                                 <i class="fab fa-instagram"></i>
                             </a>
                             <a href="https://www.youtube.com/@snsinstitutions" target="_blank" class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
@@ -599,7 +589,7 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
             });
         </script>
         <!-- Instagram Floating Icon -->
-        <a href="https://www.instagram.com/snsacademyorg/" class="instagram-float" target="_blank" rel="noopener noreferrer"
+        <a href="#" class="instagram-float" target="_blank" rel="noopener noreferrer"
             title="Follow us on Instagram">
             <i class="fab fa-instagram"></i>
         </a>

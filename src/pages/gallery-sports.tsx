@@ -10,11 +10,11 @@ export const GalleryPage = () => {
         'Gallery'
     )}
 
-    <!-- Life at SNS Academy -->
+    <!-- Life at SNS Physiotherapy -->
     <section class="py-16 bg-gradient-to-br from-yellow-50 to-primary-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-4">Life @ SNS Academy</h2>
-            <p class="text-center text-xl text-gray-600 mb-12">Where learning meets joy, and every day is an adventure!</p>
+            <h2 class="text-4xl font-bold text-center mb-4">Life @ SNS College of Physiotherapy</h2>
+            <p class="text-center text-xl text-gray-600 mb-12">Where learning meets practice, and every day brings new insights!</p>
             
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
                 <div class="bg-white rounded-2xl overflow-hidden shadow-xl card-hover">
@@ -62,11 +62,11 @@ export const GalleryPage = () => {
         </div>
     </section>
 
-    <!-- School Blocks -->
+    <!-- College Blocks -->
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-4">School Campus</h2>
-            <p class="text-center text-xl text-gray-600 mb-12">Wi-Fi enabled campus with smart classrooms and modern facilities</p>
+            <h2 class="text-4xl font-bold text-center mb-4">College Campus</h2>
+            <p class="text-center text-xl text-gray-600 mb-12">Wi-Fi enabled campus with smart classrooms and modern clinical facilities</p>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                 <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg">
@@ -104,12 +104,12 @@ export const GalleryPage = () => {
                     <h4 class="font-bold">Smart Classrooms</h4>
                 </div>
                 <div class="bg-white rounded-xl p-6 shadow-md text-center">
-                    <i class="fas fa-baby text-4xl text-pink-600 mb-3"></i>
-                    <h4 class="font-bold">Pre-KG</h4>
+                    <i class="fas fa-wheelchair text-4xl text-pink-600 mb-3"></i>
+                    <h4 class="font-bold">Rehabilitation Lab</h4>
                 </div>
                 <div class="bg-white rounded-xl p-6 shadow-md text-center">
-                    <i class="fas fa-child text-4xl text-purple-600 mb-3"></i>
-                    <h4 class="font-bold">LKG & UKG</h4>
+                    <i class="fas fa-heartbeat text-4xl text-purple-600 mb-3"></i>
+                    <h4 class="font-bold">Therapy Center</h4>
                 </div>
             </div>
         </div>
@@ -507,7 +507,7 @@ export const SportsClubsPage = () => {
             <p class="text-xl mb-8">Join our sports teams and clubs to unlock your potential!</p>
             <a href="/admissions" class="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition inline-block">
                 <i class="fas fa-trophy mr-2"></i>
-                Join SNS Academy
+                Join SNS College of Physiotherapy
             </a>
         </div>
     </section>
@@ -519,7 +519,7 @@ export const BrochurePage = () => {
     return `
     ${PageHeader(
         'Digital Brochure',
-        'Download our complete prospectus and learn more about SNS Academy',
+        'Download our complete prospectus and learn more about SNS College of Physiotherapy',
         '/static/images/hero.png',
         'Brochure'
     )}
@@ -528,20 +528,20 @@ export const BrochurePage = () => {
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-12 text-center shadow-xl">
                 <i class="fas fa-file-pdf text-8xl text-red-600 mb-8"></i>
-                <h2 class="text-4xl font-bold mb-4">SNS Academy Prospectus</h2>
+                <h2 class="text-4xl font-bold mb-4">SNS College of Physiotherapy Prospectus</h2>
                 <p class="text-xl text-gray-700 mb-8">
-                    Comprehensive guide with complete information about our programs, facilities, admission process, and fees structure.
+                    Comprehensive guide with complete information about our clinical programs, facilities, admission process, and fees structure.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                    <a href="/static/SNS%20Academy%20Brochure%202026.pdf" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
+                    <a href="/static/SNS%20Physiotherapy%20Brochure.pdf" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
                         <i class="fas fa-download mr-2"></i>
                         Download Brochure
                     </a>
                 </div>
                 
                 <p class="text-sm text-gray-600">
-                    For printed copies, contact us at <a href="tel:+919629937861" class="text-blue-600 hover:underline">+91 96299 37861</a>
+                    For printed copies, contact us at <a href="tel:+919003655855" class="text-blue-600 hover:underline">+91 90036 55855</a>
                 </p>
             </div>
             
@@ -551,7 +551,7 @@ export const BrochurePage = () => {
                         <i class="fas fa-graduation-cap text-3xl text-purple-600"></i>
                     </div>
                     <h3 class="font-bold text-lg mb-2">Academic Programs</h3>
-                    <p class="text-sm text-gray-600">Nursery to Grade XII curriculum details</p>
+                    <p class="text-sm text-gray-600">B.P.T & M.P.T curriculum details</p>
                 </div>
                 
                 <div class="text-center">
