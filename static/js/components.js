@@ -272,7 +272,7 @@ footerTemplate.innerHTML = `
                             class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://www.instagram.com/snsacademyorg" target="_blank"
+                        <a href="https://www.instagram.com/snsinstitutions" target="_blank"
                             class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
                             <i class="fab fa-instagram"></i>
                         </a>
@@ -301,7 +301,7 @@ footerTemplate.innerHTML = `
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.0/dist/axios.min.js"></script>
     
     <!-- Instagram Floating Icon -->
-    <a href="https://www.instagram.com/snsacademyorg/" class="instagram-float" target="_blank" rel="noopener noreferrer"
+    <a href="https://www.instagram.com/snsinstitutions/" class="instagram-float" target="_blank" rel="noopener noreferrer"
         title="Follow us on Instagram">
         <i class="fab fa-instagram"></i>
     </a>
