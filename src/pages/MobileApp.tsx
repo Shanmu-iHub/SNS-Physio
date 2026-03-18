@@ -1,0 +1,114 @@
+import { MobileBottomNav } from '../components/MobileBottomNav';
+
+export const MobileAppPage = () => {
+    return `
+    <div class="bg-gray-50 min-h-screen pb-20 font-inter">
+        <!-- Top Bar -->
+        <header class="bg-[#1e293b] text-white px-4 py-3 flex items-center justify-between sticky top-0 z-40">
+            <div class="flex items-center space-x-3">
+                <img src="/static/images/Logo.png" alt="SNS Institutions" class="h-10 w-auto bg-white rounded p-0.5">
+                <div>
+                    <h1 class="text-lg font-extrabold uppercase tracking-tight leading-none">SNS Institutions</h1>
+                    <p class="text-[10px] font-medium text-yellow-500 uppercase tracking-widest mt-1">Design Thinkers</p>
+                </div>
+            </div>
+            <button class="p-2">
+                <i class="fas fa-ellipsis-v text-gray-400"></i>
+            </button>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-[480px] mx-auto px-4 pt-6 space-y-8">
+            <!-- Hero Badge -->
+            <div class="inline-flex items-center space-x-2 bg-white/40 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 shadow-sm">
+                <span class="text-[10px] font-semibold text-gray-700 uppercase tracking-wider text-center w-full">DT & AI-Powered Placement-Driven Campus | K-12 to PhD</span>
+            </div>
+
+            <!-- Main Heading -->
+            <div class="space-y-4">
+                <h2 class="text-3xl font-black leading-tight">
+                    India's first <span class="text-blue-600">GenAI-Powered</span> 
+                    <span class="block text-indigo-800">Design Thinking Institution</span>
+                </h2>
+                <p class="text-xs font-semibold text-gray-500 uppercase tracking-widest">(Patented)</p>
+                <p class="text-sm text-gray-600 leading-relaxed font-medium">
+                    Building industry-ready innovators through the 3P Culture Model from Kindergarten to PhD.
+                </p>
+            </div>
+
+            <!-- Info Circular Cards -->
+            <div class="flex justify-between items-center py-4">
+                <div class="flex flex-col items-center space-y-2">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center text-white shadow-lg transform hover:scale-105 transition-all">
+                        <span class="text-xs font-bold font-poppins">Purpose</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center text-white shadow-lg transform hover:scale-105 transition-all">
+                        <span class="text-xs font-bold font-poppins">Process</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center text-white shadow-lg transform hover:scale-105 transition-all">
+                        <span class="text-xs font-bold font-poppins">People</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="grid grid-cols-2 gap-4">
+                <button class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center space-y-2 group transition-all hover:bg-gray-50">
+                    <div class="w-10 h-10 rounded-full bg-yellow-50 flex items-center justify-center group-hover:bg-yellow-100">
+                        <i class="fas fa-compass text-yellow-600"></i>
+                    </div>
+                    <span class="text-sm font-bold text-gray-800 text-center">Explore Programs</span>
+                </button>
+                <button class="bg-[#1e293b] p-5 rounded-2xl shadow-sm flex flex-col items-center space-y-2 group transition-all hover:bg-slate-800">
+                    <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center group-hover:bg-slate-600">
+                        <i class="fas fa-chart-line text-white"></i>
+                    </div>
+                    <span class="text-sm font-bold text-white text-center">Placements</span>
+                </button>
+            </div>
+
+            <!-- Featured Event Card -->
+            <div class="relative overflow-hidden rounded-3xl group cursor-pointer shadow-xl">
+                <div class="absolute inset-0 bg-gradient-to-br from-purple-600/90 via-pink-600/80 to-orange-500/90 mix-blend-multiply"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+                
+                <div class="relative p-6 space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-white/20 backdrop-blur-md border border-white/30 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full flex items-center">
+                            <i class="fas fa-fire text-orange-400 mr-2"></i> HOT EVENT
+                        </span>
+                        <span class="bg-white/20 backdrop-blur-md border border-white/30 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full flex items-center">
+                            <i class="fas fa-calendar-alt text-white mr-2"></i> FEB 15
+                        </span>
+                    </div>
+
+                    <div class="flex items-start justify-between">
+                        <div class="space-y-4 max-w-[70%]">
+                            <div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-lg">
+                                <i class="fas fa-robot text-purple-600 text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-black text-white leading-tight">Agentic AI Bootcamp</h3>
+                            <p class="text-sm font-medium text-white/90">Master GenAI & Build Autonomous Agents</p>
+                        </div>
+                        <div class="flex flex-col space-y-4">
+                            <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white shadow-lg">
+                                <i class="fas fa-hourglass-half"></i>
+                            </div>
+                            <div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white shadow-lg">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Bottom Navigation -->
+        ${MobileBottomNav('home')}
+    </div>
+    `;
+};

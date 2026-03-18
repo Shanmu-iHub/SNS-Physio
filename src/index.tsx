@@ -10,6 +10,9 @@ import { GalleryPage, SportsClubsPage, BrochurePage } from './pages/gallery-spor
 import { TransportPage } from './pages/transport'
 import { EventsPage } from './pages/events'
 import { SuccessStoriesPage } from './pages/success-stories'
+import { MobileAppPage } from './pages/MobileApp'
+import { MobileLayout } from './components/layout'
+
 const app = new Hono()
 
 // Enable CORS for API routes
@@ -133,6 +136,11 @@ app.get('/events', (c) => {
 // Success Stories Page
 app.get('/success-stories', (c) => {
     return c.html(Layout(SuccessStoriesPage(), 'Success Stories', 'success-stories'))
+})
+
+// Mobile App UI Page
+app.get('/mobile-app', (c) => {
+    return c.html(MobileLayout(MobileAppPage(), 'Mobile UI'))
 })
 
 // Stanford Pathway Page

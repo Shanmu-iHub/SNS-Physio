@@ -375,9 +375,157 @@ class AppHeader extends HTMLElement {
 }
 customElements.define('app-header', AppHeader);
 
+const mobileNavTemplate = document.createElement('template');
+mobileNavTemplate.innerHTML = `
+    <style>
+        .mobile-nav-container {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 -10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 25px 25px 0 0;
+            z-index: 9999;
+            padding: 12px 10px calc(12px + env(safe-area-inset-bottom));
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-nav-container {
+                display: flex;
+            }
+            body {
+                padding-bottom: 90px !important; /* Extra space for the bottom nav */
+            }
+            /* Adjust floating icons to be above the navbar */
+            .whatsapp-float { 
+                bottom: 100px !important; 
+                right: 20px !important;
+                width: 50px !important;
+                height: 50px !important;
+                font-size: 24px !important;
+            }
+            .instagram-float { 
+                bottom: 160px !important; 
+                right: 20px !important;
+                width: 50px !important;
+                height: 50px !important;
+                font-size: 24px !important;
+            }
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #9ca3af;
+            font-size: 11px;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            flex: 1;
+            padding-bottom: 4px;
+        }
+
+        .nav-item i {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .nav-item.active {
+            color: #9298CB;
+        }
+
+        .nav-item.featured {
+            position: relative;
+            margin-top: -35px;
+        }
+
+        .featured-icon-wrapper {
+            width: 64px;
+            height: 64px;
+            background: #9298CB;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(146, 152, 203, 0.4);
+            border: 5px solid white;
+            margin-bottom: 4px !important;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .nav-item.featured:hover .featured-icon-wrapper {
+            transform: translateY(-5px) scale(1.05);
+        }
+
+        .nav-item.featured.active .featured-icon-wrapper {
+            background: #eab308; /* Yellow/Gold for active programs */
+            box-shadow: 0 8px 20px rgba(234, 179, 8, 0.4);
+        }
+
+        .nav-item.featured i {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+    </style>
+    <div class="mobile-nav-container">
+        <a href="/" class="nav-item" data-page="home">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-chart-line"></i>
+            <span>Placements</span>
+        </a>
+        <a href="/academics/bpt/index.html" class="nav-item featured" data-page="programs">
+            <div class="featured-icon-wrapper">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <span>Programs</span>
+        </a>
+        <a href="/innovation" class="nav-item" data-page="innovation">
+            <i class="fas fa-lightbulb"></i>
+            <span>Innovation</span>
+        </a>
+        <a href="#" class="nav-item" data-page="portals">
+            <i class="fas fa-th-large"></i>
+            <span>Portals</span>
+        </a>
+    </div>
+`;
+
+class AppMobileNav extends HTMLElement {
+    connectedCallback() {
+        this.appendChild(mobileNavTemplate.content.cloneNode(true));
+        this.setActiveItem();
+    }
+
+    setActiveItem() {
+        const path = window.location.pathname;
+        const items = this.querySelectorAll('.nav-item');
+        
+        items.forEach(item => {
+            const href = item.getAttribute('href');
+            if (href === '/' && (path === '/' || path === '/index.html')) {
+                item.classList.add('active');
+            } else if (href && href !== '/' && path.includes(href)) {
+                item.classList.add('active');
+            }
+        });
+    }
+}
+customElements.define('app-mobile-nav', AppMobileNav);
+
 class AppFooter extends HTMLElement {
     connectedCallback() {
         this.appendChild(footerTemplate.content.cloneNode(true));
+        this.appendChild(document.createElement('app-mobile-nav'));
     }
 }
 customElements.define('app-footer', AppFooter);
