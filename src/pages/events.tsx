@@ -5,7 +5,7 @@ export const EventsPage = () => {
     ${PageHeader(
         'Events & Celebrations',
         'Experience the vibrant life at SNS College of Physiotherapy through our memorable events, celebrations, and activities',
-        '/static/images/SNS Academy Web/Events.webp',
+        '/static/images/SNS College of Physiotherapy Web/Events.webp',
         'Events'
     )}
 

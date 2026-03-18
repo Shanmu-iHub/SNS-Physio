@@ -33,7 +33,7 @@ export const GalleryPage = () => {
                 
                 <div class="bg-white rounded-2xl overflow-hidden shadow-xl card-hover">
                     <div class="h-64 relative overflow-hidden">
-                        <img src="/static/images/SNS Academy Web/Colla Work.png" alt="Collaborative Work" class="w-full h-full object-cover">
+                        <img src="/static/images/SNS College of Physiotherapy Web/Colla Work.png" alt="Collaborative Work" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-4 left-4 text-white">
                             <i class="fas fa-users text-3xl mb-2"></i>
@@ -47,7 +47,7 @@ export const GalleryPage = () => {
                 
                 <div class="bg-white rounded-2xl overflow-hidden shadow-xl card-hover">
                     <div class="h-64 relative overflow-hidden">
-                        <img src="/static/images/SNS Academy Web/Happy Envirn.png" alt="Happy Environment" class="w-full h-full object-cover">
+                        <img src="/static/images/SNS College of Physiotherapy Web/Happy Envirn.png" alt="Happy Environment" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-4 left-4 text-white">
                             <i class="fas fa-smile-beam text-3xl mb-2"></i>

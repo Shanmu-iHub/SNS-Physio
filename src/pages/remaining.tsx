@@ -821,7 +821,7 @@ export const ContactPage = () => {
                                     }
 
                                     // 2. Replace Academy field with "Choose College" Read-only
-                                    if (text.indexOf('SNSACD') !== -1 || text.indexOf('SNS Academy') !== -1 || text.indexOf('CBSE SCHOOL') !== -1 || text.indexOf('College') !== -1) {
+                                    if (text.indexOf('SNSACD') !== -1 || text.indexOf('SNS College of Physiotherapy') !== -1 || text.indexOf('CBSE SCHOOL') !== -1 || text.indexOf('College') !== -1) {
                                         label.textContent = "College *";
                                         
                                         if (input && input.tagName !== 'SELECT' && !input.getAttribute('data-replaced')) {

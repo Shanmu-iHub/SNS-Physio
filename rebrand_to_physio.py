@@ -33,7 +33,7 @@ def rebrand_file(filepath):
         content = f.read()
 
     # 1. Update Title and Meta Tags
-    content = content.replace("SNS Academy", "SNS College of Physiotherapy")
+    content = content.replace("SNS College of Physiotherapy", "SNS College of Physiotherapy")
     content = content.replace("Design Thinking CBSE School", "Design Thinking Physiotherapy College")
     content = content.replace("CBSE school in Coimbatore", "Physiotherapy college in Coimbatore")
     content = content.replace("Nursery to Grade XII", "Bachelor and Master of Physiotherapy (B.P.T & M.P.T)")
@@ -50,7 +50,7 @@ def rebrand_file(filepath):
         content = re.sub(config_pattern, NEW_TAILWIND_CONFIG.strip(), content, flags=re.DOTALL)
 
     # 3. Update Contact Info
-    content = content.replace("SNS Academy,", "SNS College of Physiotherapy,")
+    content = content.replace("SNS College of Physiotherapy,", "SNS College of Physiotherapy,")
     content = content.replace("Thudiyalur - Saravanampatti Road,", "SNS Kalvi Nagar, Sathy Main Road (Opp. CRI Pumps),")
     content = content.replace("Vellakinar Post,", "Kurumbapalayam (Po),")
     content = content.replace("Coimbatore - 641029", "Coimbatore \u2013 641 107") # \u2013 is en-dash
@@ -95,8 +95,8 @@ def rebrand_file(filepath):
 
     # Update bitrix.html branding if it's the bitrix.html file specifically
     if "bitrix.html" in filepath:
-        content = content.replace("Admission and Enquiry Form - SNS Academy", "Admission and Enquiry Form - SNS College of Physiotherapy")
-        content = content.replace("SNS Academy", "SNS College of Physiotherapy")
+        content = content.replace("Admission and Enquiry Form - SNS College of Physiotherapy", "Admission and Enquiry Form - SNS College of Physiotherapy")
+        content = content.replace("SNS College of Physiotherapy", "SNS College of Physiotherapy")
 
     # 4. Update Colors in Body (Utility classes)
     # Replace orange- derivatives with primary-

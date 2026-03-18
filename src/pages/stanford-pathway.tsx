@@ -16,7 +16,7 @@ export const StanfordPathwayPage = () => {
                 <div class="relative">
                     <div class="absolute -top-4 -left-4 w-24 h-24 bg-primary-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
                      <div class="rounded-2xl overflow-hidden shadow-2xl relative">
-                        <img src="/static/images/SNS Academy Web/Stanford-Trained Faculty.png" alt="Stanford Trained Faculty" class="w-full h-full object-cover">
+                        <img src="/static/images/SNS College of Physiotherapy Web/Stanford-Trained Faculty.png" alt="Stanford Trained Faculty" class="w-full h-full object-cover">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8">
                             <p class="text-white font-bold text-lg">World-Class Mentorship</p>
                             <p class="text-gray-300 text-sm">Direct guidance from industry experts</p>

@@ -6,7 +6,7 @@ export const SuccessStoriesPage = () => {
     ${PageHeader(
         'Success Stories',
         'Celebrating the achievements, breakthroughs, and inspiring journeys of our students who are making their mark in the world',
-        '/static/images/SNS Academy Web/Success.webp',
+        '/static/images/SNS College of Physiotherapy Web/Success.webp',
         'Success Stories'
     )}
 
@@ -229,7 +229,7 @@ export const SuccessStoriesPage = () => {
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-4xl font-bold text-gray-900 mb-6">Write Your Own Success Story</h2>
             <p class="text-xl text-gray-600 mb-8">
-                Join SNS Academy and become part of our legacy of excellence, innovation, and achievement!
+                Join SNS College of Physiotherapy and become part of our legacy of excellence, innovation, and achievement!
             </p>
             <a href="/admissions" class="inline-flex items-center bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl transition">
                 <i class="fas fa-pen-to-square mr-2"></i>

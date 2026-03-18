@@ -225,7 +225,7 @@
                     }
 
                     // 2. Replace Academy field with "Choose College" Read-only
-                    if (text.includes('SNSACD') || text.includes('SNS Academy') || text.includes('CBSE SCHOOL') || text.includes('College')) {
+                    if (text.includes('SNSACD') || text.includes('SNS College of Physiotherapy') || text.includes('CBSE SCHOOL') || text.includes('College')) {
                         label.textContent = "College *";
                         if (input && input.tagName !== 'SELECT' && !input.dataset.replaced) {
                             input.value = "SNS College of Physiotherapy";
