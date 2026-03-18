@@ -1,10 +1,10 @@
 export const MobileBottomNav = (activeTab: string = 'home') => {
     const tabs = [
-        { id: 'home', label: 'Home', icon: 'fa-home', href: '/mobile-app' },
-        { id: 'placements', label: 'Placements', icon: 'fa-chart-line', href: '#' },
-        { id: 'programs', label: 'Programs', icon: 'fa-graduation-cap', href: '#' },
-        { id: 'innovation', label: 'Innovation', icon: 'fa-lightbulb', href: '#' },
-        { id: 'portals', label: 'Portals', icon: 'fa-th-large', href: '#' }
+        { id: 'home', label: 'Home', icon: 'fa-home', href: '/' },
+        { id: 'placements', label: 'Placements', icon: 'fa-chart-line', href: 'https://iipc.snsgroups.com/' },
+        { id: 'programs', label: 'Programs', icon: 'fa-graduation-cap', href: '/academics/bpt/index.html' },
+        { id: 'about', label: 'About Us', icon: 'fa-info-circle', href: '/about' },
+        { id: 'apply', label: 'Apply', icon: 'fa-pen-to-square', href: '/admissions' }
     ];
 
     return `

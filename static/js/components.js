@@ -479,7 +479,7 @@ mobileNavTemplate.innerHTML = `
             <i class="fas fa-home"></i>
             <span>Home</span>
         </a>
-        <a href="#" class="nav-item">
+        <a href="https://iipc.snsgroups.com/" target="_blank" class="nav-item">
             <i class="fas fa-chart-line"></i>
             <span>Placements</span>
         </a>
@@ -489,13 +489,13 @@ mobileNavTemplate.innerHTML = `
             </div>
             <span>Programs</span>
         </a>
-        <a href="/innovation" class="nav-item" data-page="innovation">
-            <i class="fas fa-lightbulb"></i>
-            <span>Innovation</span>
+        <a href="/about" class="nav-item" data-page="about">
+            <i class="fas fa-info-circle"></i>
+            <span>About Us</span>
         </a>
-        <a href="#" class="nav-item" data-page="portals">
-            <i class="fas fa-th-large"></i>
-            <span>Portals</span>
+        <a href="/admissions" class="nav-item" data-page="apply">
+            <i class="fas fa-pen-to-square"></i>
+            <span>Apply</span>
         </a>
     </div>
 `;
@@ -509,7 +509,7 @@ class AppMobileNav extends HTMLElement {
     setActiveItem() {
         const path = window.location.pathname;
         const items = this.querySelectorAll('.nav-item');
-        
+
         items.forEach(item => {
             const href = item.getAttribute('href');
             if (href === '/' && (path === '/' || path === '/index.html')) {
