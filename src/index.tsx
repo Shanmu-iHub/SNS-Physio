@@ -119,4 +119,9 @@ app.get('/success-stories', (c) => {
 
 // Stanford Pathway Page
 
+// Catch-all route to always open the home page for missing or unknown routes
+app.notFound((c) => {
+    return c.redirect('/')
+})
+
 export default app

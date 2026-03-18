@@ -58,7 +58,7 @@ def rebrand_file(filepath):
     
     # Phone
     content = content.replace("+91 96299 37861", "+91 90036 55855")
-    content = content.replace("+91 75300 93730", "+91 99527 94297")
+    content = content.replace("+91 75300 93730", "09840246474")
     
     # Email
     content = content.replace("info@snsacademy.org", "snsphysio@gmail.com")

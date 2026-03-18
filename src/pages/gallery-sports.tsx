@@ -534,11 +534,18 @@ export const BrochurePage = () => {
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                    <a href="/static/SNS%20Physiotherapy%20Brochure.pdf" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
+                    <a href="#" onclick="handleBrochureDownload(event)" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
                         <i class="fas fa-download mr-2"></i>
-                        Download Brochure
+                        Download PDF Brochure
                     </a>
                 </div>
+
+                <script>
+                async function handleBrochureDownload(e) {
+                    e.preventDefault();
+                    window.open('/brochure-viewer/', '_blank');
+                }
+                </script>
                 
                 <p class="text-sm text-gray-600">
                     For printed copies, contact us at <a href="tel:+919003655855" class="text-blue-600 hover:underline">+91 90036 55855</a>

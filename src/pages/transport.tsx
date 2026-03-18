@@ -65,56 +65,100 @@ export const TransportPage = () => {
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                 <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold mb-6 text-blue-600 flex items-center">
+                    <h3 class="text-2xl font-bold mb-6 text-primary-600 flex items-center">
                         <i class="fas fa-map-marker-alt mr-3"></i>
-                        Mettupalayam
+                        Central Coimbatore
                     </h3>
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Karamadai</span>
+                            <span>RS Puram</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Mathampalayam</span>
+                            <span>Race Course</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Avinashi Road Route</span>
+                            <span>Town Hall</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Gandhipuram</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Saibaba Colony</span>
                         </li>
                     </ul>
                 </div>
-                
+
                 <div class="bg-white rounded-2xl p-8 shadow-lg">
                     <h3 class="text-2xl font-bold mb-6 text-purple-600 flex items-center">
                         <i class="fas fa-map-marker-alt mr-3"></i>
-                        Sathyamangalam
+                        East Coimbatore
                     </h3>
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Puliampatti</span>
+                            <span>Peelamedu</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Annur</span>
+                            <span>Hopes College</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Singanallur</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Ramanathapuram</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Ganapathy</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Vilankurichi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Kalapatti</span>
                         </li>
                     </ul>
                 </div>
-                
+
                 <div class="bg-white rounded-2xl p-8 shadow-lg">
                     <h3 class="text-2xl font-bold mb-6 text-green-600 flex items-center">
                         <i class="fas fa-map-marker-alt mr-3"></i>
-                        Tiruppur
+                        West & South
                     </h3>
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Avinashi</span>
+                            <span>Vadavalli</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Mangalam Road</span>
+                            <span>Thudiyalur</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Podanur</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Ukkadam</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Kuniyamuthur</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Kovaipudur</span>
                         </li>
                     </ul>
                 </div>
@@ -122,16 +166,24 @@ export const TransportPage = () => {
                 <div class="bg-white rounded-2xl p-8 shadow-lg">
                     <h3 class="text-2xl font-bold mb-6 text-red-600 flex items-center">
                         <i class="fas fa-map-marker-alt mr-3"></i>
-                        Nearby Regions
+                        North & North-West
                     </h3>
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Kurumbapalayam</span>
+                            <span>Mettupalayam (via Thudiyalur)</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span>Saravanampatti</span>
+                            <span>Karamadai</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>G.N. Mills</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>NGGO Colony</span>
                         </li>
                     </ul>
                 </div>

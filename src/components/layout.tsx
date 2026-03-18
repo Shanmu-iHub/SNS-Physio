@@ -333,13 +333,13 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
             </div>
         </div>
         
-        <!-- Hanging Tag 2: Clinical -->
-        <div class="fixed top-[36%] right-0 z-50 swing" style="animation-delay: 0.3s;">
+        <!-- Hanging Tag 2: Brochure -->
+        <a href="/brochure-viewer" target="_blank" class="fixed top-[36%] right-0 z-50 swing" style="animation-delay: 0.3s; display: block;">
             <div class="bg-gradient-to-br from-primary-600 to-primary-800 text-white px-4 py-8 rounded-l-2xl shadow-2xl flex flex-col items-center space-y-3 group transition-all">
-                <i class="fas fa-hospital text-2xl group-hover:scale-110 transition-transform duration-300"></i>
-                <span class="font-extrabold text-sm uppercase tracking-widest" style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">CLINICAL</span>
+                <i class="fas fa-book-open text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                <span class="font-extrabold text-sm uppercase tracking-widest" style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">BROCHURE</span>
             </div>
-        </div>
+        </a>
         
         <!-- Floating CTA Button (Mobile) -->
         <div class="fixed bottom-6 left-6 z-50 lg:hidden">
@@ -538,7 +538,7 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                         <ul class="space-y-2 text-sm mb-4">
                             <li><i class="fas fa-map-marker-alt mr-2"></i>SNS College of Physiotherapy,<br />SNS Kalvi Nagar, Sathy Main Road,<br />Kurumbapalayam (Po),<br />Coimbatore - 641107.</li>
                             <li><a href="tel:+919003655855" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>Admission: +91 90036 55855</a></li>
-                            <li><a href="tel:+919952794297" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>General: +91 99527 94297</a></li>
+                            <li><a href="tel:09840246474" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>General: 09840246474</a></li>
                             <li><a href="mailto:snsphysio@gmail.com" class="hover:text-white transition"><i class="fas fa-envelope mr-2"></i>snsphysio@gmail.com</a></li>
                             <li><a href="mailto:job@snsgroups.com" class="hover:text-white transition"><i class="fas fa-briefcase mr-2"></i>Career: job@snsgroups.com</a></li>
                         </ul>

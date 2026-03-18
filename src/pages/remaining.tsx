@@ -650,7 +650,7 @@ export const ContactPage = () => {
                             <i class="fas fa-phone text-3xl text-primary-600 mr-4"></i>
                             <div>
                                 <h3 class="font-bold text-xl mb-2">Phone</h3>
-                                <p class="text-gray-700">Admission: +91 90036 55855<br>General: +91 99527 94297</p>
+                                <p class="text-gray-700">Admission: +91 90036 55855<br>General: 09840246474</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -1014,136 +1014,180 @@ export const AdmissionsPage = () => {
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-white rounded-2xl p-8 shadow-lg">
                 <h3 class="text-2xl md:text-3xl font-bold mb-6 text-center">Admission and Enquiry Form</h3>
-                
-                <!-- Bitrix24 Form with Custom Styling -->
-                <style>
-                    /* Bitrix Form Custom Styles */
-                    .b24-form-wrapper {
-                        background: transparent !important;
-                        border: none !important;
-                        padding: 0 !important;
-                        box-shadow: none !important;
-                    }
-                    
-                    .b24-form-header {
-                        display: none !important;
-                    }
-                    
-                    .b24-form-field {
-                        margin-bottom: 24px !important;
-                    }
-                    
-                    /* Remove Bitrix auto separators */
-                    .b24-form-separator,
-                    .b24-form-field-separator,
-                    .b24-form-field::before,
-                    .b24-form-field::after {
-                        display: none !important;
-                        content: none !important;
-                        height: 0 !important;
-                        border: none !important;
-                    }
-                    
-                    /* Hide labels visually but keep for Bitrix logic */
-                    .b24-form-control-label {
-                        position: absolute !important;
-                        opacity: 0 !important;
-                        pointer-events: none !important;
-                    }
-                    
-                    /* Input styling */
-                    .b24-form-control {
-                        width: 100% !important;
-                        background: #ffffff !important;
-                        border: 1px solid #dfe3e8 !important;
-                        border-radius: 14px !important;
-                        padding: 16px 18px !important;
-                        font-size: 15px !important;
-                        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
-                        color: #111 !important;
-                        box-shadow: none !important;
-                    }
-                    
-                    .b24-form-control::placeholder {
-                        color: #9aa0a6 !important;
-                        font-weight: 400;
-                    }
-                    
-                    .b24-form-control:focus {
-                        border-color: #111 !important;
-                        outline: none !important;
-                    }
-                    
-                    /* Dropdown styling */
-                    .b24-form-dropdown {
-                        border-radius: 14px !important;
-                        border: 1px solid #fcfcfc !important;
-                        box-shadow: 0 12px 28px rgba(0,0,0,0.12) !important;
-                    }
-                    
-                    .b24-form-dropdown-item {
-                        padding: 14px 18px !important;
-                        font-size: 15px !important;
-                        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
-                    }
-                    
-                    .b24-form-dropdown-item:hover {
-                        background: #f5f6f8 !important;
-                    }
-                    
-                    /* Submit button */
-                    .b24-form-btn {
-                        width: 100% !important;
-                        margin-top: 28px !important;
-                        padding: 18px !important;
-                        border-radius: 16px !important;
-                        background: #9298CB !important;
-                        color: #000 !important;
-                        font-size: 18px !important;
-                        font-weight: 600 !important;
-                        border: none !important;
-                        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
-                        cursor: pointer !important;
-                        transition: all 0.3s ease !important;
-                    }
-                    
-                    .b24-form-btn:hover {
-                        background: #7a7fac !important;
-                        transform: translateY(-1px);
-                    }
-                    
-                    /* Footer text */
-                    .b24-form-sign {
-                        margin-top: 20px !important;
-                        font-size: 13px !important;
-                        color: #9aa0a6 !important;
-                    }
-                </style>
-                
-                <script data-b24-form="inline/18/m4ecvi" data-skip-moving="true">
-                (function(w,d,u){
-                    var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
-                    var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-                })(window,document,'https://cdn.bitrix24.com/b11752903/crm/form/loader_18.js');
-                </script>
-                
+                             <form id="admissionForm" class="space-y-6" novalidate>
+                    <!-- Full Name -->
+                    <div>
+                        <label for="fullName" class="block text-sm font-medium text-gray-700 mb-2">Full Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="fullName" name="fullName" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all" placeholder="Enter your full name">
+                        <p class="hidden text-red-500 text-sm mt-1" id="fullNameError">Full Name is required</p>
+                    </div>
+
+                    <!-- Course Selection -->
+                    <div>
+                        <label for="course" class="block text-sm font-medium text-gray-700 mb-2">Course Selection <span class="text-red-500">*</span></label>
+                        <select id="course" name="course" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all appearance-none bg-white">
+                            <option value="" disabled selected>Select a course</option>
+                            <option value="BPT">BPT</option>
+                            <option value="MPT">MPT</option>
+                        </select>
+                        <p class="hidden text-red-500 text-sm mt-1" id="courseError">Please select a course</p>
+                    </div>
+
+                    <!-- Email ID -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email ID <span class="text-red-500">*</span></label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all" placeholder="Enter your email address">
+                        <p class="hidden text-red-500 text-sm mt-1" id="emailError">Please enter a valid email address</p>
+                    </div>
+
+                    <!-- Date of Birth -->
+                    <div>
+                        <label for="dob" class="block text-sm font-medium text-gray-700 mb-2">Date of Birth <span class="text-red-500">*</span></label>
+                        <input type="date" id="dob" name="dob" required min="2000-01-01" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all">
+                        <p class="hidden text-red-500 text-sm mt-1" id="dobError">Please select a valid date of birth (no future dates)</p>
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number <span class="text-red-500">*</span></label>
+                        <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all" placeholder="Enter phone number with country code (e.g., +91...)" maxlength="15">
+                        <p class="hidden text-red-500 text-sm mt-1" id="phoneError">Please enter a valid phone number with country code</p>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" id="submitBtn" class="w-full py-4 px-6 rounded-xl bg-primary-500 hover:bg-primary-600 text-white font-bold text-lg transition-all transform hover:-translate-y-1 hover:shadow-lg flex justify-center items-center">
+                        <span id="btnText">Apply Now</span>
+                        <svg id="btnLoader" class="hidden animate-spin ml-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                    </button>
+                </form>
+
+                <!-- Success Message -->
+                <div id="successMessage" class="hidden mt-6 p-4 bg-green-50 rounded-xl border border-green-200 text-center">
+                    <i class="fas fa-check-circle text-green-500 text-3xl mb-3"></i>
+                    <h4 class="text-lg font-bold text-green-800">Application Submitted</h4>
+                    <p class="text-green-700 mt-2">Your application has been submitted successfully. Our team will contact you soon.</p>
+                </div>
+
                 <script>
-                /* Placeholder + Asterisk Fix */
-                setTimeout(function () {
-                    document.querySelectorAll('.b24-form-field').forEach(function (field) {
-                        const label = field.querySelector('.b24-form-control-label');
-                        const input = field.querySelector('.b24-form-control');
-                        
-                        if (label && input) {
-                            let text = label.textContent.replace(/\\s*\\*$/, '').trim();
-                            let required = label.textContent.includes('*');
-                            input.placeholder = required ? text + ' *' : text;
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const form = document.getElementById('admissionForm');
+                        const dobInput = document.getElementById('dob');
+
+                        // Set max date to today for DOB
+                        const todayDate = new Date();
+                        const today = todayDate.toISOString().split('T')[0];
+                        dobInput.max = today;
+
+                        // Custom validation function
+                        function validateField(input, errorElement, condition) {
+                            if (condition) {
+                                input.classList.remove('border-red-500', 'focus:ring-red-500');
+                                input.classList.add('border-gray-300', 'focus:ring-primary-500');
+                                errorElement.classList.add('hidden');
+                                return true;
+                            } else {
+                                input.classList.remove('border-gray-300', 'focus:ring-primary-500');
+                                input.classList.add('border-red-500', 'focus:ring-red-500');
+                                errorElement.classList.remove('hidden');
+                                return false;
+                            }
                         }
+
+                        function validateForm() {
+                            let isValid = true;
+
+                            // Full Name
+                            const fullName = document.getElementById('fullName');
+                            const fullNameError = document.getElementById('fullNameError');
+                            isValid = validateField(fullName, fullNameError, fullName.value.trim() !== '') && isValid;
+
+                            // Course
+                            const course = document.getElementById('course');
+                            const courseError = document.getElementById('courseError');
+                            isValid = validateField(course, courseError, course.value !== '') && isValid;
+
+                            // Email
+                            const email = document.getElementById('email');
+                            const emailError = document.getElementById('emailError');
+                            const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+                            isValid = validateField(email, emailError, emailRegex.test(email.value.trim())) && isValid;
+
+                            // Date of Birth
+                            const dobError = document.getElementById('dobError');
+                            const selectedDate = new Date(dobInput.value);
+                            const minDate = new Date('2000-01-01');
+                            isValid = validateField(dobInput, dobError, dobInput.value !== '' && selectedDate >= minDate && selectedDate <= todayDate) && isValid;
+
+                            // Phone
+                            const phone = document.getElementById('phone');
+                            const phoneError = document.getElementById('phoneError');
+                            const phoneRegex = /^\\+?[0-9\\s\\-]{10,15}$/;
+                            isValid = validateField(phone, phoneError, phoneRegex.test(phone.value.trim())) && isValid;
+
+                            return isValid;
+                        }
+
+                        // Add real-time validation removing error on input
+                        const inputs = form.querySelectorAll('input, select');
+                        inputs.forEach(input => {
+                            input.addEventListener('input', function () {
+                                if (input.classList.contains('border-red-500')) {
+                                    const errorElement = document.getElementById(input.id + 'Error');
+                                    let truthy = true;
+                                    if (input.id === 'phone' && !/^\\+?[0-9\\s\\-]{10,15}$/.test(input.value)) truthy = false;
+                                    if (input.id === 'email' && !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(input.value)) truthy = false;
+                                    if (input.value.trim() === '') truthy = false;
+
+                                    if (truthy) validateField(input, errorElement, true);
+                                }
+                            });
+                        });
+
+                        // Allow only numbers and + in phone
+                        document.getElementById('phone').addEventListener('input', function (e) {
+                            this.value = this.value.replace(/[^\\d+\\s-]/g, '').substring(0, 15);
+                        });
+
+                        form.addEventListener('submit', function (e) {
+                            e.preventDefault();
+
+                            if (validateForm()) {
+                                const btnText = document.getElementById('btnText');
+                                const btnLoader = document.getElementById('btnLoader');
+                                const submitBtn = document.getElementById('submitBtn');
+                                const successMsg = document.getElementById('successMessage');
+
+                                // Show loading state
+                                btnText.textContent = 'Submitting...';
+                                btnLoader.classList.remove('hidden');
+                                submitBtn.disabled = true;
+                                submitBtn.classList.add('opacity-75', 'cursor-not-allowed', 'pointer-events-none');
+
+                                // Simulate API Call
+                                setTimeout(() => {
+                                    // Reset button
+                                    btnText.textContent = 'Apply Now';
+                                    btnLoader.classList.add('hidden');
+                                    submitBtn.disabled = false;
+                                    submitBtn.classList.remove('opacity-75', 'cursor-not-allowed', 'pointer-events-none');
+
+                                    // Clear form
+                                    form.reset();
+
+                                    // Redirect to homepage
+                                    window.location.href = '/';
+
+                                }, 1500);
+                            }
+                        });
+
                     });
-                }, 500);
                 </script>
             </div>
         </div>
-    </section>
+    </section>ion>
   `;
 };
