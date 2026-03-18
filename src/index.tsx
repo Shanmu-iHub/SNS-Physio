@@ -102,6 +102,24 @@ app.get('/brochure', (c) => {
     return c.html(Layout(BrochurePage(), 'Digital Brochure', 'brochure'))
 })
 
+app.get('/brochure-viewer', (c) => {
+    return c.html(`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNS Institutions Brochure</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #f3f4f6; }
+        iframe { width: 100%; height: 100%; border: none; }
+    </style>
+</head>
+<body>
+    <iframe src="https://online.fliphtml5.com/ldlzd/SNS-Institutions-Brochure-2025/" title="SNS Institutions Brochure 2025" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+</body>
+</html>`)
+})
+
 // Transport Page
 app.get('/transport', (c) => {
     return c.html(Layout(TransportPage(), 'Transport Services', 'transport'))
