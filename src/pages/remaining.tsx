@@ -605,7 +605,7 @@ export const AboutPage = () => {
                 <!-- Technical Director -->
                 <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition duration-300">
                     <div class="flex items-center mb-6">
-                        <img src="/static/images/td_new.png" alt="Nalin SNS" class="w-20 h-20 rounded-full object-cover mr-4 border-2 border-white shadow-sm">
+                        <img src="/static/images/physio/nalin_sns.png" alt="Nalin SNS" class="w-20 h-20 rounded-full object-cover mr-4 border-2 border-white shadow-sm">
                         <div>
                             <h3 class="text-xl font-bold text-gray-900">Nalin SNS</h3>
                             <p class="text-primary-600 text-sm font-semibold mt-1">Technical Director</p>
