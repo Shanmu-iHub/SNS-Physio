@@ -3,8 +3,8 @@ export const MobileBottomNav = (activeTab: string = 'home') => {
         { id: 'home', label: 'Home', icon: 'fa-home', href: '/' },
         { id: 'placements', label: 'Placements', icon: 'fa-chart-line', href: 'https://iipc.snsgroups.com/' },
         { id: 'programs', label: 'Programs', icon: 'fa-graduation-cap', href: '/academics/bpt/index.html' },
-        { id: 'about', label: 'About Us', icon: 'fa-info-circle', href: '/about' },
-        { id: 'apply', label: 'Apply', icon: 'fa-pen-to-square', href: '/admissions' }
+        { id: 'about', label: 'About Us', icon: 'fa-info-circle', href: '/about/index.html' },
+        { id: 'apply', label: 'Apply', icon: 'fa-pen-to-square', href: '/admissions/index.html' }
     ];
 
     return `

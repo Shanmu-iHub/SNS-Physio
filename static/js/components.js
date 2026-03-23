@@ -489,11 +489,11 @@ mobileNavTemplate.innerHTML = `
             </div>
             <span>Programs</span>
         </a>
-        <a href="/about" class="nav-item" data-page="about">
+        <a href="/about/index.html" class="nav-item" data-page="about">
             <i class="fas fa-info-circle"></i>
             <span>About Us</span>
         </a>
-        <a href="/admissions" class="nav-item" data-page="apply">
+        <a href="/admissions/index.html" class="nav-item" data-page="apply">
             <i class="fas fa-pen-to-square"></i>
             <span>Apply</span>
         </a>
