@@ -59,7 +59,7 @@ export const ParentsTestimonialsCarousel = () => {
                                     </div>
                                     <div>
                                         <h4 class="text-xl font-bold text-gray-900">Mr. Rajesh Kumar</h4>
-                                        <p class="text-gray-600">Parent of Grade VII Student</p>
+                                        <p class="text-gray-600">Parent of III Year Student</p>
                                     </div>
                                 </div>
                                 <div class="mb-4">
@@ -88,7 +88,7 @@ export const ParentsTestimonialsCarousel = () => {
                                     </div>
                                     <div>
                                         <h4 class="text-xl font-bold text-gray-900">Mrs. Anita Menon</h4>
-                                        <p class="text-gray-600">Parent of Grade V Student</p>
+                                        <p class="text-gray-600">Parent of II Year Student</p>
                                     </div>
                                 </div>
                                 <div class="mb-4">
