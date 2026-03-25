@@ -458,67 +458,67 @@ export const AboutPage = () => {
                     
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- Pillar 1 -->
-                        <div class="bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition duration-300">
-                            <div class="h-48 overflow-hidden">
-                                <img src="/static/images/Learning.png" alt="Learning" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                            </div>
-                            <div class="p-8">
-                                <h3 class="text-xl font-bold mb-3 text-gray-900">1. Learning & Teaching</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed">
-                                    Practice Design Thinking-Based Academic Learning & Teaching. We move from rote memorization to active understanding.
-                                </p>
+                        <div class="bg-white rounded-3xl p-8 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-gray-50 hover:shadow-xl transition duration-500">
+                            <div class="flex flex-col sm:flex-row items-start gap-6">
+                                <div class="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0">
+                                    <img src="/static/images/Learning.png" alt="Learning" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-gray-900">1. Learning & Teaching</h3>
+                                    <p class="text-gray-500 text-sm leading-relaxed">Practice Design Thinking-Based Academic Learning & Teaching. We move from rote memorization to active understanding.</p>
+                                </div>
                             </div>
                         </div>
                         
                         <!-- Pillar 2 -->
-                        <div class="bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition duration-300">
-                            <div class="h-48 overflow-hidden">
-                                <img src="/static/images/Skill.png" alt="Skill Development" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                            </div>
-                            <div class="p-8">
-                                <h3 class="text-xl font-bold mb-3 text-gray-900">2. Skill & Career Development</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed">
-                                    Build life skills through various clubs and contests. Preparing students for careers that don't even exist yet.
-                                </p>
+                        <div class="bg-white rounded-3xl p-8 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-gray-50 hover:shadow-xl transition duration-500">
+                            <div class="flex flex-col sm:flex-row items-start gap-6">
+                                <div class="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0">
+                                    <img src="/static/images/Skill.png" alt="Skill Development" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-gray-900">2. Skill & Career Development</h3>
+                                    <p class="text-gray-500 text-sm leading-relaxed">Build life skills through various clubs and contests. Preparing students for careers that don't even exist yet.</p>
+                                </div>
                             </div>
                         </div>
                         
                         <!-- Pillar 3 -->
-                        <div class="bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition duration-300">
-                            <div class="h-48 overflow-hidden">
-                                <img src="/static/images/Creativity.png" alt="Creativity" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                            </div>
-                            <div class="p-8">
-                                <h3 class="text-xl font-bold mb-3 text-gray-900">3. Centre for Creativity</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed">
-                                    Hands-on experience solving key industrial problems with latest technologies in our Innovation Hub.
-                                </p>
+                        <div class="bg-white rounded-3xl p-8 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-gray-50 hover:shadow-xl transition duration-500">
+                            <div class="flex flex-col sm:flex-row items-start gap-6">
+                                <div class="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0">
+                                    <img src="/static/images/Creativity.png" alt="Creativity" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-gray-900">3. Centre for Creativity</h3>
+                                    <p class="text-gray-500 text-sm leading-relaxed">Hands-on experience solving key industrial problems with latest technologies in our Innovation Hub.</p>
+                                </div>
                             </div>
                         </div>
                         
                         <!-- Pillar 4 -->
-                        <div class="bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition duration-300">
-                            <div class="h-48 overflow-hidden">
-                                <img src="/static/images/IIPC.png" alt="Industry Partnership" class="w-full h-full object-cover transform group-hover:scale-100 transition duration-700">
-                            </div>
-                            <div class="p-8">
-                                <h3 class="text-xl font-bold mb-3 text-gray-900">4. Industry Partnership</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed">
-                                    Connecting classrooms with boardrooms. Students learn business sense directly from industry leaders.
-                                </p>
+                        <div class="bg-white rounded-3xl p-8 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-gray-50 hover:shadow-xl transition duration-500">
+                            <div class="flex flex-col sm:flex-row items-start gap-6">
+                                <div class="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0">
+                                    <img src="/static/images/Innovation.png" alt="Innovation Hub" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-gray-900">4. Innovation Hub</h3>
+                                    <p class="text-gray-500 text-sm leading-relaxed">Hub for research and innovation. Where ideas transform into reality through interdisciplinary collaboration.</p>
+                                </div>
                             </div>
                         </div>
                         
                         <!-- Pillar 5 -->
-                        <div class="bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition duration-300">
-                            <div class="h-48 overflow-hidden">
-                                <img src="/static/images/SRI.png" alt="Social Responsibility" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                            </div>
-                            <div class="p-8">
-                                <h3 class="text-xl font-bold mb-3 text-gray-900">5. Social Responsibility</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed">
-                                    Cultivating compassion. Giving back to society through impactful social service initiatives.
-                                </p>
+                        <div class="bg-white rounded-3xl p-8 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-gray-50 hover:shadow-xl transition duration-500">
+                            <div class="flex flex-col sm:flex-row items-start gap-6">
+                                <div class="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0">
+                                    <img src="/static/images/SRI.png" alt="Social Responsibility" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-gray-900">5. Social Responsibility</h3>
+                                    <p class="text-gray-500 text-sm leading-relaxed">Cultivating compassion. Giving back to society through impactful social service initiatives.</p>
+                                </div>
                             </div>
                         </div>
                         
@@ -569,48 +569,49 @@ export const AboutPage = () => {
 
             <div class="grid lg:grid-cols-3 gap-10">
                 <!-- Founder Chairman -->
-                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition duration-300">
-                    <div class="flex items-center mb-6">
-                        <img src="/static/images/chairman.png" alt="Dr. S.N. Subbramanian" class="w-20 h-20 rounded-full object-cover mr-4 border-2 border-white shadow-sm">
+                <div class="bg-white rounded-[2.5rem] p-10 shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-gray-50 hover:shadow-[0_25px_60px_rgba(0,0,0,0.1)] transition duration-500">
+                    <div class="flex items-center mb-8">
+                        <img src="/static/images/chairman.png" alt="Dr. S.N. Subbramanian" class="w-24 h-24 rounded-full object-cover mr-6 border-4 border-white shadow-md">
                         <div>
-                            <h3 class="text-xl font-bold text-gray-900"><span class="text-[70%]">Deiva Thiru</span><br/><span class="text-[90%] font-[900]">Dr. S.N. Subbramanian</span></h3>
-                            <p class="text-primary-600 text-sm font-semibold mt-1">Founder Chairman</p>
+                            <p class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-1">Deiva Thiru</p>
+                            <h3 class="text-2xl font-black text-gray-900 leading-tight">Dr. S.N. Subbramanian</h3>
+                            <p class="text-[#ff0080] text-sm font-extrabold mt-1">Founder Chairman</p>
                         </div>
                     </div>
                     <div class="space-y-4">
-                        <p class="text-gray-600 text-sm leading-relaxed italic">
+                        <p class="text-gray-500 text-[15px] leading-relaxed italic font-medium">
                             "We believe that every student is a design thinker. Through our unique Design Thinking framework and 3P Culture, we prepare students not just for exams, but for life."
                         </p>
                     </div>
                 </div>
 
                 <!-- Correspondent -->
-                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition duration-300">
-                    <div class="flex items-center mb-6">
-                        <img src="/static/images/correspondent.png" alt="Dr. S. Rajalakshmi" class="w-20 h-20 rounded-full object-cover mr-4 border-2 border-white shadow-sm">
+                <div class="bg-white rounded-[2.5rem] p-10 shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-gray-50 hover:shadow-[0_25px_60px_rgba(0,0,0,0.1)] transition duration-500">
+                    <div class="flex items-center mb-8">
+                        <img src="/static/images/correspondent.png" alt="Dr. S. Rajalakshmi" class="w-24 h-24 rounded-full object-cover mr-6 border-4 border-white shadow-md">
                         <div>
-                            <h3 class="text-xl font-bold text-gray-900">Dr. S. Rajalakshmi</h3>
-                            <p class="text-primary-600 text-sm font-semibold mt-1">Chairman / Correspondent</p>
+                            <h3 class="text-2xl font-black text-gray-900 leading-tight">Dr. S. Rajalakshmi</h3>
+                            <p class="text-[#ff0080] text-sm font-extrabold mt-1">Chairman / Correspondent</p>
                         </div>
                     </div>
                     <div class="space-y-4">
-                        <p class="text-gray-600 text-sm leading-relaxed italic">
+                        <p class="text-gray-500 text-[15px] leading-relaxed italic font-medium">
                             "We focus on holistic development through our 5 Pillars Mission. Our experienced faculty nurtures each student's unique potential, preparing them for global opportunities."
                         </p>
                     </div>
                 </div>
 
                 <!-- Technical Director -->
-                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition duration-300">
-                    <div class="flex items-center mb-6">
-                        <img src="/static/images/physio/nalin_sns.png" alt="Nalin SNS" class="w-20 h-20 rounded-full object-contain p-1 bg-white mr-4 border-2 border-white shadow-sm">
+                <div class="bg-white rounded-[2.5rem] p-10 shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-gray-50 hover:shadow-[0_25px_60px_rgba(0,0,0,0.1)] transition duration-500">
+                    <div class="flex items-center mb-8">
+                        <img src="/static/images/physio/nalin_sns.png" alt="Nalin SNS" class="w-24 h-24 rounded-full object-contain p-2 bg-white mr-6 border-4 border-white shadow-md">
                         <div>
-                            <h3 class="text-xl font-bold text-gray-900">Nalin SNS</h3>
-                            <p class="text-primary-600 text-sm font-semibold mt-1">Technical Director</p>
+                            <h3 class="text-2xl font-black text-gray-900 leading-tight">Nalin SNS</h3>
+                            <p class="text-[#ff0080] text-sm font-extrabold mt-1">Technical Director</p>
                         </div>
                     </div>
                     <div class="space-y-4">
-                        <p class="text-gray-600 text-sm leading-relaxed italic">
+                        <p class="text-gray-500 text-[15px] leading-relaxed italic font-medium">
                             "We aim to build <strong class='text-gray-900'>1000 AI startups in 10 years</strong>. SNS iHub serves as India's Y-Combinator, focused on SHAAARP industries and RADICAL technologies."
                         </p>
                     </div>

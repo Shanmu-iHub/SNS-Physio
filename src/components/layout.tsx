@@ -550,7 +550,7 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                         </div>
                         <p class="text-sm leading-relaxed">
                             Affiliation: M.G.R Medical University<br>
-                            Established: 1997<br>
+                            Established: 2020<br>
                             Coimbatore, Tamil Nadu
                         </p>
                     </div>
