@@ -122,8 +122,28 @@ export const MandatoryDisclosurePage = () => {
                         </tr>
                         <tr class="hover:bg-gray-50">
                             <td class="border border-gray-300 px-4 py-3">8</td>
-                            <td class="border border-gray-300 px-4 py-3">Copies of Valid Water, Health and Sanitation Certificates</td>
-                            <td class="border border-gray-300 px-4 py-3"><a href="#" target="_blank" class="text-primary-600 hover:underline font-semibold">View Document</a></td>
+                            <td class="border border-gray-300 px-4 py-3">Copy of Valid Sanitary Certificate</td>
+                            <td class="border border-gray-300 px-4 py-3"><a href="/static/7.sanitary certificate.pdf" target="_blank" class="text-primary-600 hover:underline font-semibold">View Document</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-3">9</td>
+                            <td class="border border-gray-300 px-4 py-3">Copy of Building License</td>
+                            <td class="border border-gray-300 px-4 py-3"><a href="/static/5.BUILDING LISCENCE.pdf" target="_blank" class="text-primary-600 hover:underline font-semibold">View Document</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-3">10</td>
+                            <td class="border border-gray-300 px-4 py-3">Copy of FORM-D License</td>
+                            <td class="border border-gray-300 px-4 py-3"><a href="/static/4.FORM D- LICENSE.pdf" target="_blank" class="text-primary-600 hover:underline font-semibold">View Document</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-3">11</td>
+                            <td class="border border-gray-300 px-4 py-3">Copy of Health and Family Welfare</td>
+                            <td class="border border-gray-300 px-4 py-3"><a href="/static/3.G O.pdf" target="_blank" class="text-primary-600 hover:underline font-semibold">View Document</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-3">12</td>
+                            <td class="border border-gray-300 px-4 py-3">Copy of Charitable Trust</td>
+                            <td class="border border-gray-300 px-4 py-3"><a href="/static/2. TRUST DEED.pdf" target="_blank" class="text-primary-600 hover:underline font-semibold">View Document</a></td>
                         </tr>
                     </tbody>
                 </table>

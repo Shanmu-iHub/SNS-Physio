@@ -82,7 +82,7 @@ export const GalleryPage = () => {
                         <i class="fas fa-school text-4xl text-purple-600"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4">B Block</h3>
-                    <p class="text-gray-700 text-center">Secondary education wing with advanced facilities</p>
+                    <p class="text-gray-700 text-center">Secondary block with advanced facilities</p>
                 </div>
                 
                 <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 shadow-lg">
@@ -90,7 +90,7 @@ export const GalleryPage = () => {
                         <i class="fas fa-landmark text-4xl text-green-600"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4">C Block</h3>
-                    <p class="text-gray-700 text-center">Senior secondary and administrative block</p>
+                    <p class="text-gray-700 text-center">Administrative block</p>
                 </div>
             </div>
 
@@ -524,56 +524,49 @@ export const BrochurePage = () => {
         'Brochure'
     )}
 
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-gray-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-12 text-center shadow-xl">
-                <i class="fas fa-file-pdf text-8xl text-red-600 mb-8"></i>
-                <h2 class="text-4xl font-bold mb-4">SNS College of Physiotherapy Prospectus</h2>
-                <p class="text-xl text-gray-700 mb-8">
+            <div class="bg-white rounded-[2rem] p-12 text-center shadow-xl card-shadow-lg max-w-3xl mx-auto border border-gray-100 relative z-10 -mt-8">
+                <i class="fas fa-file-pdf text-[5rem] text-red-600 mb-6 drop-shadow-sm"></i>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-gray-900">SNS College of Physiotherapy Prospectus</h2>
+                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
                     Comprehensive guide with complete information about our clinical programs, facilities, admission process, and fees structure.
                 </p>
                 
-                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                    <a href="#" onclick="handleBrochureDownload(event)" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
-                        <i class="fas fa-download mr-2"></i>
-                        Download PDF Brochure
+                <div class="flex justify-center mb-8">
+                    <a href="https://snscphysio.org/brochure-viewer/" target="_blank" class="bg-[#e43c3c] hover:bg-red-700 text-white px-8 py-3.5 rounded-xl font-bold text-lg transition-all hover:scale-105 shadow-md shadow-red-500/20 inline-flex items-center justify-center">
+                        <i class="fas fa-download mr-3"></i>
+                        Download Brochure
                     </a>
                 </div>
-
-                <script>
-                async function handleBrochureDownload(e) {
-                    e.preventDefault();
-                    window.open('/brochure-viewer/', '_blank');
-                }
-                </script>
                 
-                <p class="text-sm text-gray-600">
-                    For printed copies, contact us at <a href="tel:+919003655855" class="text-blue-600 hover:underline">+91 90036 55855</a>
+                <p class="text-sm text-gray-500">
+                    For printed copies, contact us at <a href="tel:+919629937861" class="text-blue-500 hover:underline font-medium">+91 96299 37861</a>
                 </p>
             </div>
             
-            <div class="mt-12 grid md:grid-cols-3 gap-8">
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
                         <i class="fas fa-graduation-cap text-3xl text-purple-600"></i>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Academic Programs</h3>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Academic Programs</h3>
                     <p class="text-sm text-gray-600">B.P.T & M.P.T curriculum details</p>
                 </div>
                 
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
                         <i class="fas fa-building text-3xl text-blue-600"></i>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Facilities Tour</h3>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Facilities Tour</h3>
                     <p class="text-sm text-gray-600">Complete infrastructure overview</p>
                 </div>
                 
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition-colors">
                         <i class="fas fa-rupee-sign text-3xl text-green-600"></i>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Fee Structure</h3>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Fee Structure</h3>
                     <p class="text-sm text-gray-600">Transparent pricing and payment options</p>
                 </div>
             </div>

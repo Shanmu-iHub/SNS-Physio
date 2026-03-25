@@ -190,6 +190,40 @@ export const EventsPage = () => {
                     </div>
                 </div>
 
+                <!-- Event 7: Raksha Bandhan -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer aspect-square">
+                    <div class="absolute inset-0">
+                        <img src="/static/images/physio/raksha_bandhan.png" alt="Raksha Bandhan"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    </div>
+                    <!-- Always visible title -->
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-6 group-hover:opacity-0 transition-opacity duration-300">
+                        <h3 class="text-white font-bold text-2xl">Raksha Bandhan</h3>
+                    </div>
+                    <!-- Hover overlay with full details -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-white font-bold text-2xl mb-2">Raksha Bandhan</h3>
+                            <p class="text-white/90 text-sm mb-3">Raksha Bandhan celebration at SNS College of
+                                Physiotherapy, honouring the bond of protection and care.</p>
+                            <div class="flex items-center text-white/80 text-xs space-x-4 mb-3">
+                                <span><i class="fas fa-calendar mr-1"></i> Aug 2025</span>
+                                <span><i class="fas fa-star mr-1"></i> Celebration</span>
+                            </div>
+                            <a href="https://www.instagram.com/snsinstitutions/" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center bg-white/20 hover:bg-white/30 backdrop-blur text-white px-4 py-2 rounded-lg text-xs font-semibold transition border border-white/30">
+                                <i class="fas fa-arrow-right mr-2"></i> Read More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-pink-600 text-white px-3 py-1 rounded-full text-xs font-bold">Celebration</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

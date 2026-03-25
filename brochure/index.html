@@ -3,26 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brochure - SNS College of Physiotherapy</title>
+    <title>Digital Brochure - SNS College of Physiotherapy</title>
+    
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f4f5f9',
+                            100: '#e8eaf2',
+                            200: '#d1d5e6',
+                            300: '#babfd9',
+                            400: '#a4a9cc',
+                            500: '#9298CB',
+                            600: '#7a7fac',
+                            700: '#62668d',
+                            800: '#4b4e6e',
+                            900: '#33354f',
+                            DEFAULT: '#9298CB',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Poppins', sans-serif; }
+        * { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
     </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Component injected via components.js -->
+<body class="bg-gray-50 antialiased overflow-x-hidden">
+    <!-- Header -->
     <app-header></app-header>
 
-    <section class="pt-32 pb-16 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <div class="bg-white rounded-3xl p-4 shadow-xl border border-gray-100">
-                <div style="position:relative;padding-top:max(60%,324px);width:100%;height:0;"><iframe style="position:absolute;border:none;width:100%;height:100%;left:0;top:0;" src="https://online.fliphtml5.com/ldlzd/SNS-Institutions-Brochure-2025/" title="SNS Institutions Brochure 2026" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div>
+    <!-- Hero Section -->
+    <div class="relative bg-gray-900 py-24 sm:py-32">
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="/static/images/physio/phy.jpg.jpeg" alt="Digital Brochure" class="w-full h-full object-cover opacity-30 object-center">
+            <div class="absolute inset-0 bg-gray-900/60 mix-blend-multiply"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <nav class="flex justify-center mb-4" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-2 text-sm text-gray-300">
+                    <li><a href="/" class="hover:text-white transition">Home</a></li>
+                    <li><i class="fas fa-chevron-right text-xs mx-2"></i></li>
+                    <li class="font-medium text-white">Brochure</li>
+                </ol>
+            </nav>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Digital Brochure</h1>
+            <p class="text-xl max-w-2xl mx-auto text-gray-200">
+                Download our complete prospectus and learn more about SNS College of Physiotherapy.
+            </p>
+        </div>
+    </div>
+
+    <!-- Brochure Content -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-[2rem] p-12 text-center shadow-xl max-w-3xl mx-auto border border-gray-100 relative z-10 -mt-[120px]">
+                <i class="fas fa-file-pdf text-[5rem] text-red-600 mb-6 drop-shadow-sm"></i>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-gray-900">SNS College of Physiotherapy Prospectus</h2>
+                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Comprehensive guide with complete information about our clinical programs, facilities, admission process, and fees structure.
+                </p>
+                
+                <div class="flex justify-center mb-8">
+                    <a href="https://snscphysio.org/brochure-viewer/" target="_blank" class="bg-[#e43c3c] hover:bg-red-700 text-white px-8 py-3.5 rounded-xl font-bold text-lg transition-all hover:scale-105 shadow-md shadow-red-500/20 inline-flex items-center justify-center">
+                        <i class="fas fa-download mr-3"></i>
+                        Download Brochure
+                    </a>
+                </div>
+                
+                <p class="text-sm text-gray-500">
+                    For printed copies, contact us at <a href="tel:+919629937861" class="text-blue-500 hover:underline font-medium">+91 96299 37861</a>
+                </p>
+            </div>
+            
+            <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-12 sm:gap-8">
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
+                        <i class="fas fa-graduation-cap text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Academic Programs</h3>
+                    <p class="text-sm text-gray-600">B.P.T & M.P.T curriculum details</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                        <i class="fas fa-building text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Facilities Tour</h3>
+                    <p class="text-sm text-gray-600">Complete infrastructure overview</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition-colors">
+                        <i class="fas fa-rupee-sign text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Fee Structure</h3>
+                    <p class="text-sm text-gray-600">Transparent pricing and payment options</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <app-footer></app-footer>
     <script src="/static/js/components.js"></script>
 </body>

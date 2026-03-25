@@ -366,11 +366,6 @@
                 <div class="w-24 h-1 bg-primary-500 rounded-full"></div>
             </div>
         </div>
-
-        <!-- Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <i class="fas fa-chevron-down text-white/60 text-2xl"></i>
-        </div>
     </section>
 
 
@@ -428,18 +423,9 @@
                 <button id="tab-academic"
                     class="tab-button px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border">Academic
                     Excellence</button>
-                <button id="tab-sports"
-                    class="tab-button px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border">Sports
-                    Champions</button>
                 <button id="tab-innovation"
                     class="tab-button px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border">Innovation
                     Leaders</button>
-                <button id="tab-community"
-                    class="tab-button px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border">Community
-                    Impact</button>
-                <button id="tab-arts"
-                    class="tab-button px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border">Arts
-                    Excellence</button>
             </div>
         </div>
     </section>
@@ -466,28 +452,20 @@
                     category: "Academic Excellence",
                     color: "blue",
                     link: "https://www.instagram.com/snsinstitutions/"
-                },
+                }
+            ],
+            sports: [],
+            innovation: [
                 {
                     title: "Tamilnadu Physiotherapy Doctors Association ll",
                     description: "Recognition from the Tamilnadu Physiotherapy Doctors Association for excellence in clinical practice and commitment to medical service.",
                     image: "/static/images/physio/WhatsApp Image 2026-03-02 at 4.50.06 PM.jpeg",
                     date: "Feb 2026",
-                    category: "Recognition",
+                    category: "Innovation Leaders",
                     color: "purple",
-                    link: "https://www.instagram.com/snsinstitutions/"
-                },
-                {
-                    title: "Distinguished Service Award",
-                    description: "Let's extend a warm congratulations to our beloved Principal on receiving 'Distinguished Service Award' for excellence service in physiotherapy profession in 'CHETPHYSIOCON 2022' organized by Chettinad School of Physiotherapy, Chettinad Academy of Research & Education (CARE).",
-                    image: "/static/images/physio/world_physio_day_2025.jpg",
-                    date: "April 2022",
-                    category: "Award",
-                    color: "gold",
                     link: "https://www.instagram.com/snsinstitutions/"
                 }
             ],
-            sports: [],
-            innovation: [],
             community: [],
             arts: [],
             leadership: []
@@ -564,10 +542,7 @@
             // Add event listeners to tab buttons
             document.getElementById('tab-all').addEventListener('click', () => switchTab('all'));
             document.getElementById('tab-academic').addEventListener('click', () => switchTab('academic'));
-            document.getElementById('tab-sports').addEventListener('click', () => switchTab('sports'));
             document.getElementById('tab-innovation').addEventListener('click', () => switchTab('innovation'));
-            document.getElementById('tab-community').addEventListener('click', () => switchTab('community'));
-            document.getElementById('tab-arts').addEventListener('click', () => switchTab('arts'));
         });
     </script>
 

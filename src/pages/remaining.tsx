@@ -184,10 +184,8 @@ export const InnovationPage = () => {
                     
                     <!-- Microsoft -->
                     <div class="bg-white rounded-xl p-6 text-center card-hover shadow-lg border border-gray-100">
-                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                            <svg class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M0 0h11.377v11.372H0V0zm12.623 0H24v11.372H12.623V0zM0 12.623h11.377V24H0V12.623zm12.623 0H24V24H12.623V12.623z"/>
-                            </svg>
+                        <div class="w-16 h-16 bg-white border border-gray-200 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg p-3">
+                            <img src="/static/images/microsoft.png" alt="Microsoft" class="w-full h-full object-contain">
                         </div>
                         <h4 class="font-bold text-lg text-gray-900">Microsoft</h4>
                         <p class="text-xs text-gray-600 mt-1">Cloud & Software</p>
@@ -605,7 +603,7 @@ export const AboutPage = () => {
                 <!-- Technical Director -->
                 <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition duration-300">
                     <div class="flex items-center mb-6">
-                        <img src="/static/images/physio/nalin_sns.png" alt="Nalin SNS" class="w-20 h-20 rounded-full object-cover mr-4 border-2 border-white shadow-sm">
+                        <img src="/static/images/physio/nalin_sns.png" alt="Nalin SNS" class="w-20 h-20 rounded-full object-contain p-1 bg-white mr-4 border-2 border-white shadow-sm">
                         <div>
                             <h3 class="text-xl font-bold text-gray-900">Nalin SNS</h3>
                             <p class="text-primary-600 text-sm font-semibold mt-1">Technical Director</p>
