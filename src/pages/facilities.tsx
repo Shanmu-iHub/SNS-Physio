@@ -170,10 +170,10 @@ export const FacilitiesPage = () => {
                 </div>
                 <div class="bg-white rounded-xl p-8 text-center shadow-lg hover:-translate-y-2 transition duration-300">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-flask text-3xl text-blue-600"></i>
+                        <i class="fas fa-heartbeat text-3xl text-blue-600"></i>
                     </div>
-                    <h3 class="font-bold text-gray-900 text-lg mb-2">Science Labs</h3>
-                    <p class="text-sm text-gray-600">Physics, Chemistry & Biology labs</p>
+                    <h3 class="font-bold text-gray-900 text-lg mb-2">Physio Labs</h3>
+                    <p class="text-sm text-gray-600">Anatomy, Physiology & Exercise Therapy labs</p>
                 </div>
                 <div class="bg-white rounded-xl p-8 text-center shadow-lg hover:-translate-y-2 transition duration-300">
                     <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">

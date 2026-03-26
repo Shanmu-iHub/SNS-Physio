@@ -213,108 +213,7 @@
             line-height: 1.4;
         }
 
-        /* WhatsApp Floating Button */
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50%;
-            text-align: center;
-            font-size: 32px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            animation: pulse-whatsapp 2s infinite;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1) translateY(-5px);
-            background-color: #128c7e;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            color: white;
-        }
-
-        /* Instagram Floating Button */
-        .instagram-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 110px;
-            right: 40px;
-            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-            color: #FFF;
-            border-radius: 50%;
-            text-align: center;
-            font-size: 32px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            animation: pulse-instagram 2s infinite;
-        }
-
-        .instagram-float:hover {
-            transform: scale(1.1) translateY(-5px);
-            background: linear-gradient(45deg, #e6683c 0%, #dc2743 25%, #cc2366 50%, #bc1888 75%, #f09433 100%);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            color: white;
-        }
-
-        @keyframes pulse-whatsapp {
-            0% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
-            }
-
-            70% {
-                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-            }
-
-            100% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-            }
-        }
-
-        @keyframes pulse-instagram {
-            0% {
-                box-shadow: 0 0 0 0 rgba(225, 48, 108, 0.5);
-            }
-
-            70% {
-                box-shadow: 0 0 0 15px rgba(225, 48, 108, 0);
-            }
-
-            100% {
-                box-shadow: 0 0 0 0 rgba(225, 48, 108, 0);
-            }
-        }
-
         @media screen and (max-width: 768px) {
-            .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                bottom: 25px;
-                right: 25px;
-                font-size: 28px;
-            }
-
-            .instagram-float {
-                width: 50px;
-                height: 50px;
-                bottom: 85px;
-                right: 25px;
-                font-size: 28px;
-            }
         }
     </style>
 
@@ -548,10 +447,10 @@
                 </div>
                 <div class="bg-white rounded-xl p-8 text-center shadow-lg hover:-translate-y-2 transition duration-300">
                     <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-flask text-3xl text-primary-600"></i>
+                        <i class="fas fa-heartbeat text-3xl text-primary-600"></i>
                     </div>
-                    <h3 class="font-bold text-gray-900 text-lg mb-2">Science Labs</h3>
-                    <p class="text-sm text-gray-600">Physics, Chemistry & Biology labs</p>
+                    <h3 class="font-bold text-gray-900 text-lg mb-2">Physio Labs</h3>
+                    <p class="text-sm text-gray-600">Anatomy, Physiology & Exercise Therapy labs</p>
                 </div>
                 <div class="bg-white rounded-xl p-8 text-center shadow-lg hover:-translate-y-2 transition duration-300">
                     <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">

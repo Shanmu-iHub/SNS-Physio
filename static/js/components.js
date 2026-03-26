@@ -22,19 +22,19 @@
 
 const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = `
-<!-- Hanging Tag 1: IAP -->
-    <div class="fixed top-[22%] right-0 z-50 swing">
-        <div class="bg-gradient-to-br from-blue-600 to-indigo-600 text-white px-4 py-6 rounded-l-2xl shadow-2xl">
-            <span class="font-extrabold text-sm uppercase tracking-widest"
-                style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">IAP APPROVED</span>
+<!-- Hanging Tag 1: MGR UNIV -->
+    <a href="https://www.tnmgrmu.ac.in/" target="_blank" class="fixed top-[22%] right-0 z-50 transition-all duration-300 hover:-translate-x-2">
+        <div class="bg-[#00a651] text-white px-3 py-6 rounded-l-xl shadow-2xl flex flex-col items-center border-l border-t border-b border-white/20">
+            <span class="font-bold text-xs uppercase tracking-widest"
+                style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">MGR UNIV</span>
         </div>
-    </div>
+    </a>
 
     <!-- Hanging Tag 2: Brochure -->
-    <a href="/brochure-viewer" target="_blank" class="fixed top-[46%] right-0 z-50 swing" style="animation-delay: 0.3s; display: block;">
-        <div class="bg-gradient-to-br from-primary-600 to-primary-800 text-white px-4 py-8 rounded-l-2xl shadow-2xl flex flex-col items-center space-y-3 group transition-all">
-            <i class="fas fa-book-open text-2xl group-hover:scale-110 transition-transform duration-300"></i>
-            <span class="font-extrabold text-sm uppercase tracking-widest"
+    <a href="/brochure" class="fixed top-[46%] right-0 z-50 transition-all duration-300 hover:-translate-x-2" style="display: block;">
+        <div class="bg-[#ed1c24] text-white px-3 py-8 rounded-l-xl shadow-2xl flex flex-col items-center space-y-3 group border-l border-t border-b border-white/20">
+            <i class="fas fa-file-pdf text-xl group-hover:scale-110 transition-transform duration-300"></i>
+            <span class="font-bold text-xs uppercase tracking-widest"
                 style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">BROCHURE</span>
         </div>
     </a>
