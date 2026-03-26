@@ -565,7 +565,7 @@ export const AboutPage = () => {
                         <div>
                             <p class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-1">Deiva Thiru</p>
                             <h3 class="text-2xl font-black text-gray-900 leading-tight">Dr. S.N. Subbramanian</h3>
-                            <p class="text-[#ff0080] text-sm font-extrabold mt-1">Founder Chairman</p>
+                            <p class="text-primary-600 text-sm font-extrabold mt-1">Founder Chairman</p>
                         </div>
                     </div>
                     <div class="space-y-4">
@@ -581,7 +581,7 @@ export const AboutPage = () => {
                         <img src="/static/images/correspondent.png" alt="Dr. S. Rajalakshmi" class="w-24 h-24 rounded-full object-cover mr-6 border-4 border-white shadow-md">
                         <div>
                             <h3 class="text-2xl font-black text-gray-900 leading-tight">Dr. S. Rajalakshmi</h3>
-                            <p class="text-[#ff0080] text-sm font-extrabold mt-1">Chairman / Correspondent</p>
+                            <p class="text-primary-600 text-sm font-extrabold mt-1">Chairman / Correspondent</p>
                         </div>
                     </div>
                     <div class="space-y-4">
@@ -597,7 +597,7 @@ export const AboutPage = () => {
                         <img src="/static/images/td.png" alt="Nalin SNS" class="w-24 h-24 rounded-full object-contain p-2 bg-white mr-6 border-4 border-white shadow-md">
                         <div>
                             <h3 class="text-2xl font-black text-gray-900 leading-tight">Nalin SNS</h3>
-                            <p class="text-[#ff0080] text-sm font-extrabold mt-1">Technical Director</p>
+                            <p class="text-primary-600 text-sm font-extrabold mt-1">Technical Director</p>
                         </div>
                     </div>
                     <div class="space-y-4">
