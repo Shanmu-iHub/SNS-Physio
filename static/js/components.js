@@ -34,7 +34,7 @@ headerTemplate.innerHTML = `
     </style>
     <!-- Hanging Tag 1: IAP APPROVED -->
     <a href="https://www.tnmgrmu.ac.in/" target="_blank" class="fixed top-[22%] right-0 z-50 swing">
-        <div class="bg-[#1a4f8a] text-white px-3 py-6 rounded-l-xl shadow-2xl flex flex-col items-center border-l border-t border-b border-white/20">
+        <div class="bg-[#00a651] text-white px-3 py-6 rounded-l-xl shadow-2xl flex flex-col items-center border-l border-t border-b border-white/20">
             <span class="font-bold text-xs uppercase tracking-widest"
                 style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">IAP APPROVED</span>
         </div>
