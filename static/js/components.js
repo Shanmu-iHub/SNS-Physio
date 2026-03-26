@@ -22,16 +22,26 @@
 
 const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = `
-<!-- Hanging Tag 1: MGR UNIV -->
-    <a href="https://www.tnmgrmu.ac.in/" target="_blank" class="fixed top-[22%] right-0 z-50 transition-all duration-300 hover:-translate-x-2">
-        <div class="bg-[#00a651] text-white px-3 py-6 rounded-l-xl shadow-2xl flex flex-col items-center border-l border-t border-b border-white/20">
+    <style>
+        @keyframes swing {
+            0%, 100% { transform: rotate(-3deg); }
+            50% { transform: rotate(3deg); }
+        }
+        .swing {
+            animation: swing 2s ease-in-out infinite;
+            transform-origin: top center;
+        }
+    </style>
+    <!-- Hanging Tag 1: IAP APPROVED -->
+    <a href="https://www.tnmgrmu.ac.in/" target="_blank" class="fixed top-[22%] right-0 z-50 swing">
+        <div class="bg-[#1a4f8a] text-white px-3 py-6 rounded-l-xl shadow-2xl flex flex-col items-center border-l border-t border-b border-white/20">
             <span class="font-bold text-xs uppercase tracking-widest"
-                style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">MGR UNIV</span>
+                style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">IAP APPROVED</span>
         </div>
     </a>
 
     <!-- Hanging Tag 2: Brochure -->
-    <a href="/brochure" class="fixed top-[46%] right-0 z-50 transition-all duration-300 hover:-translate-x-2" style="display: block;">
+    <a href="/brochure" class="fixed top-[46%] right-0 z-50 swing" style="display: block; animation-delay: 0.3s;">
         <div class="bg-[#ed1c24] text-white px-3 py-8 rounded-l-xl shadow-2xl flex flex-col items-center space-y-3 group border-l border-t border-b border-white/20">
             <i class="fas fa-file-pdf text-xl group-hover:scale-110 transition-transform duration-300"></i>
             <span class="font-bold text-xs uppercase tracking-widest"
