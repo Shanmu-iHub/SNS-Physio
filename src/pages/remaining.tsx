@@ -594,7 +594,7 @@ export const AboutPage = () => {
                 <!-- Technical Director -->
                 <div class="bg-white rounded-[2.5rem] p-10 shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-gray-50 hover:shadow-[0_25px_60px_rgba(0,0,0,0.1)] transition duration-500">
                     <div class="flex items-center mb-8">
-                        <img src="/static/images/td.png" alt="Nalin SNS" class="w-24 h-24 rounded-full object-contain p-2 bg-white mr-6 border-4 border-white shadow-md">
+                        <img src="/static/images/td.png" alt="Nalin SNS" class="w-24 h-24 rounded-full object-cover mr-6 border-4 border-white shadow-md">
                         <div>
                             <h3 class="text-2xl font-black text-gray-900 leading-tight">Nalin SNS</h3>
                             <p class="text-primary-600 text-sm font-extrabold mt-1">Technical Director</p>
