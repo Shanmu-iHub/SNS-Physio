@@ -215,7 +215,7 @@
                             select.name = input.name;
                             select.required = true;
                             select.dataset.replacedCourse = "true";
-                            select.innerHTML = '<option value="">Select Course *</option><option value="BPT">BPT</option><option value="MPT">MPT</option>';
+                            select.innerHTML = '<option value="">Select Course *</option><option value="BPT">B.P.T</option><option value="MPT">M.P.T</option>';
                             input.parentNode.replaceChild(select, input);
                             select.addEventListener('change', (e) => {
                                 select.dispatchEvent(new Event('input', { bubbles: true }));

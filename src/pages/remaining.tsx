@@ -799,7 +799,7 @@ export const ContactPage = () => {
                                             select.name = input.name;
                                             select.required = true;
                                             select.setAttribute('data-replaced-course', 'true');
-                                            select.innerHTML = '<option value="">Select Course *</option><option value="BPT">BPT</option><option value="MPT">MPT</option>';
+                                            select.innerHTML = '<option value="">Select Course *</option><option value="BPT">B.P.T</option><option value="MPT">M.P.T</option>';
                                             input.parentNode.replaceChild(select, input);
                                             select.addEventListener('change', function() {
                                                 var event = new Event('input', { bubbles: true });
@@ -1016,8 +1016,8 @@ export const AdmissionsPage = () => {
                         <label for="course" class="block text-sm font-medium text-gray-700 mb-2">Course Selection <span class="text-red-500">*</span></label>
                         <select id="course" name="course" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all appearance-none bg-white">
                             <option value="" disabled selected>Select a course</option>
-                            <option value="BPT">BPT</option>
-                            <option value="MPT">MPT</option>
+                            <option value="BPT">B.P.T</option>
+                            <option value="MPT">M.P.T</option>
                         </select>
                         <p class="hidden text-red-500 text-sm mt-1" id="courseError">Please select a course</p>
                     </div>
