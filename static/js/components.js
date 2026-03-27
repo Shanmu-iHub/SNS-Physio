@@ -63,9 +63,9 @@ headerTemplate.innerHTML = `
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="/" class="flex items-center space-x-3">
-                    <img src="/static/images/SNS%20Physio.jpg" alt="SNS Physiotherapy Logo" class="h-16 w-auto">
+                    <img src="/static/images/SNS%20Physio.jpg" alt="SNS College of Physiotherapy Logo" class="h-16 w-auto">
                     <div>
-                        <h1 class="text-xl font-bold text-gray-900">SNS Physiotherapy</h1>
+                        <h1 class="text-xl font-bold text-gray-900">SNS College of Physiotherapy</h1>
                         <p class="text-xs text-gray-500">Excellence in Care</p>
                     </div>
                 </a>
@@ -225,10 +225,10 @@ footerTemplate.innerHTML = `
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <div class="flex items-center space-x-3 mb-4">
-                        <img src="/static/images/SNS%20Physio.jpg" alt="SNS Physiotherapy Logo"
+                        <img src="/static/images/SNS%20Physio.jpg" alt="SNS College of Physiotherapy Logo"
                             class="h-12 w-auto bg-white rounded p-1">
                         <div>
-                            <h3 class="text-white font-bold">SNS Physiotherapy</h3>
+                            <h3 class="text-white font-bold">SNS College of Physiotherapy</h3>
                             <p class="text-xs">Excellence in Care</p>
                         </div>
                     </div>
@@ -299,7 +299,7 @@ footerTemplate.innerHTML = `
             </div>
 
             <div class="border-t border-gray-800 pt-8 text-center text-sm">
-                <p>&copy; 2026 SNS Physiotherapy. All rights reserved.</p>
+                <p>&copy; 2026 SNS College of Physiotherapy. All rights reserved.</p>
                 <p class="mt-2 text-primary-400 font-semibold">Caring for Your Health | We are Physical Therapists</p>
                 <p class="mt-1 text-xs">SNS Core Value: Sincerity, Nobility, Service</p>
                 <p class="mt-3 text-primary-400 font-bold"><i class="fas fa-headset mr-2"></i>Helpline: 95644 23456</p>
