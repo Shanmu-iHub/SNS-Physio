@@ -4,7 +4,7 @@ export const FacilitiesPage = () => {
     return `
     ${PageHeader(
         'World-Class Infrastructure', 
-        'Everything your child needs for holistic development under one roof—unlocking their potential at the SPINE Activity Center', 
+        'Everything a physiotherapy student needs for holistic development under one roof—unlocking their potential at the SPINE Activity Center', 
         '/static/images/hero5.png',
         'Facilities'
     )}
@@ -13,137 +13,91 @@ export const FacilitiesPage = () => {
     <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <span class="text-primary-600 font-bold tracking-wider uppercase text-sm mb-2 block">Student Life</span>
-                <h2 class="text-4xl font-bold text-gray-900 mb-6">SNS SPINE Activity Center</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    A 5-level world-class activity center for sports, arts, entertainment, and wellness. 
+                <span class="text-primary-600 font-bold tracking-wider uppercase text-sm mb-2 block font-sans">Wellness & Lifestyle</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">SNS SPINE Activity Center</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto font-medium">
+                    World-class facilities for mental & physical wellbeing
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Swimming Pool -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-64 overflow-hidden relative">
-                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Physiotherapy Web/Swim.png" alt="Swimming Pool" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    </div>
-                    <div class="p-8 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Swimming Pool</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">
-                            Professional-grade swimming pool with trained coaches. Swimming regularly lowers stress, reduces anxiety, and builds physical endurance.
-                        </p>
+                <div class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 aspect-[4/3]">
+                    <img src="/static/images/pool.jpg" alt="Swimming Pool" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
+                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Swimming Pool</h3>
+                        <p class="text-sm md:text-base text-white/90 mt-1 font-medium">Dive into excellence.</p>
                     </div>
                 </div>
 
-                <!-- Cricket Center -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-64 overflow-hidden relative">
-                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Physiotherapy Web/Indoor.png" alt="Indoor Cricket Center" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    </div>
-                    <div class="p-8 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Indoor Cricket</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">
-                            All-weather cricket pitch with bowling machines and nets. Professional coaching available for all skill levels, day or night.
-                        </p>
+                <!-- Indoor Pitch -->
+                <div class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 aspect-[4/3]">
+                    <img src="/static/images/cricket.jpg" alt="Indoor Pitch" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
+                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Indoor Pitch</h3>
+                        <p class="text-sm md:text-base text-white/90 mt-1 font-medium">All-weather sports.</p>
                     </div>
                 </div>
 
-                <!-- Fitness Center -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-64 overflow-hidden relative">
-                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Physiotherapy Web/Fitness.png" alt="Fitness Center" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                <!-- Fitness Gym -->
+                <div class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 aspect-[4/3]">
+                    <img src="/static/images/gym.jpg" alt="Fitness Gym" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
+                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Fitness Gym</h3>
+                        <p class="text-sm md:text-base text-white/90 mt-1 font-medium">Train hard, shape up.</p>
                     </div>
-                    <div class="p-8 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Fitness Center</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">
-                            Fully-equipped gym with treadmills, strength machines, weights, and boxing kits to ensure students stay healthy and toned.
-                        </p>
+                </div>
+
+                <!-- Gaming Center -->
+                <div class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 aspect-[4/3]">
+                    <img src="/static/images/gaming.jpg" alt="Gaming Center" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
+                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Gaming Center</h3>
+                        <p class="text-sm md:text-base text-white/90 mt-1 font-medium">Innovation through play.</p>
+                    </div>
+                </div>
+
+                <!-- Mini Theatre -->
+                <div class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 aspect-[4/3]">
+                    <img src="/static/images/theater.jpg" alt="Mini Theatre" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
+                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Mini Theatre</h3>
+                        <p class="text-sm md:text-base text-white/90 mt-1 font-medium">Entertainment redefined.</p>
                     </div>
                 </div>
 
                 <!-- Music Studio -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-64 overflow-hidden relative">
-                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Physiotherapy Web/Music.png" alt="Music Studio" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    </div>
-                    <div class="p-8 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Music Studio</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">
-                            Professional music studio with recording equipment and instruments. A space for students to compose, practice, and create.
-                        </p>
+                <div class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 aspect-[4/3]">
+                    <img src="/static/images/music.jpg" alt="Music Studio" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
+                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Music Studio</h3>
+                        <p class="text-sm md:text-base text-white/90 mt-1 font-medium">Fuel your soul.</p>
                     </div>
                 </div>
 
                 <!-- Dance Studio -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-64 overflow-hidden relative">
-                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Physiotherapy Web/Dance.png" alt="Beats Dance Studio" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    </div>
-                    <div class="p-8 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Dance Studio</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">
-                            Dedicated space for various dance styles—from classical to contemporary. Enriching life through movement and expression.
-                        </p>
+                <div class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 aspect-[4/3]">
+                    <img src="/static/images/dance.jpg" alt="Dance Studio" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
+                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Dance Studio</h3>
+                        <p class="text-sm md:text-base text-white/90 mt-1 font-medium">Art meets innovation.</p>
                     </div>
                 </div>
 
-                <!-- Art Room -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-64 overflow-hidden relative">
-                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Physiotherapy Web/Art Studio.png" alt="Art Room" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    </div>
-                    <div class="p-8 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Art Studio</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">
-                            Creative space for drawing, painting, and sculpting. Allowing students to visualize concepts and express emotions.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Theater -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-64 overflow-hidden relative">
-                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Physiotherapy Web/The.png" alt="Bioskop Theater" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    </div>
-                    <div class="p-8 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Bioskop Theater</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">
-                            Compact digital theater with superior sound and projection. A unique venue for educational films and entertainment.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Gaming Arena -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-64 overflow-hidden relative">
-                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Physiotherapy Web/Gaming Area.png" alt="Gaming Arena" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    </div>
-                    <div class="p-8 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Gaming Arena</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">
-                            State-of-the-art gaming space for recreational and competitive esports, fostering strategic thinking and teamwork.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Rooftop Restaurant -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-64 overflow-hidden relative">
-                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Physiotherapy Web/TopRoof Dinning.png" alt="Rooftop Restaurant" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    </div>
-                    <div class="p-8 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Rooftop Dining</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">
-                            Fine dining experience with healthy, seasonal meals. A perfect setting for community interaction and relaxation.
-                        </p>
+                <!-- Connection Lounge -->
+                <div class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 aspect-[4/3]">
+                    <img src="/static/images/lounge.jpg" alt="Connection Lounge" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
+                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Connection Lounge</h3>
+                        <p class="text-sm md:text-base text-white/90 mt-1 font-medium">Network and relax.</p>
                     </div>
                 </div>
             </div>

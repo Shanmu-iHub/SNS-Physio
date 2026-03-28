@@ -39,100 +39,76 @@ export const InnovationPage = () => {
     </section>
 
     <!-- SHAAARP Industry Verticals -->
-    <section class="py-16 bg-gradient-to-br from-primary-50 to-red-50">
+    <section class="py-20 bg-[#FFF9F3]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold mb-4">SHAAARP Industry Verticals</h2>
-                <p class="text-xl text-gray-600">Focus areas for innovation and startup development</p>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">SHAAARP Industry Verticals</h2>
+                <p class="text-xl text-gray-600 font-medium">Focus areas for innovation and startup development</p>
             </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-city text-3xl text-primary-600"></i>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+                <!-- Smart City & Manufacturing -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-[#FFF4E6] rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-city text-2xl text-[#FF922B]"></i>
                     </div>
-                    <h3 class="font-bold text-lg text-center mb-3">Smart City & Manufacturing</h3>
-                    <p class="text-sm text-gray-600 text-center">IoT, automation, smart infrastructure</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-4 leading-tight">Smart City & Manufacturing</h3>
+                    <p class="text-sm text-gray-500 font-medium">IoT, automation, smart infrastructure</p>
                 </div>
-                
-                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
-                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-heartbeat text-3xl text-red-600"></i>
+
+                <!-- Healthcare -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-[#FFF0F0] rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-heartbeat text-2xl text-[#FA5252]"></i>
                     </div>
-                    <h3 class="font-bold text-lg text-center mb-3">Healthcare</h3>
-                    <p class="text-sm text-gray-600 text-center">AI diagnostics, telemedicine, digital health</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-4 leading-tight">Healthcare</h3>
+                    <p class="text-sm text-gray-500 font-medium">AI diagnostics, telemedicine, digital health</p>
                 </div>
-                
-                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
-                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-seedling text-3xl text-green-600"></i>
+
+                <!-- Agriculture & Food Technology -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-[#EBFBEE] rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-seedling text-2xl text-[#40C057]"></i>
                     </div>
-                    <h3 class="font-bold text-lg text-center mb-3">Agriculture & Food</h3>
-                    <p class="text-sm text-gray-600 text-center">Precision farming, food tech, supply chain</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-4 leading-tight">Agriculture & Food Technology</h3>
+                    <p class="text-sm text-gray-500 font-medium">Precision farming, food tech, supply chain</p>
                 </div>
-                
-                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
-                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-shopping-cart text-3xl text-primary-600"></i>
+
+                <!-- Retail FMCG... -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-[#FFF4E6] rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shopping-cart text-2xl text-[#FD7E14]"></i>
                     </div>
-                    <h3 class="font-bold text-lg text-center mb-3">Retail FMCG</h3>
-                    <p class="text-sm text-gray-600 text-center">E-commerce, consumer goods, retail analytics</p>
+                    <h3 class="font-bold text-lg text-gray-900 mb-4 leading-tight leading-7">Retail FMCG,Real-Estate, Entertainment & Finance (BFSI)</h3>
+                    <p class="text-sm text-gray-500 font-medium">E-commerce, consumer goods, retail analytics</p>
                 </div>
-                
-                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-car text-3xl text-primary-600"></i>
+
+                <!-- Automobile -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-[#FFF2F2] rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-car text-2xl text-[#EB1A1A]"></i>
                     </div>
-                    <h3 class="font-bold text-lg text-center mb-3">Automotive & Aerospace</h3>
-                    <p class="text-sm text-gray-600 text-center">Autonomous vehicles, aerospace engineering</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-4 leading-tight">Automobile</h3>
+                    <p class="text-sm text-gray-500 font-medium">Autonomous Vehicles & Automotive Components</p>
                 </div>
-                
-                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
-                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-shield-alt text-3xl text-indigo-600"></i>
+            </div>
+
+            <!-- Row 2 Centered -->
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(20%-1.6rem)]">
+                    <div class="w-16 h-16 bg-[#EDF2FF] rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-2xl text-[#4C6EF5]"></i>
                     </div>
-                    <h3 class="font-bold text-lg text-center mb-3">Defense, Government, Legal</h3>
-                    <p class="text-sm text-gray-600 text-center">Security, compliance, legal tech</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-4 leading-tight">Aerospace & Defence</h3>
+                    <p class="text-sm text-gray-500 font-medium">Security, compliance, legal tech</p>
                 </div>
-                
-                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
-                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-building text-3xl text-pink-600"></i>
+
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(20%-1.6rem)]">
+                    <div class="w-16 h-16 bg-[#E3FAFC] rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-2xl text-[#15AABF]"></i>
                     </div>
-                    <h3 class="font-bold text-lg text-center mb-3">Real Estate</h3>
-                    <p class="text-sm text-gray-600 text-center">PropTech, smart buildings, analytics</p>
-                </div>
-                
-                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
-                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-futbol text-3xl text-yellow-600"></i>
-                    </div>
-                    <h3 class="font-bold text-lg text-center mb-3">Sports, Media & Entertainment</h3>
-                    <p class="text-sm text-gray-600 text-center">Content creation, gaming, sports tech</p>
-                </div>
-                
-                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
-                    <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-university text-3xl text-teal-600"></i>
-                    </div>
-                    <h3 class="font-bold text-lg text-center mb-3">BFSI - Fintech/Banking</h3>
-                    <p class="text-sm text-gray-600 text-center">Financial services, banking technology</p>
-                </div>
-                
-                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
-                    <div class="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-bolt text-3xl text-cyan-600"></i>
-                    </div>
-                    <h3 class="font-bold text-lg text-center mb-3">Power, Oil, Energy</h3>
-                    <p class="text-sm text-gray-600 text-center">Energy management, renewables, utilities</p>
-                </div>
-                
-                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover col-span-full md:col-span-1 lg:col-start-3">
-                    <div class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-user-circle text-3xl text-rose-600"></i>
-                    </div>
-                    <h3 class="font-bold text-lg text-center mb-3">Personal Services</h3>
-                    <p class="text-sm text-gray-600 text-center">EdTech, Dating/Marriage, HR Tech</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-4 leading-tight">Power/Energy</h3>
+                    <p class="text-sm text-gray-500 font-medium">Energy management, renewables, utilities</p>
                 </div>
             </div>
         </div>

@@ -76,7 +76,6 @@ export const SuccessStoriesPage = () => {
     </section>
 
     <script>
-        // Story data organized by categories
         const stories = {
             academic: [
                 {
@@ -87,6 +86,15 @@ export const SuccessStoriesPage = () => {
                     category: "Academic",
                     color: "blue",
                     link: "https://www.instagram.com/p/DUR0kWYE8Zr/?img_index=1"
+                },
+                {
+                    title: "Celeberating 18th Graduation Day",
+                    description: "A momentous occasion marking the significant milestone of our graduating students as they embark on their professional journeys in physiotherapy.",
+                    image: "/static/images/physio/WhatsApp Image 2026-03-02 at 5.21.01 PM (1).jpeg",
+                    date: "Feb 2026",
+                    category: "Academic Excellence",
+                    color: "blue",
+                    link: "https://www.linkedin.com/pulse/celebrating-success-sns-college-physiotherapys-18th-graduation-anand-rzjtc"
                 },
                 {
                     title: "Book of Record - Dinamalar Pattam Final",
@@ -108,6 +116,42 @@ export const SuccessStoriesPage = () => {
                 }
             ],
             sports: [
+                {
+                    title: "Silver Medal - State Athletic Meet",
+                    description: "Kanimozhi K. (2nd Year B.P.T) secured a Silver Medal in the 800 Meters run at the State Athletic Meet held at Nehru Stadium, Coimbatore. Her grit and speed on the track made SNS College of Physiotherapy proud.",
+                    image: "/static/images/physio/kanimozhi_silver.jpg",
+                    date: "Jan 2023",
+                    category: "Sports Achievements",
+                    color: "orange",
+                    link: "https://www.facebook.com/snsinstitutions/photos/ppg-college-of-physiotherapy-conducted-a-state-athletic-meet-at-nehru-stadium-on/5910479269034340/"
+                },
+                {
+                    title: "Kho-Kho: Finals at State Athletic Meet",
+                    description: "Our SNS College of Physiotherapy students competed in the finals of the Kho-Kho tournament at the State Athletic Meet conducted at Nehru Stadium in January 2023, displaying outstanding teamwork and agility.",
+                    image: "/static/images/physio/volleyball_winner.png",
+                    date: "Jan 2023",
+                    category: "Sports Achievements",
+                    color: "orange",
+                    link: "https://www.instagram.com/p/Cnx81_wvs0f/?img_index=1"
+                },
+                {
+                    title: "Volleyball: Finals at State Athletic Meet",
+                    description: "The SNS Physiotherapy Volleyball team put up a brilliant performance, reaching the finals of the Volleyball tournament at the State Athletic Meet at Nehru Stadium, showcasing elite-level teamwork and skill.",
+                    image: "/static/images/physio/volleyball_winner.png",
+                    date: "Jan 2023",
+                    category: "Sports Achievements",
+                    color: "orange",
+                    link: "https://www.instagram.com/p/Cnx81_wvs0f/?img_index=1"
+                },
+                {
+                    title: "Kabaddi: Champions at State Athletic Meet",
+                    description: "In an electrifying display of strength and strategy, our SNS Physiotherapy Kabaddi team clinched victory in the Kabaddi finals at the State Athletic Meet held at Nehru Stadium in January 2023.",
+                    image: "/static/images/physio/kabaddi_winner.png",
+                    date: "Jan 2023",
+                    category: "Sports Achievements",
+                    color: "orange",
+                    link: "https://www.instagram.com/p/Cnx81_wvs0f/"
+                },
                 {
                     title: "Silambam Championship - State Level Silver",
                     description: "We are proud to applaud D. Akshara of B.P.T Year II for her remarkable achievement at the State Level Silambam Championship 2025, securing 2nd place! Her dedication, disciplined training, and skill in this ancient martial art truly inspire us. Congratulations, Akshara — keep shining and making SNS College of Physiotherapy proud.",

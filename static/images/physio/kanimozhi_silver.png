@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../static/images/Favicon.png?v=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandatory Disclosure | SNS College of Physiotherapy - Design Thinking Physiotherapy College Coimbatore
+    </title>
+    <meta name="description"
+        content="SNS College of Physiotherapy - India's first Design Thinking Physiotherapy college in Coimbatore. Mandatory disclosure and public information.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f4f5f9',
+                            100: '#e8eaf2',
+                            200: '#d1d5e6',
+                            300: '#babfd9',
+                            400: '#a4a9cc',
+                            500: '#9298CB',
+                            600: '#7a7fac',
+                            700: '#62668d',
+                            800: '#4b4e6e',
+                            900: '#33354f',
+                            DEFAULT: '#9298CB',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        /* Instagram Floating Button */
+        .instagram-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 110px;
+            right: 40px;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: pulse-instagram 2s infinite;
+        }
+
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        @keyframes pulse-instagram {
+            0% {
+                box-shadow: 0 0 0 0 rgba(225, 48, 108, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(225, 48, 108, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(225, 48, 108, 0);
+            }
+        }
+
+        .table-header {
+            background-color: #eef2ff;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #e5e7eb;
+            padding: 12px 16px;
+            text-align: left;
+        }
+
+        th {
+            font-weight: 700;
+            color: #111827;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            color: #374151;
+            font-size: 0.875rem;
+        }
+    </style>
+    <script src="/static/js/components.js?v=2026.03.02.01" defer></script>
+</head>
+
+<body class="antialiased">
+
+    <app-header></app-header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[50vh] min-h-[500px] flex items-center justify-center text-white overflow-hidden">
+        <div class="absolute inset-0 z-0 text-center">
+            <img src="../static/images/physio/phy.jpg.jpeg" alt="Mandatory Public Disclosure"
+                class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg">
+            <nav class="mb-4">
+                <div class="flex items-center justify-center space-x-2 text-sm text-white/80">
+                    <a href="/" class="hover:text-white transition">Home</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <span class="text-white">Mandatory Disclosure</span>
+                </div>
+            </nav>
+            <h1 class="text-5xl lg:text-7xl font-extrabold mb-4 leading-tight">Mandatory Public Disclosure</h1>
+            <p class="text-xl lg:text-2xl text-white/90 max-w-2xl mx-auto mb-8">Institutional Details & Regulatory
+                Compliance</p>
+
+            <div class="flex justify-center">
+                <div class="w-24 h-1.5 bg-primary-500 rounded-full"></div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <main class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+
+            <!-- A. General Information -->
+            <section>
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">A. General Information</h2>
+                <div class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
+                    <table>
+                        <thead class="table-header">
+                            <tr>
+                                <th class="w-20">SL NO.</th>
+                                <th>INFORMATION</th>
+                                <th>DETAILS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="font-semibold">NAME OF THE INSTITUTION</td>
+                                <td>SNS COLLEGE OF PHYSIOTHERAPY</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="font-semibold">AFFILIATION</td>
+                                <td>The Tamil Nadu Dr.MGR Medical University, Chennai</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="font-semibold">COLLEGE CODE</td>
+                                <td>864</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td class="font-semibold">COMPLETE ADDRESS</td>
+                                <td>SNS Kalvi Nagar, Sathy Main Road (NH-209), Kurumbapalayam (Po), Coimbatore – 641
+                                    107, Tamil Nadu</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td class="font-semibold">PRINCIPAL / DEAN</td>
+                                <td>Dr.Abia Christy Emmanuvel</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td class="font-semibold">QUALIFICATION</td>
+                                <td>Ph.D., M.P.T., (Relevant Clinical Domain)</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td class="font-semibold">OFFICE EMAIL ID</td>
+                                <td><a href="mailto:snsphysio@gmail.com"
+                                        class="text-blue-600 hover:underline">snsphysio@gmail.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td class="font-semibold">CONTACT DETAILS</td>
+                                <td>+91 90036 55855</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- B. Documents and Information -->
+            <section>
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">B. Documents and Information</h2>
+                <div class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
+                    <table>
+                        <thead class="table-header">
+                            <tr>
+                                <th class="w-20">SL NO.</th>
+                                <th>DOCUMENTS/INFORMATION</th>
+                                <th>LINKS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Copy of Certified Public Accountant 2024-25</td>
+                                <td><a href="../static/Copy%20of%20Certified%20Public%20Accountant%202024-25.pdf"
+                                        class="text-blue-600 hover:underline font-semibold italic" target="_blank">View
+                                        Document</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Copy of Valid Fire Safety Certificate</td>
+                                <td><a href="../static/Copy%20of%20Valid%20Fire%20Safety%20Certificate.pdf"
+                                        class="text-blue-600 hover:underline font-semibold italic" target="_blank">View
+                                        Document</a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Copy of Valid Sanitary Certificate</td>
+                                <td><a href="../static/7.sanitary certificate.pdf"
+                                        class="text-blue-600 hover:underline font-semibold italic" target="_blank">View
+                                        Document</a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Copy of Building License</td>
+                                <td><a href="../static/5.BUILDING LISCENCE.pdf"
+                                        class="text-blue-600 hover:underline font-semibold italic" target="_blank">View
+                                        Document</a></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Copy of FORM-D License</td>
+                                <td><a href="../static/4.FORM D- LICENSE.pdf"
+                                        class="text-blue-600 hover:underline font-semibold italic" target="_blank">View
+                                        Document</a></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Copy of Health and Family Welfare</td>
+                                <td><a href="../static/3.G O.pdf"
+                                        class="text-blue-600 hover:underline font-semibold italic" target="_blank">View
+                                        Document</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 text-sm text-gray-700">
+                    <p><strong>NOTE:</strong> The institution uploads self-attested copies of above listed documents by
+                        Chairman/Manager/Secretary and Principal. If it is noticed at a later stage that uploaded
+                        documents are not genuine, the institution shall be liable for action as per norms.</p>
+                </div>
+            </section>
+
+            <!-- C. Result and Academics -->
+            <section>
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">C. Result and Academics</h2>
+                <div class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
+                    <table>
+                        <thead class="table-header">
+                            <tr>
+                                <th class="w-20">SL NO.</th>
+                                <th>DOCUMENTS/INFORMATION</th>
+                                <th>LINKS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Last Three-Year Result of University Examination</td>
+                                <td><a href="../static/Result%20Analysis%20lat%203%20yrs.pdf" target="_blank"
+                                        class="text-blue-600 hover:underline font-semibold italic">View
+                                        Document</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Result of Third Year of University Examination</td>
+                                <td><a href="../static/Third%20year.pdf" target="_blank"
+                                        class="text-blue-600 hover:underline font-semibold italic">View
+                                        Document</a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Result of Second Year of University Examination</td>
+                                <td><a href="../static/Second%20year.pdf" target="_blank"
+                                        class="text-blue-600 hover:underline font-semibold italic">View
+                                        Document</a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Result of First Year of University Examination</td>
+                                <td><a href="../static/First%20year.pdf" target="_blank"
+                                        class="text-blue-600 hover:underline font-semibold italic">View
+                                        Document</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- University Results Table -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">University Results</h2>
+                <div class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
+                    <table>
+                        <thead class="table-header">
+                            <tr>
+                                <th>Academic Year</th>
+                                <th>Registered Students</th>
+                                <th>Students Passed</th>
+                                <th>Pass Percentage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-medium">2021-2022</td>
+                                <td>35</td>
+                                <td>35</td>
+                                <td class="text-green-600 font-bold">100%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">2022-2023</td>
+                                <td>45</td>
+                                <td>45</td>
+                                <td class="text-green-600 font-bold">100%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">2023-2024</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td class="text-green-600 font-bold">100%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- D. Staff (Teaching) -->
+            <section>
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">D. Staff (Teaching)</h2>
+                <div class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
+                    <table>
+                        <thead class="table-header">
+                            <tr>
+                                <th class="w-20">SL NO.</th>
+                                <th>INFORMATION</th>
+                                <th>DETAILS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="font-semibold">Principal / Dean</td>
+                                <td>Dr.Abia Christy Emmanuvel</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="font-semibold">Total Number of Faculty</td>
+                                <td>
+                                    <div class="font-bold mb-1">Total: 25</div>
+                                    <div class="grid grid-cols-2 gap-x-4 text-xs">
+                                        <span>Professors: 05</span>
+                                        <span class="col-span-2">Associate Professors: 08</span>
+                                        <span class="col-span-2">Assistant Professors / Tutors: 12</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="font-semibold">Student Faculty Ratio</td>
+                                <td>1:10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- E. Institutional Infrastructure -->
+            <section>
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">E. Institutional Infrastructure</h2>
+                <div class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
+                    <table>
+                        <thead class="table-header">
+                            <tr>
+                                <th class="w-20">SL NO.</th>
+                                <th>INFORMATION</th>
+                                <th>DETAILS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="font-semibold">Total Campus Area (in sq mtr)</td>
+                                <td>12,500 sq mtr</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="font-semibold">No. and Size of Classrooms (in sq mtr)</td>
+                                <td>42 Classrooms | 620 sq mtr</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="font-semibold">No. and Size of Laboratories (in sq mtr)</td>
+                                <td>8 Specialized Labs | 850 sq mtr</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td class="font-semibold">Internet Facility</td>
+                                <td class="text-green-600 font-bold uppercase">Yes</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td class="font-semibold">Library Facility</td>
+                                <td class="text-green-600 font-bold uppercase">Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- YouTube Video Section -->
+            <section>
+                <div class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold text-gray-900 w-3/4">Watch our YouTube Video</td>
+                                <td class="text-center w-1/4">
+                                    <a href="https://www.youtube.com/c/snsinstitutions" target="_blank"
+                                        class="text-blue-600 hover:underline font-semibold">Watch Video</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Call to Action Section -->
+    <section class="py-12 bg-primary-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Questions About Our Disclosures?</h2>
+            <p class="text-lg mb-8 opacity-90">Contact our office for any queries regarding mandatory disclosures and
+                documentation</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="/contact"
+                    class="bg-white text-primary-600 hover:bg-gray-100 px-8 py-3 rounded-xl font-bold transition flex items-center shadow-lg">
+                    <i class="fas fa-envelope mr-2"></i>
+                    Contact Us
+                </a>
+                <a href="tel:+917530093728"
+                    class="bg-primary-500/30 border border-white/30 text-white hover:bg-primary-500/50 px-8 py-3 rounded-xl font-bold transition flex items-center backdrop-blur-sm">
+                    <i class="fas fa-phone mr-2"></i>
+                    Call: +91 75300 93728
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <app-footer></app-footer>
+</body>
+
+</html>
