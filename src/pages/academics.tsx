@@ -44,6 +44,31 @@ export const BPTPage = () => {
             </div>
         </div>
     </section>
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Career Opportunities</h2>
+                <p class="text-xl text-gray-600">The field of Physiotherapy offers diverse and rewarding career paths</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <i class="fas fa-hospital text-4xl text-blue-600 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Clinical Practice</h3>
+                    <p class="text-gray-600 leading-relaxed">Work in major hospitals, private clinics, and rehabilitation centers, providing direct patient care.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <i class="fas fa-running text-4xl text-green-600 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Sports Physiotherapy</h3>
+                    <p class="text-gray-600 leading-relaxed">Join sports teams, fitness centers, and athlete management organizations to improve performance.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <i class="fas fa-graduation-cap text-4xl text-purple-600 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Academic & Research</h3>
+                    <p class="text-gray-600 leading-relaxed">Pursue teaching roles in medical colleges or engage in cutting-edge physiotherapy research.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     `;
 }
 
@@ -87,6 +112,31 @@ export const MPTPage = () => {
                             <span class="text-gray-700">Cardiopulmonary Sciences</span>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Postgraduate Career Pathways</h2>
+                <p class="text-xl text-gray-600">Specialized knowledge leads to high-level professional opportunities</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-t-4 border-purple-500">
+                    <i class="fas fa-user-md text-4xl text-purple-600 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Specialist Consultant</h3>
+                    <p class="text-gray-600 leading-relaxed">Lead specialized departments in multi-specialty healthcare centers as an expert practitioner.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-t-4 border-purple-500">
+                    <i class="fas fa-chalkboard-teacher text-4xl text-purple-600 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Academic Leadership</h3>
+                    <p class="text-gray-600 leading-relaxed">Professorship and administrative roles in premier medical and physiotherapy institutions.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-t-4 border-purple-500">
+                    <i class="fas fa-search-plus text-4xl text-purple-600 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Clinical Research</h3>
+                    <p class="text-gray-600 leading-relaxed">Lead independent research projects and clinical trials in advanced rehabilitation sciences.</p>
                 </div>
             </div>
         </div>

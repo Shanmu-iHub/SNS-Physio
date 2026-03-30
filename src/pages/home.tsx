@@ -30,7 +30,7 @@ export const HomePage = () => {
                     </p>
 
                     <p class="text-sm lg:text-base mb-8 text-gray-200 leading-relaxed max-w-xl">
-                        Transform your child into a confident learner and global leader at Coimbatore's most progressive CBSE school.
+                        Transform into a confident healthcare professional and global leader at Coimbatore's most progressive physiotherapy college.
                     </p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 mb-10">
@@ -116,9 +116,9 @@ export const HomePage = () => {
     <section class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-primary-600">Why Parents Choose SNS College of Physiotherapy</h2>
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-primary-600">Why Students Choose SNS College of Physiotherapy</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    We don't just teach subjects—we redesign common minds through design thinking, preparing your child for tomorrow's challenges.
+                    We don't just teach subjects—we redesign common minds through design thinking, preparing you for tomorrow's healthcare challenges.
                 </p>
             </div>
             
@@ -141,7 +141,7 @@ export const HomePage = () => {
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-4">3P Culture Framework</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        <strong>Purpose, Process, People</strong>—our holistic approach ensures every child develops academically, socially, emotionally, and ethically.
+                        <strong>Purpose, Process, People</strong>—our holistic approach ensures every student develops academically, socially, emotionally, and ethically.
                     </p>
                 </div>
                 
@@ -152,7 +152,7 @@ export const HomePage = () => {
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-4">10:1 Personalized Care</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Ultra-low student-teacher ratio ensures every child receives individual attention. 60% of our faculty have 10+ years of experience.
+                        Ultra-low student-teacher ratio ensures every student receives individual attention. 60% of our faculty have 10+ years of experience.
                     </p>
                 </div>
                 
@@ -217,6 +217,14 @@ export const HomePage = () => {
                         <p class="text-gray-600 line-clamp-3">
                             A comprehensive 4.5-year undergraduate program focusing on human anatomy, physiology, and physical therapy techniques with a 6-month mandatory internship.
                         </p>
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <p class="text-xs font-bold text-gray-900 mb-2 uppercase tracking-wider">Career Paths:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-50 text-blue-700 text-[10px] font-bold px-2 py-1 rounded-md">CLINICAL</span>
+                                <span class="bg-green-50 text-green-700 text-[10px] font-bold px-2 py-1 rounded-md">SPORTS</span>
+                                <span class="bg-purple-50 text-purple-700 text-[10px] font-bold px-2 py-1 rounded-md">RESEARCH</span>
+                            </div>
+                        </div>
                         <div class="mt-6 text-primary-600 font-bold flex items-center">
                             Explore <i class="fas fa-arrow-right ml-2 opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0"></i>
                         </div>
@@ -235,6 +243,14 @@ export const HomePage = () => {
                         <p class="text-gray-600 line-clamp-3">
                             A 2-year postgraduate program specializing in areas like Orthopaedics, Neurology, Sports Physiotherapy, and Cardiopulmonary Sciences.
                         </p>
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <p class="text-xs font-bold text-gray-900 mb-2 uppercase tracking-wider">Career Paths:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-purple-50 text-purple-700 text-[10px] font-bold px-2 py-1 rounded-md">SPECIALIST</span>
+                                <span class="bg-indigo-50 text-indigo-700 text-[10px] font-bold px-2 py-1 rounded-md">LEADERSHIP</span>
+                                <span class="bg-blue-50 text-blue-700 text-[10px] font-bold px-2 py-1 rounded-md">ACADEMIC</span>
+                            </div>
+                        </div>
                         <div class="mt-6 text-blue-600 font-bold flex items-center">
                             Explore <i class="fas fa-arrow-right ml-2 opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0"></i>
                         </div>
@@ -250,10 +266,10 @@ export const HomePage = () => {
     <section class="py-20 bg-gradient-to-r from-primary-600 to-red-600 text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-4xl lg:text-5xl font-bold mb-4">
-                Ready to Transform Your Child's Future?
+                Ready to Transform Your Professional Future?
             </h2>
             <p class="text-xl opacity-90 mb-8">
-                Admissions open for Academic Year 2026-27. Limited seats available.
+                Admissions open for Academic Year 2026-27. Secure your professional journey in healthcare.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="/admissions" class="bg-white text-primary-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition shadow-xl">
