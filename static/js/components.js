@@ -267,7 +267,7 @@ footerTemplate.innerHTML = `
                 <div>
                     <h4 class="text-white font-bold mb-4">Connect</h4>
                     <ul class="space-y-2 text-sm mb-4">
-                        <li><i class="fas fa-map-marker-alt mr-2"></i>Sathy Main Road, SNS Kalvi Nagar,<br />Saravanampatti (PO),<br />Coimbatore - 641035</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Sathy main Road, SNS Kalvi Nagar, Saravanampatti (PO), Coimbatore - 641 035</li>
                         <li><a href="tel:+919003655855" class="hover:text-white transition"><i
                                     class="fas fa-phone mr-2"></i>Admission: +91-90036 55855</a></li>
                         <li><a href="tel:+919840246474" class="hover:text-white transition"><i
