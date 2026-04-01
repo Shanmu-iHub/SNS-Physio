@@ -233,9 +233,7 @@ footerTemplate.innerHTML = `
                         </div>
                     </div>
                     <p class="text-sm leading-relaxed">
-                        Affiliation: The Tamil Nadu Dr.MGR Medical University,<br>
-                        Established: 2020<br>
-                        Sathy Main Road, SNS Kalvi Nagar, Saravanampatti (PO), Coimbatore - 641035
+                        Affiliated to The Tamil Nadu Dr.MGR Medical University,
                     </p>
                 </div>
 
@@ -272,10 +270,10 @@ footerTemplate.innerHTML = `
                         <li><i class="fas fa-map-marker-alt mr-2"></i>Sathy Main Road, SNS Kalvi Nagar,<br />Saravanampatti (PO),<br />Coimbatore - 641035</li>
                         <li><a href="tel:+919003655855" class="hover:text-white transition"><i
                                     class="fas fa-phone mr-2"></i>Admission: +91-90036 55855</a></li>
-                        <li><a href="tel:09840246474" class="hover:text-white transition"><i
-                                    class="fas fa-phone mr-2"></i>office: 09840246474</a></li>
+                        <li><a href="tel:+919840246474" class="hover:text-white transition"><i
+                                    class="fas fa-phone mr-2"></i>Office: +91-9840246474</a></li>
                         <li><a href="mailto:principal@snscphysio.org" class="hover:text-white transition"><i
-                                    class="fas fa-envelope mr-2"></i>principal@snscphysio.org</a></li>
+                                    class="fas fa-envelope mr-2"></i>Email: principal@snscphysio.org</a></li>
                         <li><a href="mailto:job@snsgroups.com" class="hover:text-white transition"><i
                                     class="fas fa-briefcase mr-2"></i>Career: job@snsgroups.com</a></li>
                     </ul>
