@@ -549,9 +549,9 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                             </div>
                         </div>
                         <p class="text-sm leading-relaxed">
-                            Affiliation: M.G.R Medical University<br>
+                            Affiliation: The Tamil Nadu Dr.MGR Medical University,<br>
                             Established: 2020<br>
-                            Coimbatore, Tamil Nadu
+                            Sathy Main Road, SNS Kalvi Nagar, Saravanampatti (PO), Coimbatore - 641035
                         </p>
                     </div>
                     
@@ -584,10 +584,10 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                     <div>
                         <h4 class="text-white font-bold mb-4">Connect</h4>
                         <ul class="space-y-2 text-sm mb-4">
-                            <li><i class="fas fa-map-marker-alt mr-2"></i>SNS College of Physiotherapy,<br />SNS Kalvi Nagar, Sathy Main Road,<br />Kurumbapalayam (Po),<br />Coimbatore - 641107.</li>
-                            <li><a href="tel:+919003655855" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>Admission: +91 90036 55855</a></li>
-                            <li><a href="tel:09840246474" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>General: 09840246474</a></li>
-                            <li><a href="mailto:snsphysio@gmail.com" class="hover:text-white transition"><i class="fas fa-envelope mr-2"></i>snsphysio@gmail.com</a></li>
+                            <li><i class="fas fa-map-marker-alt mr-2"></i>Sathy Main Road, SNS Kalvi Nagar,<br />Saravanampatti (PO),<br />Coimbatore - 641035</li>
+                            <li><a href="tel:+919003655855" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>Admission: +91-90036 55855</a></li>
+                            <li><a href="tel:09840246474" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>office: 09840246474</a></li>
+                            <li><a href="mailto:principal@snscphysio.org" class="hover:text-white transition"><i class="fas fa-envelope mr-2"></i>principal@snscphysio.org</a></li>
                             <li><a href="mailto:job@snsgroups.com" class="hover:text-white transition"><i class="fas fa-briefcase mr-2"></i>Career: job@snsgroups.com</a></li>
                         </ul>
                         <div class="flex space-x-3">
@@ -611,7 +611,7 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                     <p>&copy; 2026 SNS College of Physiotherapy. All rights reserved.</p>
                     <p class="mt-2 text-primary-400 font-semibold">Caring for Your Health | We are Physical Therapists</p>
                     <p class="mt-1 text-xs">SNS Core Value: Sincerity, Nobility, Service</p>
-                    <p class="mt-3 text-primary-400 font-bold"><i class="fas fa-headset mr-2"></i>Helpline: 95644 23456</p>
+                    <p class="mt-3 text-primary-400 font-bold"><i class="fas fa-phone mr-2"></i>admission: +91 90036 55855</p>
                 </div>
             </div>
         </footer>

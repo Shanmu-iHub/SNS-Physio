@@ -62,7 +62,7 @@ export const MandatoryDisclosurePage = () => {
                         <tr class="hover:bg-gray-50">
                             <td class="border border-gray-300 px-4 py-3">8</td>
                             <td class="border border-gray-300 px-4 py-3 font-semibold">CONTACT DETAILS</td>
-                            <td class="border border-gray-300 px-4 py-3"><a href="tel:+919629937861" class="text-primary-600 hover:underline">+91 96299 37861</a></td>
+                            <td class="border border-gray-300 px-4 py-3"><a href="tel:+919003655855" class="text-primary-600 hover:underline">+91-90036 55855</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -408,9 +408,9 @@ export const MandatoryDisclosurePage = () => {
                     <i class="fas fa-envelope mr-2"></i>
                     Contact Us
                 </a>
-                <a href="tel:+919629937861" class="bg-white/20 hover:bg-white/30 text-white px-8 py-3 rounded-lg font-bold transition">
+                <a href="tel:+919003655855" class="bg-white/20 hover:bg-white/30 text-white px-8 py-3 rounded-lg font-bold transition">
                     <i class="fas fa-phone mr-2"></i>
-                    Call: +91 96299 37861
+                    Call: +91-90036 55855
                 </a>
             </div>
         </div>

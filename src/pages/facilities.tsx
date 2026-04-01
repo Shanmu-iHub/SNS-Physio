@@ -20,84 +20,116 @@ export const FacilitiesPage = () => {
                 </p>
             </div>
 
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Swimming Pool -->
-                <div class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 aspect-[4/3]">
-                    <img src="/static/images/pool.jpg" alt="Swimming Pool" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
-                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
-                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Swimming Pool</h3>
-                        <p class="text-sm md:text-base text-white/90 mt-1 font-medium">Dive into excellence.</p>
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="/static/images/pool.jpg" alt="Swimming Pool" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Swimming Pool</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Dive into excellence.
+                        </p>
                     </div>
                 </div>
 
                 <!-- Indoor Pitch -->
-                <div class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 aspect-[4/3]">
-                    <img src="/static/images/cricket.jpg" alt="Indoor Pitch" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
-                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
-                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Indoor Pitch</h3>
-                        <p class="text-sm md:text-base text-white/90 mt-1 font-medium">All-weather sports.</p>
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="/static/images/cricket.jpg" alt="Indoor Pitch" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Indoor Pitch</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            All-weather sports.
+                        </p>
                     </div>
                 </div>
 
                 <!-- Fitness Gym -->
-                <div class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 aspect-[4/3]">
-                    <img src="/static/images/gym.jpg" alt="Fitness Gym" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
-                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
-                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Fitness Gym</h3>
-                        <p class="text-sm md:text-base text-white/90 mt-1 font-medium">Train hard, shape up.</p>
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="/static/images/gym.jpg" alt="Fitness Gym" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Fitness Gym</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Train hard, shape up.
+                        </p>
                     </div>
                 </div>
 
                 <!-- Gaming Center -->
-                <div class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 aspect-[4/3]">
-                    <img src="/static/images/gaming.jpg" alt="Gaming Center" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
-                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
-                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Gaming Center</h3>
-                        <p class="text-sm md:text-base text-white/90 mt-1 font-medium">Innovation through play.</p>
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="/static/images/gaming.jpg" alt="Gaming Center" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Gaming Center</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Innovation through play.
+                        </p>
                     </div>
                 </div>
 
                 <!-- Mini Theatre -->
-                <div class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 aspect-[4/3]">
-                    <img src="/static/images/theater.jpg" alt="Mini Theatre" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
-                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
-                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Mini Theatre</h3>
-                        <p class="text-sm md:text-base text-white/90 mt-1 font-medium">Entertainment redefined.</p>
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="/static/images/theater.jpg" alt="Mini Theatre" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Mini Theatre</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Entertainment redefined.
+                        </p>
                     </div>
                 </div>
 
                 <!-- Music Studio -->
-                <div class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 aspect-[4/3]">
-                    <img src="/static/images/music.jpg" alt="Music Studio" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
-                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
-                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Music Studio</h3>
-                        <p class="text-sm md:text-base text-white/90 mt-1 font-medium">Fuel your soul.</p>
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="/static/images/music.jpg" alt="Music Studio" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Music Studio</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Fuel your soul.
+                        </p>
                     </div>
                 </div>
 
                 <!-- Dance Studio -->
-                <div class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 aspect-[4/3]">
-                    <img src="/static/images/dance.jpg" alt="Dance Studio" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
-                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
-                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Dance Studio</h3>
-                        <p class="text-sm md:text-base text-white/90 mt-1 font-medium">Art meets innovation.</p>
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="/static/images/dance.jpg" alt="Dance Studio" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Dance Studio</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Art meets innovation.
+                        </p>
                     </div>
                 </div>
 
                 <!-- Connection Lounge -->
-                <div class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 aspect-[4/3]">
-                    <img src="/static/images/lounge.jpg" alt="Connection Lounge" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
-                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
-                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Connection Lounge</h3>
-                        <p class="text-sm md:text-base text-white/90 mt-1 font-medium">Network and relax.</p>
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="/static/images/lounge.jpg" alt="Connection Lounge" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Connection Lounge</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Network and relax.
+                        </p>
                     </div>
                 </div>
             </div>
