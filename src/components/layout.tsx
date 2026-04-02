@@ -627,16 +627,6 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                 });
             });
         </script>
-        <!-- Instagram Floating Icon -->
-        <a href="#" class="instagram-float" target="_blank" rel="noopener noreferrer"
-            title="Follow us on Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <!-- WhatsApp Floating Icon -->
-        <a href="https://wa.me/919629937861" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
-            title="Chat with us on WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
     </body>
     </html>
   `;
