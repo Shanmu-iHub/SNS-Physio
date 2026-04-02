@@ -931,54 +931,56 @@ export const AdmissionsPage = () => {
         'Admissions'
     )}
 
-    <section class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-12">Admission Process</h2>
-            <div class="space-y-8">
-                <div class="flex items-start">
-                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
-                        <span class="text-2xl font-bold text-primary-600">1</span>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">Register</h3>
-                        <p class="text-gray-700">Visit school on any working day between 9:00 AM to 5:00 PM and register for your child's admission.</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
-                        <span class="text-2xl font-bold text-primary-600">2</span>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">Assessment</h3>
-                        <p class="text-gray-700">Written assessment in English, Mathematics, Language, and General Knowledge according to School's syllabi.</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
-                        <span class="text-2xl font-bold text-green-600">3</span>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">Interview</h3>
-                        <p class="text-gray-700">Interview to determine alignment of parental views with school philosophy and interpret student scores.</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
-                        <span class="text-2xl font-bold text-primary-600">4</span>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">Selection</h3>
-                        <p class="text-gray-700">Results compiled on merit by Admissions Committee. Seats offered in order of merit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="py-16 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-2xl p-8 shadow-lg">
-                <h3 class="text-2xl md:text-3xl font-bold mb-6 text-center">Admission and Enquiry Form</h3>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Admission Process -->
+                <div>
+                    <h2 class="text-4xl font-bold mb-12">Admission Process</h2>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
+                                <span class="text-2xl font-bold text-primary-600">1</span>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-2">Register</h3>
+                                <p class="text-gray-700">Visit school on any working day between 9:00 AM to 5:00 PM and register for your child's admission.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
+                                <span class="text-2xl font-bold text-primary-600">2</span>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-2">Assessment</h3>
+                                <p class="text-gray-700">Written assessment in English, Mathematics, Language, and General Knowledge according to School's syllabi.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
+                                <span class="text-2xl font-bold text-green-600">3</span>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-2">Interview</h3>
+                                <p class="text-gray-700">Interview to determine alignment of parental views with school philosophy and interpret student scores.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
+                                <span class="text-2xl font-bold text-primary-600">4</span>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-2">Selection</h3>
+                                <p class="text-gray-700">Results compiled on merit by Admissions Committee. Seats offered in order of merit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Section -->
+                <div>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-6 text-center">Admission and Enquiry Form</h3>
                              <form id="admissionForm" class="space-y-6" novalidate>
                     <!-- Full Name -->
                     <div>
@@ -1151,8 +1153,10 @@ export const AdmissionsPage = () => {
 
                     });
                 </script>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>ion>
+    </section>
   `;
 };
