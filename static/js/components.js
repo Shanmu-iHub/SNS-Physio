@@ -32,16 +32,8 @@ headerTemplate.innerHTML = `
             transform-origin: top center;
         }
     </style>
-    <!-- Hanging Tag 1: IAP APPROVED -->
-    <a href="https://www.tnmgrmu.ac.in/" target="_blank" class="fixed top-[22%] right-0 z-50 swing">
-        <div class="bg-[#00a651] text-white px-3 py-6 rounded-l-xl shadow-2xl flex flex-col items-center border-l border-t border-b border-white/20">
-            <span class="font-bold text-xs uppercase tracking-widest"
-                style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">IAP APPROVED</span>
-        </div>
-    </a>
-
-    <!-- Hanging Tag 2: Brochure -->
-    <a href="/brochure" class="fixed top-[46%] right-0 z-50 swing" style="display: block; animation-delay: 0.3s;">
+    <!-- Hanging Tag: Brochure -->
+    <a href="https://snscphysio.org/brochure-viewer/" target="_blank" class="fixed top-[22%] right-0 z-50 swing" style="display: block;">
         <div class="bg-[#ed1c24] text-white px-3 py-8 rounded-l-xl shadow-2xl flex flex-col items-center space-y-3 group border-l border-t border-b border-white/20">
             <i class="fas fa-file-pdf text-xl group-hover:scale-110 transition-transform duration-300"></i>
             <span class="font-bold text-xs uppercase tracking-widest"
