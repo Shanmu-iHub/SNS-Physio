@@ -93,6 +93,8 @@ headerTemplate.innerHTML = `
                         </div>
                     </div>
 
+                    <a href="https://iipc.snsgroups.com/" target="_blank" class="text-gray-700 hover:text-primary-600 font-medium">Placement</a>
+
                     <!-- Beyond Programs Dropdown -->
                     <div class="relative group">
                         <button class="text-gray-700 hover:text-primary-600 font-medium flex items-center">
@@ -100,14 +102,10 @@ headerTemplate.innerHTML = `
                         </button>
                         <div
                             class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-56 mt-0 z-50">
-                            <a href="/sports-clubs" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Sports &
-                                Clubs</a>
-                            <a href="/innovation" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Innovation
-                                Hub</a>
-                            <a href="/events" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Events &
-                                Celebrations</a>
-                            <a href="/success-stories" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Success
-                                Stories</a>
+                            <a href="/sports-clubs" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Sports & Clubs</a>
+                            <a href="/innovation" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Innovation Hub</a>
+                            <a href="/events" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Events & Celebrations</a>
+                            <a href="/success-stories" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Success Stories</a>
                         </div>
                     </div>
 
@@ -169,6 +167,8 @@ headerTemplate.innerHTML = `
                     </div>
                 </div>
 
+                <a href="https://iipc.snsgroups.com/" target="_blank" class="block text-gray-700 hover:text-primary-600 font-medium py-2">Placement</a>
+
                 <!-- Beyond Programs -->
                 <div>
                     <button
@@ -177,13 +177,10 @@ headerTemplate.innerHTML = `
                         Beyond Programs <i class="fas fa-chevron-down"></i>
                     </button>
                     <div id="mobile-beyond" class="hidden pl-4 space-y-2 mt-2">
-                        <a href="/sports-clubs" class="block text-gray-600 hover:text-primary-600 py-1">Sports &
-                            Clubs</a>
+                        <a href="/sports-clubs" class="block text-gray-600 hover:text-primary-600 py-1">Sports & Clubs</a>
                         <a href="/innovation" class="block text-gray-600 hover:text-primary-600 py-1">Innovation Hub</a>
-                        <a href="/events" class="block text-gray-600 hover:text-primary-600 py-1">Events &
-                            Celebrations</a>
-                        <a href="/success-stories" class="block text-gray-600 hover:text-primary-600 py-1">Success
-                            Stories</a>
+                        <a href="/events" class="block text-gray-600 hover:text-primary-600 py-1">Events & Celebrations</a>
+                        <a href="/success-stories" class="block text-gray-600 hover:text-primary-600 py-1">Success Stories</a>
                     </div>
                 </div>
 

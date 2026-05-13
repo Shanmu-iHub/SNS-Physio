@@ -428,7 +428,9 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                                 <a href="/transport" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Transport</a>
                             </div>
                         </div>
-                        
+
+                        <a href="https://iipc.snsgroups.com/" target="_blank" class="text-gray-700 hover:text-primary-600 font-medium">Placement</a>
+
                         <!-- Beyond Programs Dropdown -->
                         <div class="relative group">
                             <button class="${['sports-clubs', 'innovation', 'events', 'success-stories'].includes(activePage) ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium flex items-center">
@@ -441,7 +443,7 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                                 <a href="/success-stories" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Success Stories</a>
                             </div>
                         </div>
-                        
+
                         <!-- Meet Us Dropdown -->
                         <div class="relative group">
                             <button class="${['about', 'contact', 'mandatory-disclosure'].includes(activePage) ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium flex items-center">
@@ -493,7 +495,9 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                             <a href="/transport" class="block text-gray-600 hover:text-primary-600 py-1">Transport</a>
                         </div>
                     </div>
-                    
+
+                    <a href="https://iipc.snsgroups.com/" target="_blank" class="block text-gray-700 hover:text-primary-600 font-medium py-2">Placement</a>
+
                     <!-- Beyond Programs -->
                     <div>
                         <button class="w-full text-left text-gray-700 hover:text-primary-600 font-medium py-2 flex justify-between items-center" onclick="document.getElementById('mobile-beyond').classList.toggle('hidden')">
@@ -506,7 +510,7 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                             <a href="/success-stories" class="block text-gray-600 hover:text-primary-600 py-1">Success Stories</a>
                         </div>
                     </div>
-                    
+
                     <!-- Meet Us -->
                     <div>
                         <button class="w-full text-left text-gray-700 hover:text-primary-600 font-medium py-2 flex justify-between items-center" onclick="document.getElementById('mobile-meetus').classList.toggle('hidden')">
