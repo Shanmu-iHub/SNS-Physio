@@ -402,12 +402,12 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                         </div>
                     </a>
                     
-                    <div class="hidden md:flex items-center space-x-6">
-                        <a href="/" class="${activePage === 'home' ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium">Home</a>
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a href="/" class="${activePage === 'home' ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium whitespace-nowrap">Home</a>
                         
                         <!-- Academics Dropdown -->
                         <div class="relative group">
-                            <button class="${activePage.startsWith('academics') || activePage === 'stanford-pathway' ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium flex items-center">
+                            <button class="${activePage.startsWith('academics') || activePage === 'stanford-pathway' ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium flex items-center whitespace-nowrap">
                                 Academics <i class="fas fa-chevron-down ml-1 text-xs"></i>
                             </button>
                             <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-64 mt-0 z-50">
@@ -419,7 +419,7 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                         
                         <!-- Infrastructure Dropdown -->
                         <div class="relative group">
-                            <button class="${['facilities', 'gallery', 'transport'].includes(activePage) ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium flex items-center">
+                            <button class="${['facilities', 'gallery', 'transport'].includes(activePage) ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium flex items-center whitespace-nowrap">
                                 Infrastructure <i class="fas fa-chevron-down ml-1 text-xs"></i>
                             </button>
                             <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-48 mt-0 z-50">
@@ -429,11 +429,11 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                             </div>
                         </div>
 
-                        <a href="https://iipc.snsgroups.com/" target="_blank" class="text-gray-700 hover:text-primary-600 font-medium">Placement</a>
+                        <a href="https://iipc.snsgroups.com/" target="_blank" class="text-gray-700 hover:text-primary-600 font-medium whitespace-nowrap">Placement</a>
 
                         <!-- Beyond Programs Dropdown -->
                         <div class="relative group">
-                            <button class="${['sports-clubs', 'innovation', 'events', 'success-stories'].includes(activePage) ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium flex items-center">
+                            <button class="${['sports-clubs', 'innovation', 'events', 'success-stories'].includes(activePage) ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium flex items-center whitespace-nowrap">
                                 Beyond Programs <i class="fas fa-chevron-down ml-1 text-xs"></i>
                             </button>
                             <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-56 mt-0 z-50">
@@ -446,17 +446,17 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
 
                         <!-- Meet Us Dropdown -->
                         <div class="relative group">
-                            <button class="${['about', 'contact', 'mandatory-disclosure'].includes(activePage) ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium flex items-center">
+                            <button class="${['about', 'contact', 'mandatory-disclosure'].includes(activePage) ? 'text-primary-600 font-bold' : 'text-gray-700 hover:text-primary-600'} font-medium flex items-center whitespace-nowrap">
                                 Meet Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
                             </button>
                             <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-56 mt-0 z-50">
                                 <a href="/about" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">About Us</a>
                                 <a href="/contact" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Contact Us</a>
-                                <a href="/mandatory-disclosure" class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Mandatory Disclosure</a>
+                                <button onclick="window.open('https://main.snsgroups.com/mandatory-disclosure/index.html#/physio', '_blank')" class="block w-full text-left px-4 py-2 hover:bg-primary-50 text-gray-700">Mandatory Disclosure</button>
                             </div>
                         </div>
                         
-                        <a href="/admissions" class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-bold transition">
+                        <a href="/admissions" class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-bold transition whitespace-nowrap">
                             Apply Now <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -519,7 +519,7 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                         <div id="mobile-meetus" class="hidden pl-4 space-y-2 mt-2">
                             <a href="/about" class="block text-gray-600 hover:text-primary-600 py-1">About Us</a>
                             <a href="/contact" class="block text-gray-600 hover:text-primary-600 py-1">Contact Us</a>
-                            <a href="/mandatory-disclosure" class="block text-gray-600 hover:text-primary-600 py-1">Mandatory Disclosure</a>
+                            <button onclick="window.open('https://main.snsgroups.com/mandatory-disclosure/index.html#/physio', '_blank')" class="block w-full text-left text-gray-600 hover:text-primary-600 py-1">Mandatory Disclosure</button>
                         </div>
                     </div>
                     
