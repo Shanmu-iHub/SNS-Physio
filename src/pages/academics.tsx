@@ -72,6 +72,7 @@ export const BPTPage = () => {
     `;
 }
 
+/*
 export const MPTPage = () => {
     return `
     ${PageHeader(
@@ -143,3 +144,4 @@ export const MPTPage = () => {
     </section>
     `;
 }
+*/

@@ -2,7 +2,10 @@ import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import { Layout, PageHeader } from './components/layout'
 import { HomePage } from './pages/home'
+/*
 import { BPTPage, MPTPage } from './pages/academics'
+*/
+import { BPTPage } from './pages/academics'
 import { FacilitiesPage } from './pages/facilities'
 import { InnovationPage, AboutPage, ContactPage, AdmissionsPage } from './pages/remaining'
 import { MandatoryDisclosurePage } from './pages/mandatory-disclosure'
@@ -56,9 +59,11 @@ app.get('/academics/bpt', (c) => {
     return c.html(Layout(BPTPage(), 'Bachelor of Physiotherapy (B.P.T)', 'academics-bpt'))
 })
 
+/*
 app.get('/academics/mpt', (c) => {
     return c.html(Layout(MPTPage(), 'Master of Physiotherapy (M.P.T)', 'academics-mpt'))
 })
+*/
 
 // Facilities Page
 app.get('/facilities', (c) => {

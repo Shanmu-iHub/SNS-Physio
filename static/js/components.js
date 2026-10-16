@@ -74,8 +74,10 @@ headerTemplate.innerHTML = `
                             class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-64 mt-0 z-50">
                             <a href="/academics/bpt/index.html"
                                 class="block px-4 py-2 hover:bg-primary-50 text-gray-700">B.P.T (4.5 Years)</a>
+                            <!--
                             <a href="/academics/mpt/index.html"
                                 class="block px-4 py-2 hover:bg-primary-50 text-gray-700">M.P.T (2 Years)</a>
+                            -->
                         </div>
                     </div>
 
@@ -148,8 +150,10 @@ headerTemplate.innerHTML = `
                     <div id="mobile-programs" class="hidden pl-4 space-y-2 mt-2">
                         <a href="/academics/bpt/index.html"
                             class="block text-gray-600 hover:text-primary-600 py-1">B.P.T (4.5 Years)</a>
+                        <!--
                         <a href="/academics/mpt/index.html" class="block text-gray-600 hover:text-primary-600 py-1">M.P.T
                             (2 Years)</a>
+                        -->
                     </div>
                 </div>
 
@@ -249,7 +253,9 @@ footerTemplate.innerHTML = `
                     <h4 class="text-white font-bold mb-4">Programs</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="/academics/bpt/index.html" class="hover:text-white transition">B.P.T</a></li>
+                        <!--
                         <li><a href="/academics/mpt/index.html" class="hover:text-white transition">M.P.T</a></li>
+                        -->
                     </ul>
                 </div>
 

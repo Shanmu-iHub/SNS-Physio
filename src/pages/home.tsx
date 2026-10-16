@@ -231,7 +231,8 @@ export const HomePage = () => {
                     </div>
                 </a>
                 
-                <!-- Program 2 -->
+                <!--
+                Program 2: Master of Physiotherapy is intentionally disabled.
                 <a href="/academics/mpt" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                     <div class="h-64 overflow-hidden relative">
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition z-10"></div>
@@ -256,6 +257,7 @@ export const HomePage = () => {
                         </div>
                     </div>
                 </a>
+                -->
             </div>
         </div>
     </section>
